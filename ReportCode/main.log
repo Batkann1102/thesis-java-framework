@@ -1,0 +1,2651 @@
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.4.17)  17 APR 2026 04:41
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/base\report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/base\size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count271
+\c@chapter=\count272
+\c@section=\count273
+\c@subsection=\count274
+\c@subsubsection=\count275
+\c@paragraph=\count276
+\c@subparagraph=\count277
+\c@figure=\count278
+\c@table=\count279
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen148
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontsp
+ec.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/l3packages/xpar
+se\xparse.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/l3kernel\expl3.
+sty
+Package: expl3 2025-12-24 L3 programming layer (loader) 
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3bac
+kend-xetex.def
+File: l3backend-xetex.def 2025-10-09 L3 backend support: XeTeX
+\g__graphics_track_int=\count280
+\g__pdfannot_backend_int=\count281
+\g__pdfannot_backend_link_int=\count282
+))
+Package: xparse 2025-10-09 L3 Experimental document command parser
+)
+Package: fontspec 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTeX
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontsp
+ec-xetex.sty
+Package: fontspec-xetex 2025/09/29 v2.9g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count283
+\l__fontspec_language_int=\count284
+\l__fontspec_strnum_int=\count285
+\l__fontspec_tmp_int=\count286
+\l__fontspec_tmpa_int=\count287
+\l__fontspec_tmpb_int=\count288
+\l__fontspec_tmpc_int=\count289
+\l__fontspec_em_int=\count290
+\l__fontspec_emdef_int=\count291
+\l__fontspec_strong_int=\count292
+\l__fontspec_strongdef_int=\count293
+\l__fontspec_tmpa_dim=\dimen149
+\l__fontspec_tmpb_dim=\dimen150
+\l__fontspec_tmpc_dim=\dimen151
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/base\fontenc.st
+y
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/fontspec\fontsp
+ec.cfg)))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/xltxtra\xltxtra
+.sty
+Package: xltxtra 2018/12/31 v0.7 Improvements for the "XeLaTeX" format
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifluate
+x.sty
+Package: ifluatex 2019/10/25 v1.5 ifluatex legacy package. Use iftex instead.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.s
+ty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifxetex
+.sty
+Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/realscripts\rea
+lscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+\subsupersep=\dimen152
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/metalogo\metalo
+go.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphi
+cx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval
+.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks17
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphi
+cs.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.s
+ty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\gr
+aphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 106.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\xe
+tex.def
+File: xetex.def 2025/11/01 v5.0p Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen153
+\Gin@req@width=\dimen154
+)
+\xl@everylogo=\toks18
+\xl@@everylogo=\toks19
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box53
+\l__xetex_show_hyphens_temp_box=\box54
+\l__xetex_show_hyphens_final_box=\box55
+\g__xetex_show_hyphens_word_box=\box56
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/xelatex/xunicode\xuni
+code.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+)
+\tipaTiiicode=\count294
+\tipasavetokens=\toks20
+\tipachecktokens=\toks21
+LaTeX Encoding Info:    Redeclaring text command \nobreakspace (encoding TU) on
+ input line 1725.
+LaTeX Encoding Info:    Redeclaring text command \copyright (encoding TU) on in
+put line 1739.
+LaTeX Encoding Info:    Redeclaring text command \AA (encoding TU) on input lin
+e 1785.
+LaTeX Encoding Info:    Redeclaring text command \aa (encoding TU) on input lin
+e 1842.
+LaTeX Encoding Info:    Redeclaring text command \textrhookopeno (encoding TU) 
+on input line 3119.
+LaTeX Encoding Info:    Redeclaring text command \hbar (encoding TU) on input l
+ine 3636.
+LaTeX Encoding Info:    Redeclaring text command \textaolig (encoding TU) on in
+put line 3729.
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/base\textcomp.s
+ty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+
+Package fontspec Info: 
+(fontspec)             Font family 'TimesNewRoman(0)' created for font 'Times
+(fontspec)             New Roman' with options [Ligatures=TeX,Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.: <->"Times New
+(fontspec)             Roman/OT:script=latn;language=dflt;+smcp;mapping=tex-tex
+t;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.: <->"Times New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: <->"Times
+(fontspec)             New
+(fontspec)             Roman/B/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;mapping=tex-text;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/I/OT:script=latn;language=dflt;+smcp;mapping=tex-t
+ext;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.: <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;mapping=tex-text;"
+
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Times New
+(fontspec)             Roman/BI/OT:script=latn;language=dflt;+smcp;mapping=tex-
+text;"
+
+
+Package fontspec Info: 
+(fontspec)             Font family 'Arial(0)' created for font 'Arial' with
+(fontspec)             options [Ligatures=TeX].
+(fontspec)              
+(fontspec)              This font family consists of the following NFSS
+(fontspec)             series/shapes:
+(fontspec)              
+(fontspec)             - 'normal' (m/n) with NFSS spec.:
+(fontspec)             <->"Arial/OT:script=latn;language=dflt;mapping=tex-text;
+"
+(fontspec)             - 'small caps'  (m/sc) with NFSS spec.:
+(fontspec)             <->"Arial/OT:script=latn;language=dflt;+smcp;mapping=tex
+-text;"
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->"Arial/B/OT:script=latn;language=dflt;mapping=tex-tex
+t;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.:
+(fontspec)             <->"Arial/B/OT:script=latn;language=dflt;+smcp;mapping=t
+ex-text;"
+(fontspec)             - 'italic' (m/it) with NFSS spec.:
+(fontspec)             <->"Arial/I/OT:script=latn;language=dflt;mapping=tex-tex
+t;"
+(fontspec)             - 'italic small caps'  (m/scit) with NFSS spec.:
+(fontspec)             <->"Arial/I/OT:script=latn;language=dflt;+smcp;mapping=t
+ex-text;"
+(fontspec)             - 'bold italic' (b/it) with NFSS spec.:
+(fontspec)             <->"Arial/BI/OT:script=latn;language=dflt;mapping=tex-te
+xt;"
+(fontspec)             - 'bold italic small caps'  (b/scit) with NFSS spec.:
+(fontspec)             <->"Arial/BI/OT:script=latn;language=dflt;+smcp;mapping=
+tex-text;"
+
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geomet
+ry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.
+sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count295
+\Gm@cntv=\count296
+\c@Gm@tempcnt=\count297
+\Gm@bindingoffset=\dimen155
+\Gm@wd@mp=\dimen156
+\Gm@odd@mp=\dimen157
+\Gm@even@mp=\dimen158
+\Gm@layoutwidth=\dimen159
+\Gm@layoutheight=\dimen160
+\Gm@layouthoffset=\dimen161
+\Gm@layoutvoffset=\dimen162
+\Gm@dimlist=\toks22
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geomet
+ry.cfg))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/fancyhdr\fancyh
+dr.sty
+Package: fancyhdr 2025/02/07 v5.2 Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip51
+\f@nch@offset@elh=\skip52
+\f@nch@offset@erh=\skip53
+\f@nch@offset@olh=\skip54
+\f@nch@offset@orh=\skip55
+\f@nch@offset@elf=\skip56
+\f@nch@offset@erf=\skip57
+\f@nch@offset@olf=\skip58
+\f@nch@offset@orf=\skip59
+\f@nch@height=\skip60
+\f@nch@footalignment=\skip61
+\f@nch@widthL=\skip62
+\f@nch@widthC=\skip63
+\f@nch@widthR=\skip64
+\@temptokenb=\toks23
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/float\float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count298
+\float@exts=\toks24
+\float@box=\box57
+\@float@everytoks=\toks25
+\@floatcapt=\box58
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\afterpage
+.sty
+Package: afterpage 2023/07/04 v1.08 After-Page Package (DPC)
+\AP@output=\toks26
+\AP@partial=\box59
+\AP@footins=\box60
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsmath
+.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip65
+
+For additional information on amsmath, use the `?' option.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amstext
+.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsgen.
+sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks27
+\ex@=\dimen163
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsbsy.
+sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen164
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsmath\amsopn.
+sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count299
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count300
+\leftroot@=\count301
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count302
+\DOTSCASE@=\count303
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box61
+\strutbox@=\box62
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen165
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count304
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count305
+\dotsspace@=\muskip17
+\c@parentequation=\count306
+\dspbrk@lvl=\count307
+\tag@help=\toks28
+\row@=\count308
+\column@=\count309
+\maxfields@=\count310
+\andhelp@=\toks29
+\eqnshift@=\dimen166
+\alignsep@=\dimen167
+\tagshift@=\dimen168
+\tagwidth@=\dimen169
+\totwidth@=\dimen170
+\lineht@=\dimen171
+\@envbody=\toks30
+\multlinegap=\skip66
+\multlinetaggap=\skip67
+\mathdisplay@stack=\toks31
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amssym
+b.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\amsfon
+ts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\dcolumn.s
+ty
+Package: dcolumn 2025/10/21 v1.06 decimal alignment package (DPC)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen172
+\ar@mcellbox=\box63
+\extrarowheight=\dimen173
+\NC@list=\toks32
+\extratabsurround=\skip68
+\backup@length=\skip69
+\ar@cellbox=\box64
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\longtable
+.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip70
+\LTright=\skip71
+\LTpre=\skip72
+\LTpost=\skip73
+\LTchunksize=\count311
+\LTcapwidth=\dimen174
+\LT@head=\box65
+\LT@firsthead=\box66
+\LT@foot=\box67
+\LT@lastfoot=\box68
+\LT@gbox=\box69
+\LT@cols=\count312
+\LT@rows=\count313
+\c@LT@tables=\count314
+\c@LT@chunks=\count315
+\LT@p@ftn=\toks33
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/booktabs\bookta
+bs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen175
+\lightrulewidth=\dimen176
+\cmidrulewidth=\dimen177
+\belowrulesep=\dimen178
+\belowbottomsep=\dimen179
+\aboverulesep=\dimen180
+\abovetopsep=\dimen181
+\cmidrulesep=\dimen182
+\cmidrulekern=\dimen183
+\defaultaddspace=\dimen184
+\@cmidla=\count316
+\@cmidlb=\count317
+\@aboverulesep=\dimen185
+\@belowrulesep=\dimen186
+\@thisruleclass=\count318
+\@lastruleclass=\count319
+\@thisrulewidth=\dimen187
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\tabularx.
+sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen188
+\TX@old@table=\dimen189
+\TX@old@col=\dimen190
+\TX@target=\dimen191
+\TX@delta=\dimen192
+\TX@cols=\count320
+\TX@ftn=\toks34
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/ltablex\ltablex
+.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tocloft\tocloft
+.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has chapter divisions on input line 51.
+\cftparskip=\skip74
+\cftbeforetoctitleskip=\skip75
+\cftaftertoctitleskip=\skip76
+\cftbeforepartskip=\skip77
+\cftpartnumwidth=\skip78
+\cftpartindent=\skip79
+\cftbeforechapskip=\skip80
+\cftchapindent=\skip81
+\cftchapnumwidth=\skip82
+\cftbeforesecskip=\skip83
+\cftsecindent=\skip84
+\cftsecnumwidth=\skip85
+\cftbeforesubsecskip=\skip86
+\cftsubsecindent=\skip87
+\cftsubsecnumwidth=\skip88
+\cftbeforesubsubsecskip=\skip89
+\cftsubsubsecindent=\skip90
+\cftsubsubsecnumwidth=\skip91
+\cftbeforeparaskip=\skip92
+\cftparaindent=\skip93
+\cftparanumwidth=\skip94
+\cftbeforesubparaskip=\skip95
+\cftsubparaindent=\skip96
+\cftsubparanumwidth=\skip97
+\cftbeforeloftitleskip=\skip98
+\cftafterloftitleskip=\skip99
+\cftbeforefigskip=\skip100
+\cftfigindent=\skip101
+\cftfignumwidth=\skip102
+\c@lofdepth=\count321
+\c@lotdepth=\count322
+\cftbeforelottitleskip=\skip103
+\cftafterlottitleskip=\skip104
+\cftbeforetabskip=\skip105
+\cfttabindent=\skip106
+\cfttabnumwidth=\skip107
+) (dics.sty
+\fiveblanklines=\skip108
+\tenblanklines=\skip109
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\micro
+type.sty
+Package: microtype 2026/03/01 v3.2d Micro-typographical refinements (RS)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolb
+ox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count323
+)
+\MT@toks=\toks35
+\MT@tempbox=\box70
+\MT@count=\count324
+LaTeX Info: Redefining \noprotrusionifhmode on input line 1084.
+LaTeX Info: Redefining \leftprotrusion on input line 1085.
+\MT@prot@toks=\toks36
+LaTeX Info: Redefining \rightprotrusion on input line 1104.
+LaTeX Info: Redefining \textls on input line 1449.
+\MT@outer@kern=\dimen193
+LaTeX Info: Redefining \microtypecontext on input line 2053.
+LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
+\MT@listname@count=\count325
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\micro
+type-xetex.def
+File: microtype-xetex.def 2026/03/01 v3.2d Definitions specific to xetex (RS)
+LaTeX Info: Redefining \lsstyle on input line 443.
+LaTeX Info: Redefining \lslig on input line 451.
+\MT@outer@space=\skip110
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\micro
+type.cfg
+File: microtype.cfg 2026/03/01 v3.2d microtype main configuration file (RS)
+)
+LaTeX Info: Redefining \microtypesetup on input line 3065.
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/ragged2e\ragged
+2e.sty
+Package: ragged2e 2023/06/22 v3.6 ragged2e Package
+\CenteringLeftskip=\skip111
+\RaggedLeftLeftskip=\skip112
+\RaggedRightLeftskip=\skip113
+\CenteringRightskip=\skip114
+\RaggedLeftRightskip=\skip115
+\RaggedRightRightskip=\skip116
+\CenteringParfillskip=\skip117
+\RaggedLeftParfillskip=\skip118
+\RaggedRightParfillskip=\skip119
+\JustifyingParfillskip=\skip120
+\CenteringParindent=\skip121
+\RaggedLeftParindent=\skip122
+\RaggedRightParindent=\skip123
+\JustifyingParindent=\skip124
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/nomencl\nomencl
+.sty
+Package: nomencl 2021/11/10 v5.6 Nomenclature package
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval
+.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyv
+al.tex
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvut
+ils.tex
+\XKV@toks=\toks37
+\XKV@tempa@toks=\toks38
+)
+\XKV@depth=\count326
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\toc
+basic.sty
+Package: tocbasic 2026/02/02 v3.49.2 KOMA-Script package (handling toc-files)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scr
+base.sty
+Package: scrbase 2026/02/02 v3.49.2 KOMA-Script package (KOMA-Script-independen
+t basics and keyval usage)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scr
+lfile.sty
+Package: scrlfile 2026/02/02 v3.49.2 KOMA-Script package (file load hooks)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scr
+lfile-hook.sty
+Package: scrlfile-hook 2026/02/02 v3.49.2 KOMA-Script package (using LaTeX hook
+s)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/koma-script\scr
+logo.sty
+Package: scrlogo 2026/02/02 v3.49.2 KOMA-Script package (logo)
+)))
+Applying: [2021/05/01] Usage of raw or classic option list on input line 254.
+Already applied: [0000/00/00] Usage of raw or classic option list on input line
+ 370.
+)
+\scr@dte@tocline@numberwidth=\skip125
+\scr@dte@tocline@numbox=\box71
+)
+Package tocbasic Info: omitting babel extension for `nlo'
+(tocbasic)             because of missing \bbl@set@language on input line 187.
+Package tocbasic Info: omitting babel extension for `nls'
+(tocbasic)             because of missing \bbl@set@language on input line 188.
+\nomlabelwidth=\dimen194
+\nom@tempdim=\dimen195
+\nomitemsep=\skip126
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/was\upgreek.sty
+Package: upgreek 2003/02/12 v2.0 (WaS)
+Package upgreek Info: Using Euler Roman for upright Greek on input line 31.
+\symugrf@m=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `ugrf@m' in version `bold'
+(Font)                  U/eur/m/n --> U/eur/b/n on input line 38.
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\matht
+ools.sty
+Package: mathtools 2024/10/04 v1.31 mathematical typesetting tools
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tools\calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count327
+\calc@Bcount=\count328
+\calc@Adimen=\dimen196
+\calc@Bdimen=\dimen197
+\calc@Askip=\skip127
+\calc@Bskip=\skip128
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count329
+\calc@Cskip=\skip129
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/mathtools\mhset
+up.sty
+Package: mhsetup 2021/03/18 v1.4 programming setup (MH)
+)
+\g_MT_multlinerow_int=\count330
+\l_MT_multwidth_dim=\dimen198
+\origjot=\skip130
+\l_MT_shortvdotswithinadjustabove_dim=\dimen199
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen256
+\l_MT_above_intertext_sep=\dimen257
+\l_MT_below_intertext_sep=\dimen258
+\l_MT_above_shortintertext_sep=\dimen259
+\l_MT_below_shortintertext_sep=\dimen260
+\xmathstrut@box=\box72
+\xmathstrut@dim=\dimen261
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hyperr
+ef.sty
+Package: hyperref 2025-07-12 v7.01o Hypertext links for LaTeX
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/kvsetkeys\kvset
+keys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/kvdefinekeys\
+kvdefinekeys.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pdfescape\pdf
+escape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/ltxcmds\ltxcm
+ds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pdftexcmds\pd
+ftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/infwarerr\inf
+warerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode not found.
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hycolor\hycolor
+.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\namere
+f.sty
+Package: nameref 2025-06-21 v2.57 Cross-referencing by name of section
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/refcount\refcou
+nt.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/gettitlestrin
+g\gettitlestring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/kvoptions\kvopt
+ions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count331
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/stringenc\str
+ingenc.sty
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen262
+\Hy@linkcounter=\count332
+\Hy@pagecounter=\count333
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\pd1enc
+.def
+File: pd1enc.def 2025-07-12 v7.01o Hyperref: PDFDocEncoding definition (HO)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/intcalc\intca
+lc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count334
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\puenc.
+def
+File: puenc.def 2025-07-12 v7.01o Hyperref: PDF Unicode definition (HO)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\p
+uenc-greek.def
+File: puenc-greek.def 2023-09-12 2.5 Greek LICRs for PDF strings
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/greek-fontenc\g
+reek-fontenc.def
+File: greek-fontenc.def 2023-09-12 2.5 Common Greek font encoding definitions
+)
+LaTeX Encoding Info:    Redeclaring text command \textmu (encoding PU) on input
+ line 179.
+)
+LaTeX Encoding Info:    Redeclaring text command \textohm (encoding PU) on inpu
+t line 1176.
+)
+Package hyperref Info: Hyper figures OFF on input line 4195.
+Package hyperref Info: Link nesting OFF on input line 4200.
+Package hyperref Info: Hyper index ON on input line 4203.
+Package hyperref Info: Plain pages OFF on input line 4210.
+Package hyperref Info: Backreferencing OFF on input line 4215.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4462.
+\c@Hy@tempcnt=\count335
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/url\url.sty
+\Urlmuskip=\muskip18
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4801.
+\XeTeXLinkMargin=\dimen263
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/bitset\bitset
+.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/bigintcalc\bi
+gintcalc.sty
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count336
+\Field@Width=\dimen264
+\Fld@charsize=\dimen265
+Package hyperref Info: Hyper figures OFF on input line 6078.
+Package hyperref Info: Link nesting OFF on input line 6083.
+Package hyperref Info: Hyper index ON on input line 6086.
+Package hyperref Info: backreferencing OFF on input line 6093.
+Package hyperref Info: Link coloring OFF on input line 6098.
+Package hyperref Info: Link coloring with OCG OFF on input line 6103.
+Package hyperref Info: PDF/A mode OFF on input line 6108.
+\Hy@abspage=\count337
+\c@Item=\count338
+\c@Hfootnote=\count339
+)
+Package hyperref Info: Driver (autodetected): hxetex.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/hyperref\hxetex
+.def
+File: hxetex.def 2025-07-12 v7.01o Hyperref driver for XeTeX
+\pdfm@box=\box73
+\c@Hy@AnnotLevel=\count340
+\HyField@AnnotCount=\count341
+\Fld@listcount=\count342
+\c@bookmark@seq@number=\count343
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/rerunfilecheck\
+rerunfilecheck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/uniquecounter
+\uniquecounter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip131
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/frontendlay
+er\tikz.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\
+pgf.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\p
+gfrcs.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
+\pgfutil-common.tex
+\pgfutil@everybye=\toks39
+\pgfutil@tempdima=\dimen266
+\pgfutil@tempdimb=\dimen267
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
+\pgfutil-latex.def
+\pgfutil@abb=\box74
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
+\pgfrcs.code.tex
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf\pgf.revis
+ion.tex)
+Package: pgfrcs 2025-08-29 v3.1.11a (3.1.11a)
+))
+Package: pgf 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/basiclayer\
+pgfcore.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/systemlayer
+\pgfsys.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
+er\pgfsys.code.tex
+Package: pgfsys 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
+\pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks40
+\pgfkeys@temptoks=\toks41
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
+\pgfkeyslibraryfiltered.code.tex
+\pgfkeys@tmptoks=\toks42
+))
+\pgf@x=\dimen268
+\pgf@y=\dimen269
+\pgf@xa=\dimen270
+\pgf@ya=\dimen271
+\pgf@xb=\dimen272
+\pgf@yb=\dimen273
+\pgf@xc=\dimen274
+\pgf@yc=\dimen275
+\pgf@xd=\dimen276
+\pgf@yd=\dimen277
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count344
+\c@pgf@countb=\count345
+\c@pgf@countc=\count346
+\c@pgf@countd=\count347
+\t@pgf@toka=\toks43
+\t@pgf@tokb=\toks44
+\t@pgf@tokc=\toks45
+\pgf@sys@id@count=\count348
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
+er\pgf.cfg
+File: pgf.cfg 2025-08-29 v3.1.11a (3.1.11a)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
+er\pgfsys-xetex.def
+File: pgfsys-xetex.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
+er\pgfsys-dvipdfmx.def
+File: pgfsys-dvipdfmx.def 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
+er\pgfsys-common-pdf.def
+File: pgfsys-common-pdf.def 2025-08-29 v3.1.11a (3.1.11a)
+)
+\pgfsys@objnum=\count349
+)))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
+er\pgfsyssoftpath.code.tex
+File: pgfsyssoftpath.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfsyssoftpath@smallbuffer@items=\count350
+\pgfsyssoftpath@bigbuffer@items=\count351
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/systemlay
+er\pgfsysprotocol.code.tex
+File: pgfsysprotocol.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.s
+ty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\co
+lor.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 274.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/graphics\mathco
+lor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcore.code.tex
+Package: pgfcore 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+ath.code.tex
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athutil.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athparser.code.tex
+\pgfmath@dimen=\dimen278
+\pgfmath@count=\count352
+\pgfmath@box=\box75
+\pgfmath@toks=\toks46
+\pgfmath@stack@operand=\toks47
+\pgfmath@stack@operation=\toks48
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.basic.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.trigonometric.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.random.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.comparison.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.base.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.round.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.misc.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfunctions.integerarithmetics.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athcalc.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+athfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count353
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfi
+nt.code.tex)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorepoints.code.tex
+File: pgfcorepoints.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@picminx=\dimen279
+\pgf@picmaxx=\dimen280
+\pgf@picminy=\dimen281
+\pgf@picmaxy=\dimen282
+\pgf@pathminx=\dimen283
+\pgf@pathmaxx=\dimen284
+\pgf@pathminy=\dimen285
+\pgf@pathmaxy=\dimen286
+\pgf@xx=\dimen287
+\pgf@xy=\dimen288
+\pgf@yx=\dimen289
+\pgf@yy=\dimen290
+\pgf@zx=\dimen291
+\pgf@zy=\dimen292
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorepathconstruct.code.tex
+File: pgfcorepathconstruct.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@path@lastx=\dimen293
+\pgf@path@lasty=\dimen294
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorepathusage.code.tex
+File: pgfcorepathusage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@shorten@end@additional=\dimen295
+\pgf@shorten@start@additional=\dimen296
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorescopes.code.tex
+File: pgfcorescopes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfpic=\box76
+\pgf@hbox=\box77
+\pgf@layerbox@main=\box78
+\pgf@picture@serial@count=\count354
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcoregraphicstate.code.tex
+File: pgfcoregraphicstate.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgflinewidth=\dimen297
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcoretransformations.code.tex
+File: pgfcoretransformations.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@pt@x=\dimen298
+\pgf@pt@y=\dimen299
+\pgf@pt@temp=\dimen300
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorequick.code.tex
+File: pgfcorequick.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcoreobjects.code.tex
+File: pgfcoreobjects.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorepathprocessing.code.tex
+File: pgfcorepathprocessing.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorearrows.code.tex
+File: pgfcorearrows.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfarrowsep=\dimen301
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcoreshade.code.tex
+File: pgfcoreshade.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@max=\dimen302
+\pgf@sys@shading@range@num=\count355
+\pgf@shadingcount=\count356
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcoreimage.code.tex
+File: pgfcoreimage.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfexternal@startupbox=\box79
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorelayers.code.tex
+File: pgfcorelayers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcoretransparency.code.tex
+File: pgfcoretransparency.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorepatterns.code.tex
+File: pgfcorepatterns.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/basiclaye
+r\pgfcorerdf.code.tex
+File: pgfcorerdf.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\p
+gfmoduleshapes.code.tex
+File: pgfmoduleshapes.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfnodeparttextbox=\box80
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\p
+gfmoduleplot.code.tex
+File: pgfmoduleplot.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibili
+ty\pgfcomp-version-0-65.sty
+Package: pgfcomp-version-0-65 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@nodesepstart=\dimen303
+\pgf@nodesepend=\dimen304
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/compatibili
+ty\pgfcomp-version-1-18.sty
+Package: pgfcomp-version-1-18 2025-08-29 v3.1.11a (3.1.11a)
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\p
+gffor.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/utilities\p
+gfkeys.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
+\pgfkeys.code.tex))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/pgf/math\pgfmat
+h.sty
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/math\pgfm
+ath.code.tex))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/utilities
+\pgffor.code.tex
+Package: pgffor 2025-08-29 v3.1.11a (3.1.11a)
+\pgffor@iter=\dimen305
+\pgffor@skip=\dimen306
+\pgffor@stack=\toks49
+\pgffor@toks=\toks50
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
+ayer/tikz\tikz.code.tex
+Package: tikz 2025-08-29 v3.1.11a (3.1.11a)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries
+\pgflibraryplothandlers.code.tex
+File: pgflibraryplothandlers.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgf@plot@mark@count=\count357
+\pgfplotmarksize=\dimen307
+)
+\tikz@lastx=\dimen308
+\tikz@lasty=\dimen309
+\tikz@lastxsaved=\dimen310
+\tikz@lastysaved=\dimen311
+\tikz@lastmovetox=\dimen312
+\tikz@lastmovetoy=\dimen313
+\tikzleveldistance=\dimen314
+\tikzsiblingdistance=\dimen315
+\tikz@figbox=\box81
+\tikz@figbox@bg=\box82
+\tikz@tempbox=\box83
+\tikz@tempbox@bg=\box84
+\tikztreelevel=\count358
+\tikznumberofchildren=\count359
+\tikznumberofcurrentchild=\count360
+\tikz@fig@count=\count361
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\p
+gfmodulematrix.code.tex
+File: pgfmodulematrix.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+\pgfmatrixcurrentrow=\count362
+\pgfmatrixcurrentcolumn=\count363
+\pgf@matrix@numberofcolumns=\count364
+)
+\tikz@expandcount=\count365
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendl
+ayer/tikz/libraries\tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+)))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/algorithms\algo
+rithm.sty
+Invalid UTF-8 byte or sequence at line 11 replaced by U+FFFD.
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+\@float@every@algorithm=\toks51
+\c@algorithm=\count366
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\al
+gpseudocode.sty
+Package: algpseudocode 
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/algorithmicx\al
+gorithmicx.sty
+Package: algorithmicx 2005/04/27 v1.2 Algorithmicx
+
+Document Style algorithmicx 1.2 - a greatly improved `algorithmic' style
+\c@ALG@line=\count367
+\c@ALG@rem=\count368
+\c@ALG@nested=\count369
+\ALG@tlm=\skip132
+\ALG@thistlm=\skip133
+\c@ALG@Lnr=\count370
+\c@ALG@blocknr=\count371
+\c@ALG@storecount=\count372
+\c@ALG@tmpcounter=\count373
+\ALG@tmplength=\skip134
+)
+Document Style - pseudocode environments for use with the `algorithmicx' style
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/listings\listin
+gs.sty
+\lst@mode=\count374
+\lst@gtempboxa=\box85
+\lst@token=\toks52
+\lst@length=\count375
+\lst@currlwidth=\dimen316
+\lst@column=\count376
+\lst@pos=\count377
+\lst@lostspace=\dimen317
+\lst@width=\dimen318
+\lst@newlines=\count378
+\lst@lineno=\count379
+\lst@maxwidth=\dimen319
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstpat
+ch.sty
+File: lstpatch.sty 2025/11/14 1.11b (Carsten Heinz)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmis
+c.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+\c@lstnumber=\count380
+\lst@skipnumbers=\count381
+\lst@framebox=\box86
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/listings\listin
+gs.cfg
+File: listings.cfg 2025/11/14 1.11b listings configuration
+))
+Package: listings 2025/11/14 1.11b (Carsten Heinz)
+
+==> First Aid for listings.sty no longer applied!
+    Expected:
+        2024/09/23 1.10c (Carsten Heinz)
+    but found:
+        2025/11/14 1.11b (Carsten Heinz)
+    so I'm assuming it got fixed.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/subfiles\subfil
+es.sty
+Package: subfiles 2020/11/14 v2.2 Multi-file projects (package)
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/import\import.s
+ty
+Package: import 2020/04/01  v 6.2
+))
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/xurl\xurl.sty
+Package: xurl 2022/01/09 v 0.10 modify URL breaks
+)
+\@nomenclaturefile=\write4
+\openout4 = `main.nlo'.
+
+Package nomencl Info: Writing nomenclature file main.nlo on input line 124.
+
+(main.aux (main-pre.aux))
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 125.
+LaTeX Font Info:    Trying to load font information for T3+cmr on input line 12
+5.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/tipa\t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+
+Package fontspec Info: 
+(fontspec)             Adjusting the maths setup (use [no-math] to avoid
+(fontspec)             this).
+
+\symlegacymaths=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 125.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 125.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 125.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 125.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 125.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 125.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 125.
+LaTeX Font Info:    Redeclaring math accent \check on input line 125.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 125.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 125.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 125.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 125.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 125.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 125.
+
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/TimesNewRoman(0)/m/n on input line 1
+25.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 125.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/m/n on input line 
+125.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/m/n on 
+input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/TimesNewRoman(0)/m/it on input line
+ 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/TimesNewRoman(0)/b/n on input line 
+125.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/Arial(0)/m/n on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 125.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/TimesNewRoman(0)/m/n --> TU/TimesNewRoman(0)/b/n on 
+input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/TimesNewRoman(0)/b/it on input lin
+e 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/Arial(0)/b/n on input line 125.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/b/n on input line 125.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includefoot 
+* h-part:(L,W,R)=(85.35826pt, 455.24411pt, 56.9055pt)
+* v-part:(T,H,B)=(71.13188pt, 717.00946pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=455.24411pt
+* \textheight=687.00946pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-41.1381pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+LaTeX Info: Redefining \microtypecontext on input line 125.
+Package microtype Info: Applying patch `item' on input line 125.
+Package microtype Info: Applying patch `toc' on input line 125.
+Package microtype Info: Applying patch `eqnum' on input line 125.
+Package microtype Info: Applying patch `footnote' on input line 125.
+Package microtype Info: Applying patch `verbatim' on input line 125.
+LaTeX Info: Redefining \microtypesetup on input line 125.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `TimesNewRoman' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+Package hyperref Info: Link coloring OFF on input line 125.
+(main.out) (main.out)
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+\c@lstlisting=\count382
+Package tocbasic Info: omitting babel extension for `lol'
+(tocbasic)             because of missing \bbl@set@language on input line 125.
+\openout2 = `main-pre.aux'.
+
+ (main-pre.tex
+LaTeX Font Info:    Trying to load font information for U+msa on input line 3.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.f
+d
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ms
+a.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 3.
+
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.f
+d
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ms
+b.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-eu
+r.cfg
+File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cm
+r.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
+(RS)
+) [1
+
+
+]
+Overfull \hbox (18.0pt too wide) in paragraph at lines 5--5
+[][] 
+ []
+
+[0
+
+] [1
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(90.3375pt, 416.83289pt, 90.3375pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 122.34686pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=580.43pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=0.0pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (main.toc [2
+
+])
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [3]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(90.3375pt, 416.83289pt, 90.3375pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 122.34686pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=580.43pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=0.0pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ [4
+
+
+
+]
+*geometry* verbose mode - [ newgeometry ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot 
+* h-part:(L,W,R)=(90.3375pt, 416.83289pt, 90.3375pt)
+* v-part:(T,H,B)=(72.26999pt, 650.43pt, 122.34686pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=416.83289pt
+* \textheight=580.43pt
+* \oddsidemargin=18.0675pt
+* \evensidemargin=18.0675pt
+* \topmargin=0.0pt
+* \headheight=15.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ (main.lot
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+)
+\tf@lot=\write8
+\openout8 = `main.lot'.
+
+ [5
+
+
+
+]
+Package tocbasic Info: character protrusion at lol deactivated on input line 45
+.
+ (main.lol)
+\tf@lol=\write9
+\openout9 = `main.lol'.
+
+ [6
+
+
+
+]
+[7]) (intro.tex
+Underfull \hbox (badness 4479) in paragraph at lines 4--5
+\TU/TimesNewRoman(0)/m/n/12 дэлхий даяар хамгийн өргөн хэрэглэгддэг backend fra
+mework-үүдийн нэг болсон.
+ []
+
+
+Underfull \hbox (badness 2951) in paragraph at lines 8--9
+[]\TU/TimesNewRoman(0)/m/n/12 Иймээс backend системийн суурь архитектур, объект
+ын амьдралын мөчлөгийн
+ []
+
+
+Underfull \hbox (badness 6625) in paragraph at lines 8--9
+\TU/TimesNewRoman(0)/m/n/12 ийн цөм зарчим болох \TU/TimesNewRoman(0)/b/n/12 Io
+C\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/b/n/12 DI\TU/TimesNewRoman(
+0)/m/n/12 , \TU/TimesNewRoman(0)/b/n/12 annotation \TU/TimesNewRoman(0)/m/n/12 
+боловсруулалт, \TU/TimesNewRoman(0)/b/n/12 reflection \TU/TimesNewRoman(0)/m/n/
+12 ашиглалт
+ []
+
+
+Underfull \hbox (badness 2564) in paragraph at lines 8--9
+\TU/TimesNewRoman(0)/m/n/12 зэрэг ойлголтуудыг илүү гүнзгий эзэмшихээс гадна ba
+ckend хөгжүүлэлтийн суурь
+ []
+
+(goal.tex [1
+
+
+
+
+
+]
+Underfull \hbox (badness 5189) in paragraph at lines 4--5
+[]\TU/TimesNewRoman(0)/m/n/12 Энэхүү дипломын ажлын зорилго нь Java хэлний anno
+tation болон reflection
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 4--5
+\TU/TimesNewRoman(0)/m/n/12 механизмд тулгуурласан суурь түвшний \TU/TimesNewRo
+man(0)/b/n/12 Dependency Injection Framework \TU/TimesNewRoman(0)/m/n/12 зохион
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--12
+[]\TU/TimesNewRoman(0)/m/n/12 Spring Framework-ийн dependency injection болон a
+nnotation боловсруулах
+ []
+
+
+Underfull \hbox (badness 6332) in paragraph at lines 12--13
+[]\TU/TimesNewRoman(0)/m/n/12 Java Reflection API ашиглан класс, талбар, гишүүн
+ функцийн мэдээллийг
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 13--14
+[]\TU/TimesNewRoman(0)/m/n/12 Custom annotation-ууд тодорхойлон dependency-ийг 
+автоматаар илрүүлэх
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+[]\TU/TimesNewRoman(0)/m/n/12 Судлагдахуун нь IoC container, Dependency Injecti
+on механизм, annotation
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 25--26
+\TU/TimesNewRoman(0)/m/n/12 боловсруулах аргачлал, reflection ашиглан объект үү
+сгэх болон dependency холбох
+ []
+
+[2]
+Underfull \hbox (badness 4303) in paragraph at lines 28--30
+\TU/TimesNewRoman(0)/m/n/12 хэрэгжүүлсэн DI framework-ийн бүтэц, ажиллагаатай х
+арьцуулан үнэлнэ. Үүнд
+ []
+
+
+Underfull \hbox (badness 4819) in paragraph at lines 32--33
+[]\TU/TimesNewRoman(0)/b/n/12 Харьцуулсан шинжилгээ \TU/TimesNewRoman(0)/m/n/12
+ – Spring Framework-ийн механизмтай харьцуулан
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 35--36
+[]\TU/TimesNewRoman(0)/b/n/12 Үр дүнгийн үнэлгээ \TU/TimesNewRoman(0)/m/n/12 – 
+хэрэгжүүлсэн framework-ийн ажиллагаа, давуу тал,
+ []
+
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 44--45
+\TU/TimesNewRoman(0)/m/n/12 хэрэгжилтийг ойлгоход сургалтын болон туршилтын зор
+иулалтаар ашиглагдах
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 44--45
+\TU/TimesNewRoman(0)/m/n/12 шийдлийг судлах,судалгааны дагуу хэрэгжүүлэн сургал
+тын хэрэглэгдэхүүн болгон
+ []
+
+))
+Underfull \hbox (badness 5652) in paragraph at lines 48--184
+[]\TU/TimesNewRoman(0)/m/n/12 Энэхүү дипломын ажил нь үндсэндээ онолын судалгаа
+, системийн зохиомж,
+ []
+
+[4] (research.tex
+БҮЛЭГ1.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 3138) in paragraph at lines 3--4
+\TU/TimesNewRoman(0)/m/n/12 бүтээмж, кодын зохион байгуулалт, өргөтгөх боломж б
+олон засвар үйлчилгээний
+ []
+
+[5
+
+
+]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12> not avai
+lable
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on inpu
+t line 12.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/sl' in size <12> not avai
+lable
+(Font)              Font shape `TU/TimesNewRoman(0)/b/it' tried instead on inpu
+t line 12.
+File: images/IoC_principle.png Graphic file (type bmp)
+<images/IoC_principle.png>
+ [6]
+File: images/di_principle1.png Graphic file (type bmp)
+<images/di_principle1.png>
+
+Underfull \hbox (badness 3049) in paragraph at lines 68--77
+\TU/lmtt/m/n/12 Dependency / Service \TU/TimesNewRoman(0)/m/n/12 буюу \TU/lmtt/
+m/n/12 Repository\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 Service\TU/Times
+NewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 DAO \TU/TimesNewRoman(0)/m/n/12 зэрэг бүрэ
+лдэхүүнүүдийг
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 68--77
+\TU/TimesNewRoman(0)/m/n/12 container-д бүртгэсний дараа \TU/lmtt/m/n/12 Client
+ Component\TU/TimesNewRoman(0)/m/n/12 -д шаардлагатай dependency-г field,
+ []
+
+[7] [8]
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlan
+g1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+) [9]
+Underfull \hbox (badness 4660) in paragraph at lines 121--122
+[]\TU/TimesNewRoman(0)/m/n/12 Энэ аргын үед \TU/lmtt/m/n/12 UserService \TU/Tim
+esNewRoman(0)/m/n/12 класс нь \TU/lmtt/m/n/12 UserRepository \TU/TimesNewRoman(
+0)/m/n/12 хамаарлаа байгуулагч
+ []
+
+[10] [11] [12] [13] [14] [15] (ann_refl.tex
+Underfull \hbox (badness 7012) in paragraph at lines 4--8
+\TU/TimesNewRoman(0)/m/n/12 параметр зэрэг программын элементүүдэд нэмэлт мэдээ
+лэл буюу metadata өгөх
+ []
+
+
+Underfull \hbox (badness 6725) in paragraph at lines 23--24
+[]\TU/TimesNewRoman(0)/m/n/12 Жишээлбэл, \TU/lmtt/m/n/12 @Override \TU/TimesNew
+Roman(0)/m/n/12 annotation нь эцэг классаас өвлөсөн функцыг дахин
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 23--24
+\TU/TimesNewRoman(0)/m/n/12 тодорхойлж байгааг илэрхийлдэг бол \TU/lmtt/m/n/12 
+@Deprecated \TU/TimesNewRoman(0)/m/n/12 annotation нь тухайн элемент
+ []
+
+
+Underfull \hbox (badness 4726) in paragraph at lines 27--28
+\TU/TimesNewRoman(0)/m/n/12 annotation боловсруулах үед meta-annotation-ууд чух
+ал үүрэгтэй байдаг. Энэхүү
+ []
+
+[16] [17] [18]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 119.
+ [19] [20]
+Underfull \hbox (badness 2285) in paragraph at lines 176--177
+[]\TU/lmtt/m/n/12 RUNTIME \TU/TimesNewRoman(0)/m/n/12 – Annotation нь runtime ү
+ед хадгалагдаж, reflection ашиглан унших
+ []
+
+[21] [22] [23]
+Underfull \hbox (badness 10000) in paragraph at lines 259--260
+\TU/TimesNewRoman(0)/m/n/12 Component annotation нь Spring container-т bean бол
+гох class-ыг тодорхойлоход
+ []
+
+
+Underfull \hbox (badness 2409) in paragraph at lines 263--264
+[]\TU/lmtt/m/n/12 @Component \TU/TimesNewRoman(0)/m/n/12 – Package scanning үед
+ framework энэ annotation-той class-уудыг
+ []
+
+[24] [25] [26] [27]
+Underfull \hbox (badness 2277) in paragraph at lines 378--379
+\TU/TimesNewRoman(0)/m/n/12 бөгөөд built-in annotation, meta-annotation болон c
+ustom annotation зэрэг төрлүүдэд
+ []
+
+[28]
+Underfull \hbox (badness 10000) in paragraph at lines 387--388
+[]\TU/TimesNewRoman(0)/m/n/12 Иймээс annotation-г хэрэгжүүлэхийн тулд annotatio
+n-үүдийг \TU/lmtt/m/n/12 RetentionPolicy.
+ []
+
+[29]) [30]
+File: images/spring_frame.png Graphic file (type bmp)
+<images/spring_frame.png>
+ [31]
+File: images/google_guice.png Graphic file (type bmp)
+<images/google_guice.png>
+File: images/jakarta.png Graphic file (type bmp)
+<images/jakarta.png>
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+[]|\TU/TimesNewRoman(0)/m/n/12 IoC, DI, annotation, web,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+\TU/TimesNewRoman(0)/m/n/12 data access зэрэг өргөн
+ []
+
+
+Underfull \hbox (badness 6775) in paragraph at lines 298--298
+[]|\TU/TimesNewRoman(0)/m/n/12 DI чиглэлийн frame-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 298--299
+[]|\TU/TimesNewRoman(0)/m/n/12 Энгийн бүтэцтэй, depen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
+[]|\TU/TimesNewRoman(0)/m/n/12 Java enterprise
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 300--301
+[]|\TU/TimesNewRoman(0)/m/n/12 Enterprise орчинд compo-
+ []
+
+[32] [33]
+Underfull \hbox (badness 2790) in paragraph at lines 310--311
+\TU/TimesNewRoman(0)/m/n/12 Java хэл нь объект хандалтат загварчлалыг бүрэн дэм
+ждэг, өргөн хөгжүүлэлтийн
+ []
+
+File: images/java-logo.png Graphic file (type bmp)
+<images/java-logo.png>
+[34]
+File: images/maven.png Graphic file (type bmp)
+<images/maven.png>
+File: images/JUnit.png Graphic file (type bmp)
+<images/JUnit.png>
+File: images/intellij.png Graphic file (type bmp)
+<images/intellij.png>
+File: images/eclipse.png Graphic file (type bmp)
+<images/eclipse.png>
+ [35]
+Underfull \hbox (badness 3503) in paragraph at lines 384--385
+[]\TU/TimesNewRoman(0)/m/n/12 Git нь хувилбар удирдлагын систем бөгөөд төслийн 
+хөгжүүлэлтийн явц дахь
+ []
+
+
+Underfull \hbox (badness 7030) in paragraph at lines 384--385
+\TU/TimesNewRoman(0)/m/n/12 өөрчлөлтүүдийг хянахад ашиглагдана. GitHub нь тухай
+н repository-г хадгалах,
+ []
+
+File: images/git.png Graphic file (type bmp)
+<images/git.png>
+[36]
+Underfull \hbox (badness 10000) in paragraph at lines 400--404
+\TU/TimesNewRoman(0)/m/n/12 г шийдэх үндсэн үүргийг гүйцэтгэдэг. Энэ container-
+ийн суурь ойлголтууд
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 418--419
+\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 нь \TU/lmtt/m/n/
+12 BeanFactory\TU/TimesNewRoman(0)/m/n/12 -ийг өргөтгөсөн интерфейс бөгөөд bean
+
+ []
+
+[37] [38]
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstlan
+g1.sty
+File: lstlang1.sty 2025/11/14 1.11b listings language file
+)
+(C:\Users\Administrator\AppData\Local\Programs\MiKTeX\tex/latex/listings\lstmis
+c.sty
+File: lstmisc.sty 2025/11/14 1.11b (Carsten Heinz)
+) [39] [40] [41] [42]
+Underfull \hbox (badness 3229) in paragraph at lines 605--606
+[]\TU/TimesNewRoman(0)/m/n/12 Bean scope нь тухайн bean хэдэн хувь үүсэх, ямар 
+хугацаанд оршин байхыг
+ []
+
+[43]
+Underfull \hbox (badness 6063) in paragraph at lines 635--636
+[]\TU/TimesNewRoman(0)/m/n/12 Дээрх судалгаанаас үзэхэд Spring Framework-ийн Io
+C container нь annotation-
+ []
+
+
+Underfull \hbox (badness 3758) in paragraph at lines 635--636
+\TU/TimesNewRoman(0)/m/n/12 оор классуудыг илрүүлэх, bean болгон бүртгэх, depen
+dency-г автоматаар шийдэх,
+ []
+
+
+Underfull \hbox (badness 4805) in paragraph at lines 635--636
+\TU/TimesNewRoman(0)/m/n/12 дипломын ажлын хүрээнд хэрэгжүүлэх framework нь Spr
+ing-ийн бүх боломжийг
+ []
+
+[44]
+File: images/framework-flow.png Graphic file (type bmp)
+<images/framework-flow.png>
+
+Underfull \hbox (badness 4205) in paragraph at lines 656--657
+[]\TU/TimesNewRoman(0)/m/n/12 Зураг []1.12[]-т хэрэгжүүлэх framework-ийн ерөнхи
+й урсгал, үндсэн бүрэлдэхүүн
+ []
+
+) (requirement.tex [45] [46]
+БҮЛЭГ2.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 2573) in paragraph at lines 3--4
+\TU/TimesNewRoman(0)/m/n/12 framework-ийн шаардлагыг тодорхойлно. Уг framework 
+нь component классуудыг
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/12 механизмд тулгуурлан dependency injection-ийн суурь
+ үйл ажиллагааг хэрэгжүүлнэ.
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/12 Framework-ийн үндсэн зорилго нь хэрэглэгчийн тодорх
+ойлсон классуудыг package
+ []
+
+
+Underfull \hbox (badness 4266) in paragraph at lines 9--10
+\TU/TimesNewRoman(0)/m/n/12 түвшинд илрүүлэх, annotation-уудыг унших, bean болг
+он бүртгэх, объект үүсгэх,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--43
+[]\TU/TimesNewRoman(0)/m/n/12 Функциональ шаардлага нь framework-ийн заавал хий
+ж гүйцэтгэх үндсэн
+ []
+
+
+Underfull \hbox (badness 6927) in paragraph at lines 23--43
+\TU/TimesNewRoman(0)/m/n/12 үйлдлүүдийг тодорхойлно. Энэхүү framework нь сургал
+тын болон судалгааны
+ []
+
+[47
+
+] [48]
+Underfull \hbox (badness 6316) in paragraph at lines 66--66
+[]|\TU/TimesNewRoman(0)/m/n/10.95 10 хүртэл bean-тэй үед container-ийн эхлэлт
+ []
+
+
+Underfull \hbox (badness 8075) in paragraph at lines 66--66
+[]|\TU/lmtt/m/n/10.95 getBean() \TU/TimesNewRoman(0)/m/n/10.95 дуудлага 1ms-аас
+ бага хугацаанд
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 66--66
+[]|\TU/lmtt/m/n/10.95 ApplicationContext \TU/TimesNewRoman(0)/m/n/10.95 үүсгэхэ
+д зөвхөн package
+ []
+
+
+Underfull \hbox (badness 5245) in paragraph at lines 66--66
+[]|\TU/TimesNewRoman(0)/m/n/10.95 Үндсэн функциональ шаардлага бүр JUnit 5
+ []
+
+[49] [50]
+Underfull \hbox (badness 2012) in paragraph at lines 96--97
+[]\TU/TimesNewRoman(0)/m/n/12 Иймээс A1 ажил нь энэ бүлгийн шаардлагыг өөрчлөх 
+бус, харин шаардлагын
+ []
+
+[51]
+Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[]|\TU/TimesNewRoman(0)/m/n/12 Тухайн классыг container-т bean
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 130--130
+[]|\TU/TimesNewRoman(0)/m/n/12 Dependency-г автоматаар inject
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 131--131
+[]|\TU/TimesNewRoman(0)/m/n/12 FIELD, PA-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+[]|\TU/TimesNewRoman(0)/m/n/12 Bean-ийн амьдралын мөчлөгийг
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--132
+\TU/lmtt/m/n/12 singleton \TU/TimesNewRoman(0)/m/n/12 болон \TU/lmtt/m/n/12 pro
+totype
+ []
+
+
+Overfull \hbox (1.6299pt too wide) in paragraph at lines 126--134
+ [][] 
+ []
+
+
+Underfull \hbox (badness 3503) in paragraph at lines 140--141
+\TU/TimesNewRoman(0)/m/n/12 заавал \TU/lmtt/m/n/12 RUNTIME \TU/TimesNewRoman(0)
+/m/n/12 түвшинд хадгалагдаж, reflection ашиглан унших боломжтой байх
+ []
+
+[52]
+Underfull \hbox (badness 3746) in paragraph at lines 159--160
+\TU/TimesNewRoman(0)/m/n/12 Framework нь ерөнхий зориулалттай байх ёстой. Өөрөө
+р хэлбэл framework-ийг
+ []
+
+
+Underfull \hbox (badness 7468) in paragraph at lines 159--160
+\TU/TimesNewRoman(0)/m/n/12 өргөжүүлэхийг framework урьдчилан мэдэх боломжгүй. 
+Иймээс framework нь
+ []
+
+[53]
+Underfull \hbox (badness 2689) in paragraph at lines 177--178
+\TU/TimesNewRoman(0)/m/n/12 байдагт оршино. Программ compile хийгдэж \TU/lmtt/m
+/n/12 .class \TU/TimesNewRoman(0)/m/n/12 файл үүссэний дараа JVM
+ []
+
+
+Underfull \hbox (badness 3635) in paragraph at lines 177--178
+\TU/TimesNewRoman(0)/m/n/12 дээр ажиллах үед framework annotation-уудыг уншиж, 
+dependency-үүдийг шалгаж,
+ []
+
+[54] [55]
+Underfull \hbox (badness 2617) in paragraph at lines 215--216
+[]\TU/TimesNewRoman(0)/b/n/12 Dependency injection \TU/TimesNewRoman(0)/m/n/12 
+– \TU/lmtt/m/n/12 @Autowired \TU/TimesNewRoman(0)/m/n/12 annotation-той талбар 
+бүрийн хамаарлыг
+ []
+
+[56] [57]
+Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[]|\TU/TimesNewRoman(0)/b/n/12 Хэрэгсэл /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+[]|\TU/TimesNewRoman(0)/m/n/12 Программчлалын
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 264--264
+[]|\TU/TimesNewRoman(0)/m/n/12 Annotation, Reflection, class load-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--264
+\TU/TimesNewRoman(0)/m/n/12 ing зэрэг механизмыг стандарт
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+[]|\TU/TimesNewRoman(0)/m/n/12 Apache Maven
+ []
+
+
+Underfull \hbox (badness 7168) in paragraph at lines 265--265
+[]|\TU/TimesNewRoman(0)/m/n/12 Төслийн бүтэц, compile, depen-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 265--265
+\TU/TimesNewRoman(0)/m/n/12 dency болон test-ийг удирдахад
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+[]|\TU/TimesNewRoman(0)/m/n/12 IntelliJ IDEA
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 266--266
+\TU/TimesNewRoman(0)/m/n/12 Community Edi-
+ []
+
+
+Underfull \hbox (badness 2181) in paragraph at lines 266--266
+[]|\TU/TimesNewRoman(0)/m/n/12 Reflection-д суурилсан кодын de-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\TU/TimesNewRoman(0)/m/n/12 OpenJDK 17 /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\TU/TimesNewRoman(0)/m/n/12 Java 17 орчныг тогтвортой
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]|\TU/TimesNewRoman(0)/m/n/12 Зөвхөн JDK стандарт сан
+ []
+
+[58]
+Underfull \hbox (badness 3386) in paragraph at lines 275--276
+\TU/TimesNewRoman(0)/m/n/12 Java 17 нь урт хугацааны дэмжлэгтэй (LTS) хувилбар 
+бөгөөд орчин үеийн Java
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 275--276
+\TU/TimesNewRoman(0)/m/n/12 module system зэрэг энэхүү судалгааны ажилд шаардла
+гатай боломжуудыг бүрэн
+ []
+
+[59]
+Underfull \hbox (badness 5446) in paragraph at lines 289--290
+\TU/TimesNewRoman(0)/m/n/12 Ийнхүү framework-ийн технологийн орчныг сонгохдоо д
+араах гурван шалгуурыг
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
+\TU/TimesNewRoman(0)/m/n/12 зохиомж, модулийн хуваарилалт, container-ийн дотоод
+ урсгалыг илүү оновчтой
+ []
+
+[60] [61]
+Underfull \hbox (badness 3907) in paragraph at lines 353--360
+\TU/TimesNewRoman(0)/m/n/12 Том хэмжээний загварыг илүү тоймтой, ойлгомжтой бол
+гох, системийн бүтцийн
+ []
+
+
+Underfull \hbox (badness 3417) in paragraph at lines 353--360
+\TU/TimesNewRoman(0)/m/n/12 өндөр хийсвэрлэлийн түвшний тайлбар өгөх зорилготой
+. Энэхүү framework-ийн
+ []
+
+[62]
+Underfull \hbox (badness 10000) in paragraph at lines 503--510
+[]\TU/lmtt/b/n/12 container \TU/TimesNewRoman(0)/b/n/12 багц \TU/TimesNewRoman(
+0)/m/n/12 нь framework-ийн цөм бүрэлдэхүүн хэсгүүдийг агуулна.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--515
+[]\TU/lmtt/b/n/12 exception \TU/TimesNewRoman(0)/b/n/12 багц \TU/TimesNewRoman(
+0)/m/n/12 нь framework-ийн \TU/TimesNewRoman(0)/m/it/12 fail-fast \TU/TimesNewR
+oman(0)/m/n/12 зарчмыг хэрэгжүүлэх гурван
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 511--515
+\TU/TimesNewRoman(0)/m/n/12 тусгай exception агуулна: \TU/lmtt/m/n/12 BeanCreat
+ionException\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 NoSuchBeanException\T
+U/TimesNewRoman(0)/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 4181) in paragraph at lines 516--520
+[]\TU/lmtt/b/n/12 app \TU/TimesNewRoman(0)/b/n/12 багц \TU/TimesNewRoman(0)/m/n
+/12 нь framework-ийг ашиглах жишээ хэрэглэгчийн классуудыг агуулах
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 530--530
+[]|\TU/TimesNewRoman(0)/b/n/12 Хамааралтай
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--534
+[]|\TU/lmtt/m/n/12 BeanDefinition \TU/TimesNewRoman(0)/m/n/12 объект үүсгэж
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 542--542
+[]|\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 үүсгэж
+ []
+
+[63]
+Underfull \hbox (badness 10000) in paragraph at lines 559--559
+[]|\TU/TimesNewRoman(0)/m/n/12 Dependency injection үйл явцыг
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 576--576
+[]|\TU/TimesNewRoman(0)/m/n/12 Bean үүсгэхэд шаардлагатай мета
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 577--577
+[]|\TU/TimesNewRoman(0)/m/n/12 Container-д бүртгэгдсэн bean-ийн
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 591--591
+[]|\TU/lmtt/m/n/12 @Component \TU/TimesNewRoman(0)/m/n/12 зэрэг annotation бүхи
+й
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 592--592
+[]|\TU/TimesNewRoman(0)/m/n/12 Component class-уудын мэдээллийг
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 593--593
+[]|\TU/TimesNewRoman(0)/m/n/12 Scan хийх логикийг төвлөрүүлэн
+ []
+
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 609--609
+[]|\TU/TimesNewRoman(0)/m/n/12 Field эсвэл constructor injection
+ []
+
+
+Underfull \hbox (badness 8038) in paragraph at lines 623--623
+[]|\TU/lmtt/m/n/12 SINGLETON \TU/TimesNewRoman(0)/m/n/12 болон \TU/lmtt/m/n/12 
+PROTOTYPE \TU/TimesNewRoman(0)/m/n/12 утгыг
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 624--624
+[]|\TU/TimesNewRoman(0)/m/n/12 Bean үүсгэх болон дахин ашиглах
+ []
+
+[66]
+File: images/class_gm.png Graphic file (type bmp)
+<images/class_gm.png>
+
+Underfull \hbox (badness 5533) in paragraph at lines 638--645
+\TU/lmtt/m/n/12 DependencyInjector\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12
+ ScopeType \TU/TimesNewRoman(0)/m/n/12 гэсэн зургаан үндсэн бүрэлдэхүүн хэсэг б
+олон
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--655
+[]\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 нь framework-и
+йн төв класс бөгөөд \TU/lmtt/m/n/12 beanDefinitions\TU/TimesNewRoman(0)/m/n/12 
+,
+ []
+
+
+Underfull \hbox (badness 4024) in paragraph at lines 646--655
+\TU/lmtt/m/n/12 singletonObjects\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 s
+canner\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 beanFactory\TU/TimesNewRoma
+n(0)/m/n/12 , \TU/lmtt/m/n/12 injector \TU/TimesNewRoman(0)/m/n/12 гэсэн таван 
+хувийн талбар
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 646--655
+\TU/TimesNewRoman(0)/m/it/12 uses \TU/TimesNewRoman(0)/m/n/12 харилцаагаар ашиг
+лах бөгөөд \TU/lmtt/m/n/12 ClassPathScanner\TU/TimesNewRoman(0)/m/n/12 -тэй \TU
+/TimesNewRoman(0)/m/it/12 manages \TU/TimesNewRoman(0)/m/n/12 харилцаагаар
+ []
+
+[67]
+Underfull \hbox (badness 5741) in paragraph at lines 656--664
+[]\TU/lmtt/m/n/12 ClassPathScanner \TU/TimesNewRoman(0)/m/n/12 нь \TU/lmtt/m/n/
+12 basePackage \TU/TimesNewRoman(0)/m/n/12 талбартай бөгөөд \TU/lmtt/m/n/12 sca
+n() \TU/TimesNewRoman(0)/m/n/12 аргаар илэрсэн
+ []
+
+
+Underfull \hbox (badness 3407) in paragraph at lines 665--676
+[]\TU/lmtt/m/n/12 BeanDefinition \TU/TimesNewRoman(0)/m/n/12 нь bean-ийн мета м
+эдээллийг хадгалах \TU/lmtt/m/n/12 beanName\TU/TimesNewRoman(0)/m/n/12 , \TU/lm
+tt/m/n/12 beanClass\TU/TimesNewRoman(0)/m/n/12 ,
+ []
+
+File: images/use_case1.png Graphic file (type bmp)
+<images/use_case1.png>
+[68]
+Underfull \hbox (badness 2065) in paragraph at lines 702--703
+[] []\TU/TimesNewRoman(0)/m/n/12 2.3[]-р зурагт хөгжүүлэгч болон JVM actor - уу
+дын ажлын явцын диаграммыг
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 717--717
+[]|\TU/TimesNewRoman(0)/m/n/12 Урьдчилсан
+ []
+
+
+Underfull \hbox (badness 6526) in paragraph at lines 738--738
+[]|\TU/TimesNewRoman(0)/m/n/12 Хөгжүүлэгч container-оос шаардлагатай bean-ийг н
+эрээр
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
+[]|\TU/TimesNewRoman(0)/m/n/12 Урьдчилсан
+ []
+
+[69]) (design_architecture.tex
+Underfull \hbox (badness 3780) in paragraph at lines 752--1
+[]\TU/TimesNewRoman(0)/m/n/12 Энэхүү бүлэгт framework-ийн шаардлагыг тодорхойло
+в. Үүнд framework-ийн
+ []
+
+[70]
+БҮЛЭГ3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 11--12
+[]\TU/TimesNewRoman(0)/m/n/12 Давхаргат архитектур нь системийн бүрэлдэхүүн хэс
+гүүдийн үүргийг тодорхой
+ []
+
+[71
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 50--58
+[]\TU/TimesNewRoman(0)/b/n/12 Spring Framework-ийн архитектурын суурь ойлголтто
+й нийцэл.
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 50--58
+\TU/TimesNewRoman(0)/m/n/12 Энэхүү архитектур нь Spring-ийн суурь ойлголттой ни
+йцэж байгаа бөгөөд
+ []
+
+[72
+
+]
+File: images/architecture.png Graphic file (type bmp)
+<images/architecture.png>
+ [73]
+Underfull \hbox (badness 2401) in paragraph at lines 103--121
+[] []\TU/TimesNewRoman(0)/m/n/12 3.1[]-р зурагт annotation-д суурилсан DI frame
+work-ийн давхаргат архитектурыг
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 103--121
+\TU/TimesNewRoman(0)/m/n/12 байрлана. Annotation давхарга нь \TU/lmtt/m/n/12 @C
+omponent\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 @Autowired\TU/TimesNewRom
+an(0)/m/n/12 , \TU/lmtt/m/n/12 @Qualifier\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt
+/m/n/12 @Scope
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 103--121
+\TU/TimesNewRoman(0)/m/n/12 нь \TU/lmtt/m/n/12 BeanCreationException\TU/TimesNe
+wRoman(0)/m/n/12 , \TU/lmtt/m/n/12 NoSuchBeanException\TU/TimesNewRoman(0)/m/n/
+12 , \TU/lmtt/m/n/12 CircularDependencyException
+ []
+
+[74]
+Underfull \hbox (badness 4120) in paragraph at lines 127--128
+[]\TU/TimesNewRoman(0)/m/n/12 Дараагийн шатанд singleton bean instance-үүдийг ү
+үсгэж, \TU/lmtt/m/n/12 DependencyInjector
+ []
+
+File: images/Activity Diagram.png Graphic file (type bmp)
+<images/Activity Diagram.png>
+[75
+
+]
+Underfull \hbox (badness 2735) in paragraph at lines 150--161
+[]\TU/TimesNewRoman(0)/m/n/12 Бүртгэлтийн дараа singleton bean-ууд урьдчилан үү
+сгэгдэж dependency injection
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 150--161
+\TU/TimesNewRoman(0)/m/n/12 илэрсэн тохиолдолд \TU/lmtt/m/n/12 CircularDependen
+cyException \TU/TimesNewRoman(0)/m/n/12 шидэгдэнэ. Тойрог хамаарал
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 150--161
+\TU/TimesNewRoman(0)/m/n/12 байхгүй бол container бэлэн болж хэрэглэгч \TU/lmtt
+/m/n/12 getBean() \TU/TimesNewRoman(0)/m/n/12 дуудах боломжтой болно.
+ []
+
+[76] [77]
+Underfull \hbox (badness 2359) in paragraph at lines 165--166
+\TU/TimesNewRoman(0)/m/n/12 илэрхийлнэ. Эхлээд хэрэглэгч \TU/lmtt/m/n/12 Applic
+ationContext\TU/TimesNewRoman(0)/m/n/12 -ийг үүсгэж, package scanning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+[]\TU/TimesNewRoman(0)/m/n/12 Dependency injection хийх явцад шаардлагатай depe
+ndency-г \TU/lmtt/m/n/12 BeanRegistry\TU/TimesNewRoman(0)/m/n/12 -
+ []
+
+
+Underfull \hbox (badness 7667) in paragraph at lines 169--170
+\TU/TimesNewRoman(0)/m/n/12 ээс хайж олно. Хэрэв dependency шийдвэрлэх үед тойр
+ог хамаарал илэрвэл
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+\TU/lmtt/m/n/12 CircularDependencyException\TU/TimesNewRoman(0)/m/n/12 , харин 
+bean үүсгэх явцад алдаа гарвал
+ []
+
+File: images/sequence.png Graphic file (type bmp)
+<images/sequence.png>
+
+Underfull \hbox (badness 2126) in paragraph at lines 179--185
+[] []\TU/TimesNewRoman(0)/m/n/12 3.3[]-р зурагт DI framework-ийн startup болон 
+bean авах үйл явцын дарааллын
+ []
+
+[78
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 196--206
+[]\TU/TimesNewRoman(0)/m/n/12 Хоёрдугаар үе шатанд singleton bean бүрийг давтан
+ \TU/lmtt/m/n/12 instantiate bean
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--206
+\TU/TimesNewRoman(0)/m/n/12 хийж, \TU/lmtt/m/n/12 injectDependencies(bean) \TU/
+TimesNewRoman(0)/m/n/12 ашиглан \TU/lmtt/m/n/12 DependencyInjector\TU/TimesNewR
+oman(0)/m/n/12 -т дамжуулна.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--213
+[]\TU/TimesNewRoman(0)/m/n/12 Гуравдугаар үе шатанд хэрэглэгч \TU/lmtt/m/n/12 g
+etBean(MyService) \TU/TimesNewRoman(0)/m/n/12 дуудахад
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 207--213
+\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 нь \TU/lmtt/m/n/
+12 BeanRegistry\TU/TimesNewRoman(0)/m/n/12 -ээс \TU/lmtt/m/n/12 find bean \TU/T
+imesNewRoman(0)/m/n/12 хайлт хийж олдсон \TU/lmtt/m/n/12 bean
+ []
+
+[79]
+Underfull \hbox (badness 5741) in paragraph at lines 218--219
+[]\TU/TimesNewRoman(0)/m/n/12 Нэмэлт хэрэгжүүлэлтийн A1 ажил нь энэхүү бүлэгт т
+одорхойлсон давхаргат
+ []
+
+[80]) (implementation.tex
+Underfull \hbox (badness 5862) in paragraph at lines 264--1
+\TU/TimesNewRoman(0)/m/n/12 давхарга тус бүрийн зан авирыг тестээр баталсан нь 
+энэ бүлэгт тодорхойлсон
+ []
+
+[81] [82]
+БҮЛЭГ4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+[83
+
+] [84]
+LaTeX Font Info:    Font shape `TU/lmtt/bx/sl' in size <12> not available
+(Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 98.
+ [85] [86]
+Underfull \hbox (badness 2027) in paragraph at lines 212--222
+\TU/TimesNewRoman(0)/m/n/12 төрөл, бүртгэлтэй bean-үүдийн жагсаалт, олон candid
+ate тохирсон үед \TU/lmtt/m/n/12 @Qualifier
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 212--222
+\TU/TimesNewRoman(0)/m/n/12 ашиглах шаардлага зэрэг оношлох мэдээллийг хавсарга
+х байдлаар баяжуулсан.
+ []
+
+[87]
+Underfull \hbox (badness 2547) in paragraph at lines 269--272
+[]\TU/TimesNewRoman(0)/m/n/12 Container давхарга нь framework-ийн цөм бүрэлдэхү
+үн болох \TU/lmtt/m/n/12 ScopeType \TU/TimesNewRoman(0)/m/n/12 enum,
+ []
+
+[88] [89]
+Underfull \hbox (badness 8075) in paragraph at lines 333--340
+\TU/TimesNewRoman(0)/m/n/12 агуулна: нэгдүгээрт, bean-ийн нэрийг \TU/lmtt/m/n/1
+2 BeanDefinition\TU/TimesNewRoman(0)/m/n/12 -д харгалзуулан хадгалах
+ []
+
+
+Underfull \hbox (badness 7963) in paragraph at lines 333--340
+\TU/lmtt/m/n/12 definitions \TU/TimesNewRoman(0)/m/n/12 Map, хоёрдугаарт, singl
+eton bean-ийн бодит instance-г cache хийх
+ []
+
+[90]
+Underfull \hbox (badness 2961) in paragraph at lines 373--377
+[]\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 нь framework-и
+йн хамгийн чухал, төв бүрэлдэхүүн хэсэг
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 379--382
+[]\TU/lmtt/m/n/12 ClassPathScanner\TU/TimesNewRoman(0)/m/n/12 -ээр заасан packa
+ge болон дэд package-уудыг нэгжиж
+ []
+
+
+Underfull \hbox (badness 5908) in paragraph at lines 396--404
+[]\TU/TimesNewRoman(0)/m/n/12 A1 ажлын үед энэ хэсгийн чанарын баталгаажуулалт 
+мэдэгдэхүйц өргөжсөн.
+ []
+
+[91] [92]
+Underfull \hbox (badness 7759) in paragraph at lines 471--475
+\TU/TimesNewRoman(0)/m/n/12 аргаар нэгжиж \TU/lmtt/m/n/12 @Component \TU/TimesN
+ewRoman(0)/m/n/12 annotation-той классуудыг илрүүлэн \TU/lmtt/m/n/12 BeanDefini
+tion
+ []
+
+[93]
+Underfull \hbox (badness 4036) in paragraph at lines 514--517
+[]\TU/lmtt/m/n/12 DependencyInjector \TU/TimesNewRoman(0)/m/n/12 нь аль хэдийн 
+үүсгэгдсэн bean объект дээр \TU/lmtt/m/n/12 @Autowired
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 518--528
+\TU/TimesNewRoman(0)/m/n/12 бол \TU/lmtt/m/n/12 BeanRegistry.findByType() \TU/T
+imesNewRoman(0)/m/n/12 ашиглан төрлөөр хайж нэг candidate илэрсэн
+ []
+
+[94]
+Underfull \hbox (badness 2547) in paragraph at lines 535--544
+\TU/TimesNewRoman(0)/m/n/12 дээр төвлөрсөн. \TU/lmtt/m/n/12 @Qualifier \TU/Time
+sNewRoman(0)/m/n/12 байхгүй үед dependency-г төрлөөр нь resolve хийх,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 572--576
+\TU/TimesNewRoman(0)/m/n/12 шалгахад чиглэсэн. Энэ түвшинд \TU/lmtt/m/n/12 Bean
+RegistryTest\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 ClassPathScannerTest\
+TU/TimesNewRoman(0)/m/n/12 ,
+ []
+
+[95]
+Underfull \hbox (badness 4467) in paragraph at lines 587--590
+[]\TU/lmtt/m/n/12 ExceptionTest \TU/TimesNewRoman(0)/m/n/12 – exception constru
+ctor-уудын мэдэгдэл, \TU/lmtt/m/n/12 ApplicationContext
+ []
+
+
+Underfull \hbox (badness 3657) in paragraph at lines 587--590
+\TU/TimesNewRoman(0)/m/n/12 болон \TU/lmtt/m/n/12 ClassPathScanner\TU/TimesNewR
+oman(0)/m/n/12 -ийн хүрэхэд хэцүү branch-уудыг reflection ашиглан
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 598--606
+\TU/lmtt/m/n/12 DependencyInjectionIntegrationTest\TU/TimesNewRoman(0)/m/n/12 ,
+ \TU/lmtt/m/n/12 QualifierIntegrationTest\TU/TimesNewRoman(0)/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 6510) in paragraph at lines 598--606
+\TU/lmtt/m/n/12 ScopeIntegrationTest\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/
+12 CircularDependencyIntegrationTest \TU/TimesNewRoman(0)/m/n/12 гэсэн зургаан 
+тест
+ []
+
+[96]
+Overfull \hbox (4.52203pt too wide) in paragraph at lines 624--624
+[]|[]|  
+ []
+
+
+Overfull \hbox (15.79323pt too wide) in paragraph at lines 615--630
+ [][] 
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 634--639
+\TU/TimesNewRoman(0)/m/n/12 харин framework-ийн давхарга тус бүрийн хариуцлагад
+ уялдсан бүтэцтэй болсон.
+ []
+
+
+Underfull \hbox (badness 4779) in paragraph at lines 634--639
+\TU/TimesNewRoman(0)/m/n/12 Ингэснээр regression эрсдэлийг бууруулах, өөрчлөлти
+йн нөлөөг хурдан илрүүлэх,
+ []
+
+) (summer.tex [97
+
+] [98]
+БҮЛЭГ5.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 7--8
+[]\TU/TimesNewRoman(0)/m/n/12 Мөн нэмэлт хэрэгжүүлэлтийн A1 ажлын хүрээнд одоо 
+байгаа хэрэгжилтийн
+ []
+
+) [99
+
+] [100
+
+
+] (code.tex [101]
+AppendixA.
+
+Underfull \hbox (badness 10000) in paragraph at lines 10--11
+
+ []
+
+[102
+
+
+] [103] [104
+
+] [105] [106] [107]) [108] (main.aux (main-pre.aux))
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2025-12-24>
+ ***********
+Package rerunfilecheck Info: File `main.out' has not changed.
+(rerunfilecheck)             Checksum: E2C9F7EEC198BF59B26421E14184AB1F;10524.
+ ) 
+Here is how much of TeX's memory you used:
+ 34627 strings out of 402987
+ 662869 string characters out of 5446868
+ 1772671 words of memory out of 5000000
+ 62726 multiletter control sequences out of 15000+600000
+ 645693 words of font info for 161 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 110i,17n,107p,1003b,2046s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+Output written on main.pdf (117 pages).

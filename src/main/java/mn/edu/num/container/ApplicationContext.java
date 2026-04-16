@@ -1,5 +1,6 @@
 package mn.edu.num.container;
 
+import mn.edu.num.annotation.EnableIoC;
 import mn.edu.num.exception.BeanCreationException;
 import mn.edu.num.exception.CircularDependencyException;
 import mn.edu.num.exception.NoSuchBeanException;
@@ -11,12 +12,101 @@ public class ApplicationContext implements DependencyInjector.ApplicationContext
 
     private final BeanRegistry registry = new BeanRegistry();
     private final DependencyInjector injector = new DependencyInjector(registry);
+    private final DependencyTreeBuilder treeBuilder;
     // Circular dependency илрүүлэх
     private final Set<String> inCreation = new HashSet<>();
 
+    // ──────────────────────────────────────────────
+    //  Spring Boot-ийн загвартай адил static run() method
+    // ──────────────────────────────────────────────
+
+    /**
+     * Spring Boot-ийн SpringApplication.run()-тай адил.
+     * @EnableIoC annotation-тай классыг дамжуулж container-г эхлүүлнэ.
+     *
+     * <pre>
+     * &#64;EnableIoC
+     * public class MyApp {
+     *     public static void main(String[] args) {
+     *         ApplicationContext ctx = ApplicationContext.run(MyApp.class);
+     *     }
+     * }
+     * </pre>
+     *
+     * @param primarySource @EnableIoC annotation-тай main класс
+     * @return бэлэн ApplicationContext
+     */
+    public static ApplicationContext run(Class<?> primarySource) {
+        // 1. @EnableIoC annotation-аас тохиргоог унших
+        String basePackage = primarySource.getPackage().getName();
+        List<String> excludePackages = new ArrayList<>();
+
+        if (primarySource.isAnnotationPresent(EnableIoC.class)) {
+            EnableIoC config = primarySource.getAnnotation(EnableIoC.class);
+
+            // Нэмэлт scan package зааж өгсөн бол тэдгээрийг ашиглана
+            if (config.scanPackages().length > 0) {
+                basePackage = config.scanPackages()[0]; // Эхний package-г root болгоно
+            }
+
+            // Exclude package-ууд
+            excludePackages.addAll(Arrays.asList(config.excludePackages()));
+        }
+
+
+        System.out.println("[IoC] Primary source: " + primarySource.getName());
+
+        return new ApplicationContext(basePackage, excludePackages);
+    }
+
+    /**
+     * Дуудагч классын package-аас автоматаар root package олж scan хийнэ.
+     * Ямар ч төсөлд new ApplicationContext() гэж дуудахад л хангалттай.
+     */
+    public ApplicationContext() {
+        this(detectCallerBasePackage(), List.of());
+    }
+
+    /**
+     * Тодорхой package-уудыг алгасах боломжтой constructor.
+     * @param excludePackages алгасах package-ууд
+     */
+    public ApplicationContext(List<String> excludePackages) {
+        this(detectCallerBasePackage(), excludePackages);
+    }
+
+    /**
+     * Дуудагч классын stack trace-аас root package автоматаар олно.
+     * Жишээ: mn.edu.num.Main → "mn.edu.num" гэсэн root package буцаана.
+     */
+    private static String detectCallerBasePackage() {
+        StackTraceElement[] stack = Thread.currentThread().getStackTrace();
+        String callerClass = null;
+        // ApplicationContext-ийн constructor-аас гадна дуудагчийг олно
+        for (int i = 1; i < stack.length; i++) {
+            if (!stack[i].getClassName().equals(ApplicationContext.class.getName())) {
+                callerClass = stack[i].getClassName();
+                break;
+            }
+        }
+        if (callerClass == null) callerClass = stack[stack.length - 1].getClassName();
+        int lastDot = callerClass.lastIndexOf('.');
+        if (lastDot > 0) {
+            return callerClass.substring(0, lastDot);
+        }
+        return callerClass;
+    }
+
     public ApplicationContext(String basePackage) {
+        this(basePackage, List.of());
+    }
+
+    public ApplicationContext(String basePackage, List<String> excludePackages) {
         System.out.println("[Context] Эхэлж байна... package: " + basePackage);
-        ClassPathScanner scanner = new ClassPathScanner(basePackage);
+        if (!excludePackages.isEmpty()) {
+            System.out.println("[Context] Алгасах package-ууд: " + excludePackages);
+        }
+        ClassPathScanner scanner = new ClassPathScanner(basePackage, excludePackages);
         List<BeanDefinition> definitions = scanner.scan();
 
         // Бүртгэх
@@ -35,7 +125,18 @@ public class ApplicationContext implements DependencyInjector.ApplicationContext
                 }
             }
         }
+        // Dependency tree үүсгэж, хэвлэх
+        treeBuilder = new DependencyTreeBuilder(registry);
+        treeBuilder.buildTree();
+        System.out.println(treeBuilder.printTree());
         System.out.println("[Context] Container бэлэн боллоо.");
+    }
+
+    /**
+     * Dependency tree builder-г буцаана.
+     */
+    public DependencyTreeBuilder getTreeBuilder() {
+        return treeBuilder;
     }
 
     @Override

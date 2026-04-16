@@ -1,0 +1,5 @@
+﻿NOT_FOUND: Environment ltablex undefined
+NOT_FOUND: undefined references
+NOT_FOUND: Label(s) may have changed
+NOT_FOUND: Rerun to get cross-references right
+FOUND: Output written on main.pdf

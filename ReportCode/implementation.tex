@@ -1,0 +1,669 @@
+\chapter{Хэрэгжүүлэлт}
+
+Энэхүү бүлэгт өмнөх бүлгүүдэд тодорхойлсон системийн шаардлага болон
+архитектурын зохиомжийн дагуу хэрэгжүүлсэн annotation болон reflection
+механизмд суурилсан dependency injection framework-ийн дэлгэрэнгүй
+хэрэгжүүлэлтийг тайлбарлана. Хэрэгжүүлэлт нь давхаргат архитектурын
+зарчмыг баримтлан annotation давхарга, scanner давхарга, container
+давхарга, exception давхарга гэсэн үндсэн хэсгүүдэд хуваагдана. Үүнээс
+гадна A1 сайжруулалтын ажлын хүрээнд тестийн хамралтыг өсгөх,
+fail-fast exception-уудын мэдээллийн чанарыг сайжруулах, туршилтын
+бүтцийг \codeword{unit} болон \codeword{integration} түвшинд цэгцлэх
+ажлууд хийгдсэн. Иймээс энэ бүлэгт үндсэн хэрэгжүүлэлтээс гадна уг
+сайжруулалтууд системийн шаардлага болон зохиомжтой хэрхэн уялдсан
+байдгийг хамтад нь тайлбарлана.
+
+%-------------------------------------------------------------
+\section{Хэрэгжүүлэлтийн орчин ба бүтэц}
+%-------------------------------------------------------------
+
+Хэрэгжүүлэлтийг системийн шаардлагын бүлэгт тодорхойлсон технологийн
+орчны дагуу Java~SE~17, Apache Maven~3.9.x, JUnit~5 орчинд гүйцэтгэв.
+Гуравдагч талын нэмэлт сан огт ашиглаагүй бөгөөд зөвхөн JDK стандарт
+сангийн Reflection API болон annotation боловсруулах механизмыг ашигласан.
+
+Төслийн package бүтэц нь архитектурын давхаргатай шууд нийцэж байна.
+
+\begin{verbatim}
+mn.edu.num/
+|-- annotation/
+|   |-- Component.java
+|   |-- Autowired.java
+|   |-- Qualifier.java
+|   `-- Scope.java
+|-- container/
+|   |-- ApplicationContext.java
+|   |-- BeanDefinition.java
+|   |-- BeanRegistry.java
+|   |-- DependencyInjector.java
+|   `-- ScopeType.java
+|-- scanner/
+|   `-- ClassPathScanner.java
+|-- exception/
+|   |-- BeanCreationException.java
+|   |-- NoSuchBeanException.java
+|   `-- CircularDependencyException.java
+`-- app/
+    |-- broken/, circular/, circular3/
+    |-- conflict/, qualifer/, scope/
+    `-- throwing/
+\end{verbatim}
+
+Энд \codeword{annotation}, \codeword{scanner}, \codeword{container},
+\codeword{exception} багцууд нь framework-ийн үндсэн хэрэгжүүлэлт бөгөөд
+\codeword{app} багц нь жишээ хэрэглээ болон тестийн scenario-г бүрдүүлэх
+зориулалттай. A1 ажлын үед энэхүү бүтэц өөрчлөгдөөгүй, харин тус
+бүтцийн зан авирыг баталгаажуулах тестийн сан мэдэгдэхүйц өргөжсөн.
+
+\section{A1 сайжруулалтын ажлын хэрэгжилтийн хүрээ}
+
+Нэмэлт хэрэгжүүлэлтийн баримтад A1 ажлыг ``одоогийн хэрэгжүүлэлтийг
+сайжруулж, тестийн хамралтыг өсгөх'' гэж тодорхойлсон. Энэ ажлын
+хүрээнд framework-ийн үндсэн логикийг шинэчлэхээс илүүтэйгээр дараах
+гурван чиглэлд төвлөрсөн.
+
+\begin{enumerate}
+    \item \textbf{Branch-oriented тестийн баталгаажуулалт} --
+    \codeword{ClassPathScanner}, \codeword{ApplicationContext},
+    \codeword{BeanRegistry}, \codeword{DependencyInjector} зэрэг цөм
+    классуудын салбарласан урсгал бүрийг нэгж тестээр шалгах;
+    \item \textbf{Fail-fast exception-ийн мэдээллийн чанарыг
+    сайжруулах} -- bean нэр, хайсан төрөл, боломжит candidate,
+    үүсгэгдэж буй төлөв, үндсэн \textit{cause} зэрэг мэдээллийг
+    exception мэдэгдэлд тусгах;
+    \item \textbf{Тестийн бүтцийг цэгцлэх} -- framework-ийн нэгж
+    зан авир болон бүхэл урсгалын шалгалтыг \codeword{unit} болон
+    \codeword{integration} түвшинд салгаж, дахин ажиллуулахад илүү
+    ойлгомжтой тестийн сан бүрдүүлэх.
+\end{enumerate}
+
+Ингэснээр A1 ажил нь 2-р бүлгийн шаардлагын биелэлтийг батлах, 3-р
+бүлгийн layered architecture-ийн зөв зааглалыг хамгаалах, 4-р бүлгийн
+хэрэгжүүлэлтийг ``ажиллаж буй загвар''-аас ``тестээр баталгаажсан
+хэрэгжүүлэлт'' түвшинд ахиулах үүрэг гүйцэтгэсэн.
+
+%-------------------------------------------------------------
+\section{Annotation давхаргын хэрэгжүүлэлт}
+%-------------------------------------------------------------
+
+Annotation давхарга нь framework-ийн хэрэглэгчтэй харилцах гадаад
+интерфэйсийн үүрэг гүйцэтгэнэ. Шаардлагын бүлэгт тодорхойлсон дөрвөн
+custom annotation-г \codeword{@interface} түлхүүр үгээр тодорхойлсон бөгөөд
+бүгд \codeword{@Retention(RetentionPolicy.RUNTIME)} тохиргоотой байна.
+Энэ нь annotation-уудыг программ ажиллах үед Reflection API ашиглан унших
+боломжийг бүрдүүлдэг бөгөөд container-ийн бүх дотоод логик үүнд
+тулгуурлан ажилладаг.
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsection{\texttt{@Component} annotation}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+\codeword{@Component} annotation нь тухайн классыг IoC container-д bean
+хэлбэрээр бүртгэхийг заах үндсэн тэмдэглэгээ юм. \codeword{@Target}
+нь \codeword{ElementType.TYPE} байх тул зөвхөн класс болон интерфэйс
+дээр тавигдана. \codeword{value()} атрибут нь bean-ийн нэрийг тодорхойлох
+боломж олгох бөгөөд хоосон үед \codeword{ClassPathScanner} классын нэрийг
+жижиг үсгээр эхлүүлж автоматаар нэр үүсгэнэ.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={Component annotation-ийн хэрэгжүүлэлт},
+    label={lst:component-annotation}]
+package mn.edu.num.annotation;
+
+import java.lang.annotation.*;
+    
+@Retention(RetentionPolicy.RUNTIME)
+@Target(ElementType.TYPE)
+@Documented
+public @interface Component {
+    String value() default "";
+}
+
+\end{lstlisting}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsection{\texttt{@Autowired} annotation}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+\codeword{@Autowired} annotation нь field болон constructor дээр тавигдаж
+тухайн хамаарлыг container автоматаар inject хийхийг заана.
+\codeword{required} атрибут нь injection заавал байх эсэхийг тодорхойлох
+бөгөөд \codeword{true} утгатай үед bean олдохгүй бол
+\codeword{NoSuchBeanException} шидэгдэнэ.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={\texttt{@Autowired} annotation-ийн хэрэгжүүлэлт},
+    label={lst:autowired-annotation}]
+package mn.edu.num.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.FIELD, ElementType.CONSTRUCTOR})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Autowired {
+    boolean required() default true;
+}
+
+\end{lstlisting}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsection{\texttt{@Qualifier} ба \texttt{@Scope} annotation}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+\texttt{@Qualifier} annotation нь ижил интерфэйсийг хэрэгжүүлсэн олон
+bean бүртгэгдсэн үед injection-д ашиглах bean-г нэрээр заах зорилготой.
+Энэ нь \texttt{DependencyInjector} дотор тохирох bean хайх үед
+\textit{ambiguity} үүсэхээс сэргийлнэ. \texttt{@Scope} annotation нь
+bean-ийн амьдралын мөчлөгийг тодорхойлох бөгөөд \texttt{singleton}
+болон \texttt{prototype} гэсэн хоёр утгыг дэмжинэ.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={\texttt{@Qualifier} annotation-ийн хэрэгжүүлэлт},
+    label={lst:qualifier-annotation}]
+package mn.edu.num.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.PARAMETER,  ElementType.FIELD})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Qualifier {
+    String value();
+}
+
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java,
+    caption={\texttt{@Scope} annotation-ийн хэрэгжүүлэлт},
+    label={lst:scope-annotation}]
+package mn.edu.num.annotation;
+
+import java.lang.annotation.ElementType;
+import java.lang.annotation.Retention;
+import java.lang.annotation.RetentionPolicy;
+import java.lang.annotation.Target;
+
+@Target({ElementType.TYPE})
+@Retention(RetentionPolicy.RUNTIME)
+public @interface Scope {
+    String value() default "singleton";
+}
+
+
+\end{lstlisting}
+%-------------------------------------------------------------
+\section{Exception давхаргын хэрэгжүүлэлт}
+%-------------------------------------------------------------
+
+Exception давхарга нь framework-ийн \textit{fail-fast} зарчмыг
+хэрэгжүүлэх гол хэрэгсэл юм. Гурван тусгай exception класс нь
+\texttt{RuntimeException}-г өвлөн тодорхойлогдсон тул хэрэглэгч
+заавал барих шаардлагагүй боловч алдааны шалтгааныг тодорхой
+мэдэгдлээр хүргэнэ.
+
+\texttt{NoSuchBeanException} нь container-т хүссэн нэр эсвэл төрлийн
+bean бүртгэгдээгүй үед шидэгдэнэ. A1 сайжруулалтын явцад уг exception-ийн
+мэдэгдэлд хайсан bean-ийн нэр, төрөл, бүртгэлтэй bean-үүдийн жагсаалт,
+олон candidate тохирсон үед \texttt{@Qualifier} ашиглах шаардлага зэрэг
+оношлох мэдээллийг хавсаргах байдлаар баяжуулсан. \texttt{BeanCreationException}
+нь Reflection API ашиглан bean объект үүсгэх явцад техникийн алдаа гарсан
+үед \textit{cause} exception-г wrap хийж шидэгдэнэ. \texttt{CircularDependencyException}
+нь A~$\rightarrow$~B~$\rightarrow$~A хэлбэрийн тойрог хамаарлыг container
+эхлэх үед илрүүлэн шидэх бөгөөд үүсгэгдэж буй bean-үүдийн төлөвийг
+мэдэгдэлд багтааснаар fail-fast шинж чанарыг илүү ойлгомжтой болгосон.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={BeanCreationException классын хэрэгжүүлэлт},
+    label={lst:beancreation-exception}]
+package mn.edu.num.exception;
+
+public class BeanCreationException extends RuntimeException{
+    public BeanCreationException(String message, Throwable cause) {
+        super(message, cause);
+    }
+}
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Java,
+    caption={NoSuchBeanException классын хэрэгжүүлэлт},
+    label={lst:nosuchbean-exception}]
+package mn.edu.num.exception;
+
+public class NoSuchBeanException extends RuntimeException {
+    public NoSuchBeanException(String message) {
+        super(message);
+    }
+}
+
+\end{lstlisting}
+
+
+\begin{lstlisting}[language=Java,
+    caption={CircularDependencyException классын хэрэгжүүлэлт},
+    label={lst:circulardependency-exception}]
+package mn.edu.num.exception;
+
+public class CircularDependencyException extends RuntimeException{
+    public CircularDependencyException(String message){
+        super(message);
+    }
+}
+
+
+\end{lstlisting}
+%-------------------------------------------------------------
+\section{Container давхаргын хэрэгжүүлэлт}
+%-------------------------------------------------------------
+
+Container давхарга нь framework-ийн цөм бүрэлдэхүүн болох
+\texttt{ScopeType} enum, \texttt{BeanDefinition}, \texttt{BeanRegistry}
+болон \texttt{ApplicationContext} классуудаас бүрдэнэ.
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsection{\texttt{ScopeType} ба \texttt{BeanDefinition}}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+\texttt{ScopeType} нь bean-ийн амьдралын мөчлөгийг \texttt{String}
+биш type-safe \texttt{enum} хэлбэрээр хадгалдаг. Энэ нь буруу утга
+оруулах боломжийг compile цагт таслан зогсооно.
+
+\texttt{BeanDefinition} нь bean-ийн бодит объект биш, харин тухайн
+bean-г хэрхэн үүсгэх, ямар scope-той болохыг илэрхийлэх мета
+мэдээллийн савлагаа юм. Дотор нь \texttt{beanName},
+\texttt{beanClass}, \texttt{scope} гэсэн гурван талбар агуулна.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={\texttt{ScopeType} enum классын хэрэгжүүлэлт},
+    label={lst:scopetype-enum}]
+package mn.edu.num.container;
+
+public enum ScopeType {
+    SINGLETON, PROTOTYPE;
+}
+\end{lstlisting}
+
+\begin{lstlisting}[language=Java,
+    caption={\texttt{BeanDefinition} классын хэрэгжүүлэлт},
+    label={lst:beandefinition-class}]
+package mn.edu.num.container;
+
+public class BeanDefinition {
+    private String name;
+    private Class<?> beanClass;
+    private ScopeType scope;
+
+    public BeanDefinition(String name, Class<?> beanScope, ScopeType scope){
+        this.name = name;
+        this.beanClass = beanScope;
+        this.scope = scope;
+    }
+
+    public String getBeanName() {return this.name;}
+    public Class<?> getBeanClass() {return this.beanClass;}
+    public ScopeType getScope() {return this.scope;}
+
+    @Override
+    public String toString() {
+        return "BeanDefinition{" +
+                "name='"  + name  + '\'' +
+                ", class=" + beanClass.getSimpleName() +
+                ", scope=" + scope +
+                '}';
+    }
+}
+
+\end{lstlisting}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsection{\texttt{BeanRegistry}}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+\texttt{BeanRegistry} нь container-ийн санах ойн үүрэг гүйцэтгэнэ.
+Дотроо хоёр \texttt{HashMap} агуулна: нэгдүгээрт,
+bean-ийн нэрийг \texttt{BeanDefinition}-д харгалзуулан хадгалах
+\texttt{definitions} Map, хоёрдугаарт, singleton bean-ийн бодит
+instance-г cache хийх \texttt{singletonCache} Map. \texttt{findByType()}
+метод нь \texttt{isAssignableFrom()} ашиглан интерфэйс болон
+superclass-аар хайх боломжийг олгодог.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={\texttt{BeanRegistry} классын хэрэгжүүлэлт},
+    label={lst:beanregistry}]
+package mn.edu.num.container;
+
+import java.util.*;
+
+public class BeanRegistry {
+    // bean нэр → BeanDefinition
+    private final Map<String, BeanDefinition> definitions = new HashMap<>();
+    // singleton cache
+    private final Map<String, Object> singletonCache = new HashMap<>();
+
+    // Төрлөөр хайх
+    public List<BeanDefinition> findByType(Class<?> type) {
+        List<BeanDefinition> result = new ArrayList<>();
+        for (BeanDefinition def : definitions.values()) {
+            if (type.isAssignableFrom(def.getBeanClass())) {
+                result.add(def);
+            }
+        }
+        return result;
+    }
+}
+
+\end{lstlisting}
+
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+\subsection{\texttt{ApplicationContext}}
+%- - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+\texttt{ApplicationContext} нь framework-ийн хамгийн чухал, төв
+бүрэлдэхүүн хэсэг юм. Хэрэглэгч зөвхөн энэ классыг ашиглан
+container-тай харилцана. Constructor-д \texttt{basePackage} нэр
+дамжуулахад дараах дарааллаар startup явагдана.
+
+\begin{enumerate}
+    \item \texttt{ClassPathScanner}-ээр заасан package болон
+          дэд package-уудыг нэгжиж \texttt{@Component} annotation-той
+          классуудыг илрүүлнэ.
+    \item Илэрсэн класс бүрийг \texttt{BeanDefinition} болгон
+          \texttt{BeanRegistry}-д бүртгэнэ.
+    \item \texttt{SINGLETON} scope-той bean бүрийг урьдчилан
+          үүсгэж singleton cache - д хадгална.
+    \item \texttt{DependencyInjector}-ээр \texttt{@Autowired}
+          field бүрд тохирох dependency-г inject хийнэ.
+\end{enumerate}
+
+Тойрог хамааралыг илрүүлэхийн тулд \texttt{inCreation} гэсэн
+\texttt{HashSet} ашиглана. Bean үүсгэж эхлэхэд нэрийг
+\texttt{Set}-д нэмж, бэлэн болсны дараа хасна. Дахин тэр bean-г
+үүсгэхийг оролдвол \texttt{Set}-д байгааг олж
+\texttt{CircularDependencyException} шидэнэ.
+
+A1 ажлын үед энэ хэсгийн чанарын баталгаажуулалт мэдэгдэхүйц
+өргөжсөн. Тухайлбал singleton cache-д байгаа болон байхгүй
+тохиолдол, prototype bean хүсэх үеийн урсгал, нэрээр болон төрлөөр
+bean авах үеийн алдааны нөхцөл, олон candidate тохирох ambiguity,
+мөн хоёр болон гурван шаттай circular dependency зэрэг нөхцөл бүрийг
+тусгай тестээр баталгаажуулсан. Иймээс \texttt{ApplicationContext}
+нь зөвхөн bean үүсгэх төв класс бус, мөн framework-ийн fail-fast
+зан авирыг хэрэгжүүлэх үндсэн цэг болж байна.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={\texttt{ApplicationContext} классын хэрэгжүүлэлт},
+    label={lst:applicationcontext}]
+package mn.edu.num.container;
+
+import mn.edu.num.exception.BeanCreationException;
+import mn.edu.num.exception.CircularDependencyException;
+import mn.edu.num.exception.NoSuchBeanException;
+import mn.edu.num.scanner.ClassPathScanner;
+
+import java.util.*;
+
+public class ApplicationContext implements DependencyInjector.ApplicationContextRef {
+
+    private final BeanRegistry registry = new BeanRegistry();
+    private final DependencyInjector injector = new DependencyInjector(registry);
+    // Circular dependency илрүүлэх
+    private final Set<String> inCreation = new HashSet<>();
+
+    public ApplicationContext(String basePackage) {
+        System.out.println("[Context] Эхэлж байна... package: " + basePackage);
+        ClassPathScanner scanner = new ClassPathScanner(basePackage);
+        List<BeanDefinition> definitions = scanner.scan();
+
+        // Бүртгэх
+        for (BeanDefinition def : definitions) {
+            registry.register(def);
+        }
+
+        // Singleton bean-уудыг урьдчилан үүсгэх
+        for (BeanDefinition def : definitions) {
+            if (def.getScope() == ScopeType.SINGLETON) {
+                getBean(def.getBeanName());
+            }
+        }
+        System.out.println("[Context] Container бэлэн боллоо.");
+    }
+
+    @Override
+    public Object getBean(String name) {
+        BeanDefinition def = registry.getDefinition(name);
+
+        // Кэш шалгахаас ӨМНӨ тойрог хамаарал шалгана
+        if (inCreation.contains(name)) {
+            throw new CircularDependencyException(
+                    "Тойрог хамаарал илэрлээ: " + name
+                            + " | Үүсгэгдэж байгаа: " + inCreation);
+        }
+        if (def.getScope() == ScopeType.SINGLETON) {
+            if (registry.hasSingleton(name)) {
+                return registry.getSingleton(name);
+            }
+            return createBean(def);
+        } else {
+            // Prototype — шинэ instance үүсгэнэ
+            return createBean(def);
+        }
+    }
+}
+\end{lstlisting}
+
+%-------------------------------------------------------------
+\section{Scanner давхаргын хэрэгжүүлэлт}
+%-------------------------------------------------------------
+
+\texttt{ClassPathScanner} нь өгөгдсөн package болон түүний бүх
+дэд package-уудыг рекурсив аргаар нэгжиж \texttt{@Component}
+annotation-той классуудыг илрүүлэн \texttt{BeanDefinition} болгодог
+модуль юм.
+
+Ажиллах алгоритм нь дараах алхмуудаас бүрдэнэ. Эхлээд package - ийн нэрийн
+цэг тэмдэгтийг зам тусгаарлагч болгон хөрвүүлж
+(\texttt{"mn.edu.num"} $\rightarrow$ \texttt{"mn/edu/num"}),
+\texttt{ClassLoader}-оос харгалзах \texttt{URL} авна. \texttt{URL}-г
+\texttt{File} объект болгон рекурсив байдлаар нэгжиж, \texttt{.class}
+өргөтгөлтэй файл бүрийг \texttt{Class.forName()} ашиглан JVM-д
+ачаалдаг. Interface болон \texttt{\$} тэмдэгт агуулсан inner class-уудыг
+шүүн гаргаж, \texttt{@Component} annotation байгаа классуудыг
+\texttt{BeanDefinition} болгон буцаадаг.
+
+A1 сайжруулалтын хүрээнд scanner давхаргын дараах edge case-уудыг
+тусад нь шалгасан. Үүнд package олдохгүй байх, хоосон package scan хийх,
+interface-ийг bean болгон бүртгэхгүй байх, custom bean name болон
+decapitalize хийсэн default bean name үүсгэх, \texttt{@Scope("prototype")}
+утгыг зөв унших, буруу scope утгыг singleton fallback болгон авч үзэх,
+\texttt{.class} биш файлуудыг алгасах, \texttt{listFiles()} нь
+\texttt{null} болох нөхцөл, мөн component биш классыг бүртгэхгүй байх
+урьдал нөхцлүүд орно. Ингэснээр scanner-ийн алгоритм зөвхөн үндсэн
+зам дээр бус, захын тохиолдлуудад ч тогтвортой ажиллаж байгааг баталсан.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={\texttt{ClassPathScanner} классын хэрэгжүүлэлт},
+    label={lst:classpathscanner}]
+public class ClassPathScanner {
+
+    private final String basePackage;
+
+    public ClassPathScanner(String basePackage) {
+        this.basePackage = basePackage;
+    }
+}
+\end{lstlisting}
+
+%-------------------------------------------------------------
+\section{Injector давхаргын хэрэгжүүлэлт}
+%-------------------------------------------------------------
+
+\texttt{DependencyInjector} нь аль хэдийн үүсгэгдсэн bean объект
+дээр \texttt{@Autowired} annotation-той field бүрд тохирох
+dependency-г олж Reflection ашиглан оноодог модуль юм.
+
+Inject хийх дараалал нь дараах байдалтай. Bean-ийн класс дахь
+бүх field-ийг \texttt{getDeclaredFields()} ашиглан авч
+\texttt{@Autowired} annotation байгааг шалгана. \texttt{@Qualifier}
+annotation байвал заасан нэрээр \texttt{ApplicationContext}-оос
+хайна. \texttt{@Qualifier} байхгүй бол \texttt{BeanRegistry.findByType()}
+ашиглан төрлөөр хайж нэг candidate илэрсэн тохиолдолд inject хийнэ.
+Олон candidate илэрвэл \textit{ambiguity} алдаа, нэг ч олдохгүй бол
+\texttt{NoSuchBeanException} илгээнэ. Эцэст нь
+\texttt{field.setAccessible(true)} ашиглан private field-д хандаж
+\texttt{field.set(instance, dependency)} ашиглан утга оноодог.
+
+\codeword{DependencyInjector.ApplicationContextRef} interface нь
+\codeword{DependencyInjector} болон \codeword{ApplicationContext} хоёрын
+хоорондох шууд хамаарлыг арилгах зорилготой. Энэ нь circular import
+гарахаас сэргийлж, нэгж тест хийхэд mock объект ашиглах боломжийг
+олгоно.
+
+A1 ажлын үед injector давхаргын чанарын баталгаажуулалт дараах гол
+урвалууд дээр төвлөрсөн. \texttt{@Qualifier} байхгүй үед dependency-г
+төрлөөр нь resolve хийх, \texttt{@Qualifier} өгөгдсөн үед яг заасан
+bean-ийг нэрээр нь сонгох, dependency байхгүй үед тайлбарлагдсан
+\texttt{NoSuchBeanException} шидэх, олон candidate илэрсэн үед ambiguity
+алдаа өгөх, мөн reflection-оор field утга оноох явцад гарч болох
+\texttt{IllegalAccessException}-ийг \texttt{BeanCreationException}-д wrap
+хийх зэрэг урсгалуудыг нэгж тестээр баталгаажуулсан. Энэ нь injector
+давхаргыг бодит нөхцөлд илүү найдвартай болгосон.
+
+% ---- КОД ОРУУЛАХ ХЭСЭГ ----
+\begin{lstlisting}[language=Java,
+    caption={\texttt{DependencyInjector} классын хэрэгжүүлэлт},
+    label={lst:dependencyinjector}]
+public class DependencyInjector {
+
+    private final BeanRegistry registry;
+
+    public DependencyInjector(BeanRegistry registry) {
+        this.registry = registry;
+    }
+}
+\end{lstlisting}
+
+%-------------------------------------------------------------
+\section{Туршилт}
+%-------------------------------------------------------------
+
+Хэрэгжүүлсэн framework-ийн үндсэн функциональ шаардлага бүрийг
+JUnit~5 тестийн орчинд баталгаажуулав. A1 ажлын үед тестийн
+стратегийг \codeword{unit} болон \codeword{integration} гэсэн хоёр түвшинд
+салгаж, framework-ийн цөм классуудын салбарласан урсгал болон
+бүхэл startup--lookup--inject урсгалыг тус тусад нь шалгах зохион
+байгуулалт бүрдүүлсэн.
+
+\subsection{Нэгж тестийн бүтэц ба шалгасан нөхцөлүүд}
+
+Нэгж тестүүд нь тухайн нэг класс эсвэл туслах логикийн зан авирыг
+тусгаарлан шалгахад чиглэсэн. Энэ түвшинд \texttt{BeanRegistryTest},
+\texttt{ClassPathScannerTest}, \texttt{DependencyInjectorTest},
+\texttt{ExceptionTest} гэсэн дөрвөн тест класс ашиглагдсан.
+
+\begin{itemize}
+    \item \texttt{BeanRegistryTest} -- definition бүртгэх, singleton cache,
+    төрлөөр хайх, давхардсан bean нэрийг overwrite хийх, \texttt{toString()}
+    үр дүнг шалгах;
+    \item \texttt{ClassPathScannerTest} -- package байхгүй, хоосон package,
+    interface ignore хийх, custom/default bean name, prototype scope,
+    component биш класс, \texttt{null} болон хоосон текстийн edge case-уудыг шалгах;
+    \item \texttt{DependencyInjectorTest} -- dependency-г төрлөөр болон
+    \texttt{@Qualifier}-аар resolve хийх, dependency байхгүй болон ambiguity
+    үүсэх үед exception шидэх, reflection field set-ийн алдааг wrap хийх;
+    \item \texttt{ExceptionTest} -- exception constructor-уудын мэдэгдэл,
+    \texttt{ApplicationContext} болон \texttt{ClassPathScanner}-ийн хүрэхэд
+    хэцүү branch-уудыг reflection ашиглан баталгаажуулах.
+\end{itemize}
+
+Эдгээр нэгж тестүүд нь A1 ажлын ``branch бүрийг илрүүлж тестлэх''
+зорилтыг хэрэгжүүлж, framework-ийн цөм логикийн захын тохиолдлуудыг
+системтэйгээр хамгаалж өгсөн.
+
+\subsection{Интеграцийн тестийн бүтэц ба A1 ажлын үр дүн}
+
+Интеграцийн тестүүд нь \texttt{ApplicationContext}-г бүхэлд нь
+ажиллуулж, scan, register, inject, getBean гэсэн дамжлагууд бодит
+жишээ package-ууд дээр хэрхэн ажиллаж байгааг шалгана. Энэ түвшинд
+\texttt{BeanCreationIntegrationTest}, \texttt{BeanLookupIntegrationTest},
+\texttt{DependencyInjectionIntegrationTest},
+\texttt{QualifierIntegrationTest}, \texttt{ScopeIntegrationTest},
+\texttt{CircularDependencyIntegrationTest} гэсэн зургаан тест класс
+ашиглагдсан.
+
+\clearpage
+\renewcommand{\arraystretch}{1.25}
+\footnotesize
+\setlength{\tabcolsep}{4pt}
+\begin{table}[p]
+\centering
+\caption{A1 ажлын хүрээнд ашигласан тестийн матриц}
+\label{tab:a1-test-matrix}
+\begin{tabular}{|L{0.23\textwidth}|L{0.13\textwidth}|L{0.10\textwidth}|L{0.50\textwidth}|}
+\hline
+\textbf{Тест класс} & \textbf{Түвшин} & \textbf{Тестийн тоо} & \textbf{Шалгасан үндсэн зан авир} \\ \hline
+\shortstack[l]{\codeword{BeanRegistry}\\\codeword{Test}} & Unit & 8 & \shortstack[l]{Definition бүртгэл, cache,\\төрлөөр хайлт, overwrite,\\\codeword{toString()}} \\ \hline
+\shortstack[l]{\codeword{ClassPathScanner}\\\codeword{Test}} & Unit & 12 & \shortstack[l]{Package scan, custom/default нэр,\\scope, interface ignore, edge case} \\ \hline
+\shortstack[l]{\codeword{DependencyInjector}\\\codeword{Test}} & Unit & 6 & \shortstack[l]{Inject by type, qualifier, missing\\dependency, ambiguity, field access error} \\ \hline
+\codeword{ExceptionTest} & Unit & 5 & \shortstack[l]{Exception constructor,\\reflection-оор өдөөсөн branch шалгалт} \\ \hline
+\shortstack[l]{\codeword{BeanCreation}\\\codeword{IntegrationTest}} & Integration & 3 & \shortstack[l]{Default constructor байхгүй,\\constructor exception} \\ \hline
+\shortstack[l]{\codeword{BeanLookup}\\\codeword{IntegrationTest}} & Integration & 3 & \shortstack[l]{Нэрээр болон төрлөөр lookup fail,\\multiple beans ambiguity} \\ \hline
+\shortstack[l]{\codeword{DependencyInjection}\\\codeword{IntegrationTest}} & Integration & 2 & \shortstack[l]{\codeword{EmailService}, \codeword{OrderService}\\dependency inject} \\ \hline
+\shortstack[l]{\codeword{Qualifier}\\\codeword{IntegrationTest}} & Integration & 3 & \shortstack[l]{\codeword{@Qualifier} resolve,\\custom bean name lookup} \\ \hline
+\shortstack[l]{\codeword{Scope}\\\codeword{IntegrationTest}} & Integration & 3 & \shortstack[l]{Singleton, prototype,\\invalid scope fallback} \\ \hline
+\shortstack[l]{\codeword{CircularDependency}\\\codeword{IntegrationTest}} & Integration & 2 & \shortstack[l]{Хоёр болон гурван шаттай\\circular dependency илрүүлэлт} \\ \hline
+\textbf{Нийт} & -- & \textbf{47} & Framework-ийн гол болон захын урсгалуудыг хамарсан \\ \hline
+\end{tabular}
+\end{table}
+\normalsize
+\renewcommand{\arraystretch}{1}
+
+Хүснэгт~\ref{tab:a1-test-matrix}-аас харахад A1 ажлын хүрээнд тестийн
+сан зөвхөн тоогоор өссөнгүй, харин framework-ийн давхарга тус бүрийн
+хариуцлагад уялдсан бүтэцтэй болсон. Ингэснээр regression эрсдэлийг
+бууруулах, өөрчлөлтийн нөлөөг хурдан илрүүлэх, дараагийн A2--A4 ажлуудын
+суурь чанарын хамгаалалтыг бүрдүүлэх боломжтой болсон.
+
+\subsection{\texttt{mvn test} гүйцэтгэлийн баталгаа}
+
+Төслийн үндсэн директорт \codeword{mvn test} командыг ажиллуулж шалгахад
+framework-ийн тестийн сан амжилттай гүйцэтгэсэн. Үүний үр дүнд нийт 47
+тест ажиллаж, \codeword{0 failures}, \codeword{0 errors}, \codeword{0 skipped}
+байдлаар build success болсон. Энэ нь A1 ажлын тайлбар зөвхөн кодын
+түвшний дүгнэлт бус, бодит build ба тестийн гүйцэтгэлийн үр дүнд
+тулгуурлаж байгааг харуулна.
+
+%-------------------------------------------------------------
+\section{Бүлгийн дүгнэлт}
+%-------------------------------------------------------------
+
+Энэ бүлэгт системийн шаардлага болон архитектурын зохиомжийн дагуу
+annotation болон reflection механизмд суурилсан dependency injection
+framework-ийн туршилтын загвар болгон хэрэгжүүллээ. Давхаргат архитектурын зарчмыг
+баримтлан annotation, scanner, container, injector, exception гэсэн
+таван давхаргыг тус тусад нь хэрэгжүүлж, тэдгээрийн хоорондын
+хамаарлыг интерфэйсээр зохицуулав.
+
+Хэрэгжүүлэлтийн гол онцлог нь зөвхөн Java~SE стандарт сангийн
+Reflection API болон annotation inspection механизмыг ашигласнаар
+framework-ийн дотоод ажиллагааг гуравдагч талын сангаас бүрэн
+хамааралгүй байдлаар харуулсан явдал юм. Мөн A1 сайжруулалтын ажлын
+үр дүнд fail-fast exception-уудын мэдээллийн чанар сайжирч,
+\texttt{unit} болон \texttt{integration} түвшний нийт 10 тест класс,
+47 тестийн тохиолдлоор framework-ийн гол болон захын урсгалуудыг
+баталгаажууллаа. Ингэснээр энэхүү хэрэгжүүлэлт нь зөвхөн ажилладаг
+туршилтын загвар бус, харин архитектур, шаардлага, туршилтын нотолгоо
+хоорондоо уялдсан чанарын баталгаатай хэрэгжүүлэлт болж байна.

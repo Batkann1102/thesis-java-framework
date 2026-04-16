@@ -1,0 +1,139 @@
+\contentsline {chapter}{Удиртгал}{1}{chapter*.1}%
+\contentsline {chapter}{\numberline {1.}Сэдвийн судалгаа}{5}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Dependency Injection болон Inversion of Control зарчмын судалгаа}{6}{section.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Inversion of Control зарчим}{6}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.2}Dependency Injection зарчим}{7}{subsection.1.1.2}%
+\contentsline {subsection}{\numberline {1.1.3}Dependency Injection хэрэгжүүлэх үндсэн аргууд}{9}{subsection.1.1.3}%
+\contentsline {subsubsection}{Constructor Injection}{9}{section*.10}%
+\contentsline {subsubsection}{Setter Injection}{11}{section*.11}%
+\contentsline {subsubsection}{Field Injection}{13}{section*.12}%
+\contentsline {subsection}{\numberline {1.1.4}Аргуудын харьцуулалт}{14}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.5}Дүгнэлт}{15}{subsection.1.1.5}%
+\contentsline {section}{\numberline {1.2}Annotation болон Reflection механизмын судалгаа}{16}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Java annotation-ийн үндсэн ойлголт}{16}{subsection.1.2.1}%
+\contentsline {subsubsection}{Built-in annotation}{16}{section*.13}%
+\contentsline {subsubsection}{Meta-annotation}{17}{section*.14}%
+\contentsline {subsubsection}{Custom annotation}{18}{section*.15}%
+\contentsline {subsection}{\numberline {1.2.2}Annotation-ий бүтцийн ангилал}{18}{subsection.1.2.2}%
+\contentsline {subsubsection}{Marker annotation}{19}{section*.16}%
+\contentsline {subsubsection}{Single-value annotation}{19}{section*.17}%
+\contentsline {subsubsection}{Full annotation}{19}{section*.18}%
+\contentsline {subsection}{\numberline {1.2.3}Custom annotation үүсгэхэд ашиглагддаг үндсэн annotation-ууд}{19}{subsection.1.2.3}%
+\contentsline {subsubsection}{\texttt {@Target}}{19}{section*.19}%
+\contentsline {subsubsection}{\texttt {@Retention}}{21}{section*.20}%
+\contentsline {subsubsection}{\texttt {@Documented}}{22}{section*.21}%
+\contentsline {subsubsection}{\texttt {@Inherited}}{22}{section*.22}%
+\contentsline {subsubsection}{\texttt {@Repeatable}}{23}{section*.23}%
+\contentsline {subsection}{\numberline {1.2.4}Spring Framework дахь annotation}{24}{subsection.1.2.4}%
+\contentsline {subsubsection}{Component annotation}{24}{section*.24}%
+\contentsline {subsubsection}{Configuration annotation}{25}{section*.25}%
+\contentsline {subsubsection}{Dependency Injection annotation}{25}{section*.26}%
+\contentsline {subsubsection}{Web annotation}{27}{section*.27}%
+\contentsline {subsubsection}{AOP annotation}{27}{section*.28}%
+\contentsline {subsubsection}{Transaction annotation}{27}{section*.29}%
+\contentsline {subsection}{\numberline {1.2.5}Framework-д хэрэгжүүлэх annotation-ууд}{28}{subsection.1.2.5}%
+\contentsline {subsubsection}{Дипломд заавал хэрэгжүүлэх annotation-ууд (DI Framework-ийн цөм)}{28}{section*.30}%
+\contentsline {subsubsection}{Хэрэгжүүлэх боломжтой annotation-ууд (нэмэлт)}{28}{section*.31}%
+\contentsline {subsection}{\numberline {1.2.6}Java ба Spring annotation-ийн ялгаа}{28}{subsection.1.2.6}%
+\contentsline {subsection}{\numberline {1.2.7}Compile болон Runtime ойлголт}{29}{subsection.1.2.7}%
+\contentsline {subsection}{\numberline {1.2.8}Reflection механизм}{29}{subsection.1.2.8}%
+\contentsline {subsection}{\numberline {1.2.9}Annotation ба Reflection-ийн уялдаа холбоо}{30}{subsection.1.2.9}%
+\contentsline {section}{\numberline {1.3}Ижил төрлийн framework-үүдийн судалгаа}{31}{section.1.3}%
+\contentsline {subsection}{\numberline {1.3.1}Spring Framework}{31}{subsection.1.3.1}%
+\contentsline {subsection}{\numberline {1.3.2}Google Guice}{32}{subsection.1.3.2}%
+\contentsline {subsection}{\numberline {1.3.3}Jakarta CDI}{32}{subsection.1.3.3}%
+\contentsline {subsection}{\numberline {1.3.4}Framework-үүдийн харьцуулалт}{33}{subsection.1.3.4}%
+\contentsline {section}{\numberline {1.4}Ашиглагдах программчлалын хэлний судалгаа}{34}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Ашиглагдах технологи, хэрэгслүүдийн судалгаа}{35}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}Maven}{35}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}JUnit}{35}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Хөгжүүлэлтийн орчин}{35}{subsection.1.5.3}%
+\contentsline {subsection}{\numberline {1.5.4}Git болон GitHub}{36}{subsection.1.5.4}%
+\contentsline {section}{\numberline {1.6}Системийн ерөнхий шийдлийн судалгаа}{37}{section.1.6}%
+\contentsline {subsection}{\numberline {1.6.1}Spring Framework-ийн IoC container}{37}{subsection.1.6.1}%
+\contentsline {subsubsection}{BeanFactory}{37}{section*.32}%
+\contentsline {subsubsection}{ApplicationContext}{38}{section*.33}%
+\contentsline {subsection}{\numberline {1.6.2}Bean болон container-д бүртгэгдэх классууд}{38}{subsection.1.6.2}%
+\contentsline {subsection}{\numberline {1.6.3}Spring configuration хийх үндсэн аргууд}{39}{subsection.1.6.3}%
+\contentsline {subsubsection}{XML суурилсан configuration}{40}{section*.34}%
+\contentsline {subsubsection}{Annotation-д суурилсан configuration}{40}{section*.35}%
+\contentsline {subsubsection}{Java-д суурилсан configuration}{42}{section*.36}%
+\contentsline {subsubsection}{Spring Boot configuration}{42}{section*.37}%
+\contentsline {subsection}{\numberline {1.6.4}Dependency Injection ба annotation ашиглалт}{43}{subsection.1.6.4}%
+\contentsline {subsection}{\numberline {1.6.5}Bean scope}{43}{subsection.1.6.5}%
+\contentsline {subsubsection}{Singleton scope}{44}{section*.38}%
+\contentsline {subsubsection}{Prototype scope}{44}{section*.39}%
+\contentsline {subsection}{\numberline {1.6.6}Хэрэгжүүлэх framework-ийн ерөнхий шийдэлтэй уялдах нь}{44}{subsection.1.6.6}%
+\contentsline {section}{\numberline {1.7}Бүлгийн дүгнэлт}{45}{section.1.7}%
+\contentsline {chapter}{\numberline {2.}Системийн шаардлага}{47}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Framework-ийн шаардлагын тодорхойлолт}{47}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Ерөнхий шаардлага}{47}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Функциональ шаардлага}{48}{subsection.2.1.2}%
+\contentsline {section}{\numberline {2.2}Функциональ бус шаардлага}{49}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Нэмэлт сайжруулалт шаардлагатай уялдах нь}{50}{section.2.3}%
+\contentsline {section}{\numberline {2.4}Custom annotation-уудын шаардлага}{51}{section.2.4}%
+\contentsline {subsection}{\numberline {2.4.1}Meta-annotation ашиглах шаардлага}{51}{subsection.2.4.1}%
+\contentsline {subsection}{\numberline {2.4.2}Retention policy болон runtime reflection-ийн шаардлага}{52}{subsection.2.4.2}%
+\contentsline {subsubsection}{Динамик илрүүлэлт}{53}{section*.40}%
+\contentsline {subsubsection}{Fail-fast буюу эрт баталгаажуулалт}{54}{section*.41}%
+\contentsline {subsubsection}{Уламжлалт объект үүсгэлтээс ялгарах нь}{54}{section*.42}%
+\contentsline {subsection}{\numberline {2.4.3}ApplicationContext-ийн шаардлага}{56}{subsection.2.4.3}%
+\contentsline {subsubsection}{ApplicationContext-ийн гүйцэтгэх үндсэн үүрэг}{56}{section*.43}%
+\contentsline {subsubsection}{Bean бүртгэл ба мета мэдээлэл}{56}{section*.44}%
+\contentsline {subsubsection}{Dependency injection-ийн шаардлага}{57}{section*.45}%
+\contentsline {subsubsection}{Scope удирдлагын шаардлага}{57}{section*.46}%
+\contentsline {subsubsection}{ApplicationContext сонгосон үндэслэл}{58}{section*.47}%
+\contentsline {subsection}{\numberline {2.4.4}Технологийн шаардлага}{58}{subsection.2.4.4}%
+\contentsline {subsubsection}{Java 17 сонгосон үндэслэл}{59}{section*.48}%
+\contentsline {subsubsection}{IntelliJ IDEA сонгосон үндэслэл}{60}{section*.49}%
+\contentsline {subsubsection}{Гуравдагч талын сан ашиглахгүй байх шаардлага}{60}{section*.50}%
+\contentsline {subsubsection}{Технологийн шаардлагын дүгнэлт}{60}{section*.51}%
+\contentsline {section}{\numberline {2.5}Статик загвар}{61}{section.2.5}%
+\contentsline {subsection}{\numberline {2.5.1}Бүрэлдэхүүн хэсгүүдийн тодорхойлолт}{61}{subsection.2.5.1}%
+\contentsline {subsection}{\numberline {2.5.2}Боломжит классууд}{61}{subsection.2.5.2}%
+\contentsline {subsection}{\numberline {2.5.3}Багцын зохион байгуулалт}{62}{subsection.2.5.3}%
+\contentsline {subsection}{\numberline {2.5.4}КҮХ карт (CRC card)}{65}{subsection.2.5.4}%
+\contentsline {subsection}{\numberline {2.5.5}Классын диаграмм}{67}{subsection.2.5.5}%
+\contentsline {section}{\numberline {2.6}Динамик загвар}{68}{section.2.6}%
+\contentsline {subsection}{\numberline {2.6.1}Framework хэрэглэгчийн ажлын явцын загвар (Use case)}{68}{subsection.2.6.1}%
+\contentsline {subsection}{\numberline {2.6.2}Ажлын явцын задаргаа (Use case description)}{69}{subsection.2.6.2}%
+\contentsline {subsubsection}{Container эхлүүлэх}{69}{section*.52}%
+\contentsline {subsubsection}{Bean авах}{70}{section*.53}%
+\contentsline {subsection}{\numberline {2.6.3}Бүлгийн дүгнэлт}{70}{subsection.2.6.3}%
+\contentsline {chapter}{\numberline {3.}Системийн зохиомж}{71}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Архитектурын ерөнхий үндэслэл}{71}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Сонгосон архитектур: Давхаргат архитектур}{71}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Сонгосон архитектурын давуу тал}{72}{section.3.3}%
+\contentsline {section}{\numberline {3.4}Layered Architecture Diagram}{73}{section.3.4}%
+\contentsline {section}{\numberline {3.5}Activity Diagram}{75}{section.3.5}%
+\contentsline {section}{\numberline {3.6}Sequence Diagram}{78}{section.3.6}%
+\contentsline {section}{\numberline {3.7}A1 сайжруулалтын ажлын архитектурын уялдаа}{80}{section.3.7}%
+\contentsline {section}{\numberline {3.8}Бүлгийн дүгнэлт}{82}{section.3.8}%
+\contentsline {chapter}{\numberline {4.}Хэрэгжүүлэлт}{83}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Хэрэгжүүлэлтийн орчин ба бүтэц}{83}{section.4.1}%
+\contentsline {section}{\numberline {4.2}A1 сайжруулалтын ажлын хэрэгжилтийн хүрээ}{84}{section.4.2}%
+\contentsline {section}{\numberline {4.3}Annotation давхаргын хэрэгжүүлэлт}{85}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}\texttt {@Component} annotation}{85}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}\texttt {@Autowired} annotation}{86}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}\texttt {@Qualifier} ба \texttt {@Scope} annotation}{86}{subsection.4.3.3}%
+\contentsline {section}{\numberline {4.4}Exception давхаргын хэрэгжүүлэлт}{87}{section.4.4}%
+\contentsline {section}{\numberline {4.5}Container давхаргын хэрэгжүүлэлт}{89}{section.4.5}%
+\contentsline {subsection}{\numberline {4.5.1}\texttt {ScopeType} ба \texttt {BeanDefinition}}{89}{subsection.4.5.1}%
+\contentsline {subsection}{\numberline {4.5.2}\texttt {BeanRegistry}}{90}{subsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.5.3}\texttt {ApplicationContext}}{91}{subsection.4.5.3}%
+\contentsline {section}{\numberline {4.6}Scanner давхаргын хэрэгжүүлэлт}{93}{section.4.6}%
+\contentsline {section}{\numberline {4.7}Injector давхаргын хэрэгжүүлэлт}{94}{section.4.7}%
+\contentsline {section}{\numberline {4.8}Туршилт}{95}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Нэгж тестийн бүтэц ба шалгасан нөхцөлүүд}{95}{subsection.4.8.1}%
+\contentsline {subsection}{\numberline {4.8.2}Интеграцийн тестийн бүтэц ба A1 ажлын үр дүн}{96}{subsection.4.8.2}%
+\contentsline {subsection}{\numberline {4.8.3}\texttt {mvn test} гүйцэтгэлийн баталгаа}{97}{subsection.4.8.3}%
+\contentsline {section}{\numberline {4.9}Бүлгийн дүгнэлт}{97}{section.4.9}%
+\contentsline {chapter}{\numberline {5.}Дүгнэлт}{99}{chapter.5}%
+\contentsline {part}{НОМ ЗҮЙ}{100}{chapter.5}%
+\contentsline {part}{ХАВСРАЛТ}{102}{chapter*.54}%
+\contentsline {chapter}{\numberline {A.}Кодын хэрэгжүүлэлт}{102}{appendix.A}%
+\contentsline {section}{\numberline {A.1}\textit {\textbf {ApplicationContext.java }}}{102}{section.A.1}%
+\contentsline {section}{\numberline {A.2}\textit {\textbf {ClassPathScanner.java}}}{104}{section.A.2}%
+\contentsline {section}{\numberline {A.3}\textit {\textbf {DependencyInjector.java}}}{105}{section.A.3}%
+\contentsline {section}{\numberline {A.4}\textit {\textbf {BeanRegistry.java}}}{106}{section.A.4}%
+\contentsline {section}{\numberline {A.5}\textit {\textbf {ContextIntegrationTest.java}}}{107}{section.A.5}%

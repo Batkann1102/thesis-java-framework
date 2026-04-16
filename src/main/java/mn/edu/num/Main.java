@@ -1,17 +1,36 @@
 package mn.edu.num;
 
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
+import mn.edu.num.annotation.EnableIoC;
+import mn.edu.num.container.ApplicationContext;
+import mn.edu.num.container.DependencyTreeBuilder;
+import mn.edu.num.container.DependencyTreeExporter;
+
+/**
+ * Төслийн эхлэл цэг.
+ * @EnableIoC annotation нь энэ классын package (mn.edu.num)-аас
+ * эхлэн бүх дэд package-уудыг scan хийж @Component bean-уудыг олно.
+ *
+ * Spring Boot-ийн @SpringBootApplication + SpringApplication.run()-тай адил загвар.
+ */
+@EnableIoC(excludePackages = {
+        "mn.edu.num.app.broken",
+        "mn.edu.num.app.circular",
+        "mn.edu.num.app.circular3",
+        "mn.edu.num.app.throwing"
+})
 public class Main {
     public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+        // Spring Boot: SpringApplication.run(MyApp.class, args)
+        // Манай IoC:   ApplicationContext.run(Main.class)
+        ApplicationContext ctx = ApplicationContext.run(Main.class);
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+        // Dependency tree
+        DependencyTreeBuilder builder = ctx.getTreeBuilder();
+
+        System.out.println("\n--- Dependency Tree (Console) ---");
+        System.out.println(builder.printTree());
+
+        System.out.println("--- Dependency Tree (JSON) ---");
+        System.out.println(DependencyTreeExporter.toJson(builder.getNodeMap()));
     }
 }

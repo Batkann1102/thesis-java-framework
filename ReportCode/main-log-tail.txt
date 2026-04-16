@@ -1,0 +1,120 @@
+﻿
+Underfull \hbox (badness 10000) in paragraph at lines 740--740
+[]|\TU/TimesNewRoman(0)/m/n/12 Ð£Ñ€ÑŒÐ´Ñ‡Ð¸Ð»ÑÐ°Ð½
+ []
+
+[70]) (design_architecture.tex
+Underfull \hbox (badness 3780) in paragraph at lines 752--1
+[]\TU/TimesNewRoman(0)/m/n/12 Ð­Ð½ÑÑ…Ò¯Ò¯ Ð±Ò¯Ð»ÑÐ³Ñ‚ framework-Ð¸Ð¹Ð½ ÑˆÐ°Ð°Ñ€Ð´Ð»Ð°Ð³Ñ‹Ð³ Ñ‚Ð¾Ð´Ð¾Ñ€Ñ…Ð¾Ð¹Ð»Ð¾
+Ð². Ò®Ò¯Ð½Ð´ framework-Ð¸Ð¹Ð½
+ []
+
+[71]
+Ð‘Ò®Ð›Ð­Ð“3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--2
+
+ []
+
+
+Underfull \hbox (badness 2401) in paragraph at lines 11--12
+[]\TU/TimesNewRoman(0)/m/n/12 Ð”Ð°Ð²Ñ…Ð°Ñ€Ð³Ð°Ñ‚ Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€ Ð½ÑŒ ÑÐ¸ÑÑ‚ÐµÐ¼Ð¸Ð¹Ð½ Ð±Ò¯Ñ€ÑÐ»Ð´ÑÑ…Ò¯Ò¯Ð½ Ñ…ÑÑ
+Ð³Ò¯Ò¯Ð´Ð¸Ð¹Ð½ Ò¯Ò¯Ñ€Ð³Ð¸Ð¹Ð³ Ñ‚Ð¾Ð´Ð¾Ñ€Ñ…Ð¾Ð¹
+ []
+
+[72
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 50--58
+[]\TU/TimesNewRoman(0)/b/n/12 Spring Framework-Ð¸Ð¹Ð½ Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€Ñ‹Ð½ ÑÑƒÑƒÑ€ÑŒ Ð¾Ð¹Ð»Ð³Ð¾Ð»Ñ‚Ñ‚Ð¾
+Ð¹ Ð½Ð¸Ð¹Ñ†ÑÐ».
+ []
+
+
+Underfull \hbox (badness 5802) in paragraph at lines 50--58
+\TU/TimesNewRoman(0)/m/n/12 Ð­Ð½ÑÑ…Ò¯Ò¯ Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€ Ð½ÑŒ Spring-Ð¸Ð¹Ð½ ÑÑƒÑƒÑ€ÑŒ Ð¾Ð¹Ð»Ð³Ð¾Ð»Ñ‚Ñ‚Ð¾Ð¹ Ð½Ð¸
+Ð¹Ñ†ÑÐ¶ Ð±Ð°Ð¹Ð³Ð°Ð° Ð±Ó©Ð³Ó©Ó©Ð´
+ []
+
+[73
+
+]
+File: images/architecture.png Graphic file (type bmp)
+<images/architecture.png>
+ [74]
+Underfull \hbox (badness 2401) in paragraph at lines 103--121
+[] []\TU/TimesNewRoman(0)/m/n/12 3.1[]-Ñ€ Ð·ÑƒÑ€Ð°Ð³Ñ‚ annotation-Ð´ ÑÑƒÑƒÑ€Ð¸Ð»ÑÐ°Ð½ DI frame
+work-Ð¸Ð¹Ð½ Ð´Ð°Ð²Ñ…Ð°Ñ€Ð³Ð°Ñ‚ Ð°Ñ€Ñ…Ð¸Ñ‚ÐµÐºÑ‚ÑƒÑ€Ñ‹Ð³
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 103--121
+\TU/TimesNewRoman(0)/m/n/12 Ð±Ð°Ð¹Ñ€Ð»Ð°Ð½Ð°. Annotation Ð´Ð°Ð²Ñ…Ð°Ñ€Ð³Ð° Ð½ÑŒ \TU/lmtt/m/n/12 @C
+omponent\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 @Autowired\TU/TimesNewRom
+an(0)/m/n/12 , \TU/lmtt/m/n/12 @Qualifier\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt
+/m/n/12 @Scope
+ []
+
+
+Underfull \hbox (badness 2012) in paragraph at lines 103--121
+\TU/TimesNewRoman(0)/m/n/12 Ð½ÑŒ \TU/lmtt/m/n/12 BeanCreationException\TU/TimesNe
+wRoman(0)/m/n/12 , \TU/lmtt/m/n/12 NoSuchBeanException\TU/TimesNewRoman(0)/m/n/
+12 , \TU/lmtt/m/n/12 CircularDependencyException
+ []
+
+[75]
+Underfull \hbox (badness 4120) in paragraph at lines 127--128
+[]\TU/TimesNewRoman(0)/m/n/12 Ð”Ð°Ñ€Ð°Ð°Ð³Ð¸Ð¹Ð½ ÑˆÐ°Ñ‚Ð°Ð½Ð´ singleton bean instance-Ò¯Ò¯Ð´Ð¸Ð¹Ð³ Ò¯
+Ò¯ÑÐ³ÑÐ¶, \TU/lmtt/m/n/12 DependencyInjector
+ []
+
+File: images/Activity Diagram.png Graphic file (type bmp)
+<images/Activity Diagram.png>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [76
+
+]
+Underfull \hbox (badness 2735) in paragraph at lines 150--161
+[]\TU/TimesNewRoman(0)/m/n/12 Ð‘Ò¯Ñ€Ñ‚Ð³ÑÐ»Ñ‚Ð¸Ð¹Ð½ Ð´Ð°Ñ€Ð°Ð° singleton bean-ÑƒÑƒÐ´ ÑƒÑ€ÑŒÐ´Ñ‡Ð¸Ð»Ð°Ð½ Ò¯Ò¯
+ÑÐ³ÑÐ³Ð´ÑÐ¶ dependency injection
+ []
+
+
+Underfull \hbox (badness 2961) in paragraph at lines 150--161
+\TU/TimesNewRoman(0)/m/n/12 Ð¸Ð»ÑÑ€ÑÑÐ½ Ñ‚Ð¾Ñ…Ð¸Ð¾Ð»Ð´Ð¾Ð»Ð´ \TU/lmtt/m/n/12 CircularDependen
+cyException \TU/TimesNewRoman(0)/m/n/12 ÑˆÐ¸Ð´ÑÐ³Ð´ÑÐ½Ñ. Ð¢Ð¾Ð¹Ñ€Ð¾Ð³ Ñ…Ð°Ð¼Ð°Ð°Ñ€Ð°Ð»
+ []
+
+
+Underfull \hbox (badness 3009) in paragraph at lines 150--161
+\TU/TimesNewRoman(0)/m/n/12 Ð±Ð°Ð¹Ñ…Ð³Ò¯Ð¹ Ð±Ð¾Ð» container Ð±ÑÐ»ÑÐ½ Ð±Ð¾Ð»Ð¶ Ñ…ÑÑ€ÑÐ³Ð»ÑÐ³Ñ‡ \TU/lmtt
+/m/n/12 getBean() \TU/TimesNewRoman(0)/m/n/12 Ð´ÑƒÑƒÐ´Ð°Ñ… Ð±Ð¾Ð»Ð¾Ð¼Ð¶Ñ‚Ð¾Ð¹ Ð±Ð¾Ð»Ð½Ð¾.
+ []
+
+[77] [78]
+Underfull \hbox (badness 2359) in paragraph at lines 165--166
+\TU/TimesNewRoman(0)/m/n/12 Ð¸Ð»ÑÑ€Ñ…Ð¸Ð¹Ð»Ð½Ñ. Ð­Ñ…Ð»ÑÑÐ´ Ñ…ÑÑ€ÑÐ³Ð»ÑÐ³Ñ‡ \TU/lmtt/m/n/12 Applic
+ationContext\TU/TimesNewRoman(0)/m/n/12 -Ð¸Ð¹Ð³ Ò¯Ò¯ÑÐ³ÑÐ¶, package scanning
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+[]\TU/TimesNewRoman(0)/m/n/12 Dependency injection Ñ…Ð¸Ð¹Ñ… ÑÐ²Ñ†Ð°Ð´ ÑˆÐ°Ð°Ñ€Ð´Ð»Ð°Ð³Ð°Ñ‚Ð°Ð¹ depe
+ndency-Ð³ \TU/lmtt/m/n/12 BeanRegistry\TU/TimesNewRoman(0)/m/n/12 -
+ []
+
+
+Underfull \hbox (badness 7667) in paragraph at lines 169--170
+\TU/TimesNewRoman(0)/m/n/12 ÑÑÑ Ñ…Ð°Ð¹Ð¶ Ð¾Ð»Ð½Ð¾. Ð¥ÑÑ€ÑÐ² dependency ÑˆÐ¸Ð¹Ð´Ð²ÑÑ€Ð»ÑÑ… Ò¯ÐµÐ´ Ñ‚Ð¾Ð¹Ñ€
+Ð¾Ð³ Ñ…Ð°Ð¼Ð°Ð°Ñ€Ð°Ð» Ð¸Ð»ÑÑ€Ð²ÑÐ»
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 169--170
+\TU/lmtt/m/n/12 CircularDependencyException\TU/TimesNewRoman(0)/m/n/12 , Ñ…Ð°Ñ€Ð¸Ð½ 
+bean Ò¯Ò¯ÑÐ³ÑÑ… ÑÐ²Ñ†Ð°Ð´ Ð°Ð»Ð´Ð°Ð° Ð³Ð°Ñ€Ð²Ð°Ð»
+ []
+
+File: images/sequence.png Graphic file (type bmp)

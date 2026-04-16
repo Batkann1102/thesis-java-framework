@@ -7,14 +7,25 @@ import mn.edu.num.annotation.Scope;
 import java.io.File;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ClassPathScanner {
 
     private final String basePackage;
+    private final List<String> excludePackages;
 
     public ClassPathScanner(String basePackage) {
+        this(basePackage, List.of());
+    }
+
+    /**
+     * @param basePackage     scan хийх root package
+     * @param excludePackages алгасах package-уудын жагсаалт
+     */
+    public ClassPathScanner(String basePackage, List<String> excludePackages) {
         this.basePackage = basePackage;
+        this.excludePackages = excludePackages;
     }
 
     public List<BeanDefinition> scan() {
@@ -38,7 +49,13 @@ public class ClassPathScanner {
 
         for (File file : files) {
             if (file.isDirectory()) {
-                scanDirectory(file, packageName + "." + file.getName(), definitions);
+                String subPackage = packageName + "." + file.getName();
+                // Exclude package-д багтаж байвал алгасна
+                if (isExcluded(subPackage)) {
+                    System.out.println("[Scanner] Алгасав: " + subPackage);
+                    continue;
+                }
+                scanDirectory(file, subPackage, definitions);
             } else if (file.getName().endsWith(".class")) {
                 String className = packageName + "."
                         + file.getName().replace(".class", "");
@@ -75,5 +92,17 @@ public class ClassPathScanner {
     private String decapitalize(String name) {
         if (name == null || name.isEmpty()) return name;
         return Character.toLowerCase(name.charAt(0)) + name.substring(1);
+    }
+
+    /**
+     * Тухайн package нь exclude жагсаалтад байгаа эсэхийг шалгана.
+     */
+    private boolean isExcluded(String packageName) {
+        for (String excluded : excludePackages) {
+            if (packageName.equals(excluded) || packageName.startsWith(excluded + ".")) {
+                return true;
+            }
+        }
+        return false;
     }
 }

@@ -1,0 +1,319 @@
+%----------------------------------------------------------------------------------------
+%   Доорх хэсгийг өөрчлөх шаардлагагүй
+%----------------------------------------------------------------------------------------
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[12pt,a4paper]{report}
+
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{textcomp}
+\setmainfont[Ligatures=TeX]{Times New Roman}
+\setsansfont{Arial}
+
+% \usepackage[utf8x]{inputenc}
+% \usepackage[mongolian]{babel}
+%\usepackage{natbib}
+\usepackage{geometry}
+%\usepackage{fancyheadings} fancyheadings is obsolete: replaced by fancyhdr. JL
+\usepackage{fancyhdr}
+\setlength{\headheight}{15pt}
+\usepackage{float}
+\usepackage{afterpage}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsbsy}
+\usepackage{dcolumn,array}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{ltablex}
+\usepackage{tocloft}
+\usepackage{dics}
+\usepackage{microtype}
+\usepackage{ragged2e}
+\usepackage{nomencl}
+\usepackage{upgreek}
+\newcommand{\argmin}{\mathop{\mathrm{arg\,min}}}
+\usepackage{mathtools}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tikz}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+\usepackage{xcolor}
+\usepackage{listings}
+\DeclarePairedDelimiter\abs{\lvert}{\rvert}%
+\makeatletter
+\setlength{\belowcaptionskip}{0.5pt}
+\usepackage{subfiles}
+\usepackage{url}
+\usepackage{xurl}
+\keepXColumns
+% \usepackage{minted}
+% \usepackage[utf8]{inputenc}
+% \setminted{
+%     fontsize=\small,
+%     breaklines=true,
+%     frame=single,
+%     numbers=left,
+%     style=friendly
+% }
+\renewcommand{\lstlistingname}{Код}
+\renewcommand{\lstlistlistingname}{\lstlistingname ын жагсаалт}
+
+\usepackage{color}
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.99,0.99,0.99}
+
+
+\lstdefinestyle{mystyle}{
+    basicstyle=\ttfamily\small,
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    columns=fullflexible,
+    captionpos=b,
+    keepspaces=true,
+    numbers=left,
+    numbersep=10pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,
+    tabsize=2,
+    postbreak=\mbox{\textcolor{codegray}{$\hookrightarrow$}\space}
+}
+ 
+\lstset{style=mystyle}
+
+\raggedbottom
+\emergencystretch=3em
+\tolerance=2000
+\hbadness=2000
+\hfuzz=1pt
+\Urlmuskip=0mu plus 1mu
+
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\newcommand{\codeword}[1]{\begingroup\small\ttfamily\path{#1}\endgroup}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\nouppercase{\leftmark}}
+\fancyhead[R]{}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+\makeatletter
+\renewcommand{\chaptermark}[1]{\markboth{\thechapter.\ #1}{}}
+\renewcommand{\sectionmark}[1]{}
+\makeatother
+
+\fancypagestyle{plain}{%
+    \fancyhf{}
+    \fancyfoot[C]{\thepage}
+    \renewcommand{\headrulewidth}{0pt}
+}
+
+\let\oldabs\abs
+\def\abs{\@ifstar{\oldabs}{\oldabs*}}
+\makenomenclature
+\begin{document}
+
+
+%----------------------------------------------------------------------------------------
+%   Өөрийн мэдээллээ оруулах хэсэг
+%----------------------------------------------------------------------------------------
+
+% Дипломийн ажлын сэдэв
+\title{Backend системд зориулсан annotation-д суурилсан Java framework-ийн загварчлал, хэрэгжүүлэлт}
+% Дипломын ажлын англи нэр
+\titleEng{Design and Implementation of an Annotation-Based Java Framework for Backend Systems
+}
+% Өөрийн овог нэрийг бүтнээр нь бичнэ
+\author{Гантулгын Батням}
+% Өөрийн овгийн эхний үсэг нэрээ бичнэ
+\authorShort{Г.Батням}
+% Удирдагчийн зэрэг цол овгийн эхний үсэг нэр
+\supervisor{Др. Т.Цэрэннадмид}
+% Хамтарсан удирдагчийн зэрэг цол овгийн эхний үсэг нэр
+\cosupervisor{Др. Т.Цэрэннадмид}
+
+% СиСи дугаар 
+\sisiId{22B1NUM5578}
+% Их сургуулийн нэр
+\university{МОНГОЛ УЛСЫН ИХ СУРГУУЛЬ}
+% Бүрэлдэхүүн сургуулийн нэр
+\faculty{МЭДЭЭЛЛИЙН ТЕХНОЛОГИ, ЭЛЕКТРОНИКИЙН СУРГУУЛЬ}
+% Тэнхимийн нэр
+\department{МЭДЭЭЛЭЛ, КОМПЬЮТЕРЫН УХААНЫ ТЭНХИМ}
+% Зэргийн нэр
+\degreeName{Бакалаврын судалгааны ажил}
+% Суралцаж буй хөтөлбөрийн нэр
+\programeName{Программ хангамж(D 061302)}
+% Хэвлэгдсэн газар
+\cityName{Улаанбаатар}
+% Хэвлэгдсэн огноо
+\gradyear{2026 оны 4 дугаар сар}
+
+
+%----------------------------------------------------------------------------------------
+%   Доорх хэсгийг өөрчлөх шаардлагагүй
+%----------------------------------------------------------------------------------------
+\include{main-pre}
+
+\clearpage
+\pagestyle{plain}
+\markboth{}{}
+\markright{}
+
+% Удиртгалыг оруулж ирэх ба intro.tex файлд удиртгалаа бичнэ
+\cleardoublepage
+\thispagestyle{plain}
+\addcontentsline{toc}{chapter}{Удиртгал}
+\begin{center}
+    \vspace*{-1.2\baselineskip}
+    {\huge\bfseries Удиртгал\par}
+\end{center}
+\vspace{0.5\baselineskip}
+\subfile{intro}
+
+%----------------------------------------------------------------------------------------
+%   Дипломын үндсэн хэсэг эндээс эхэлнэ
+%----------------------------------------------------------------------------------------
+%\addcontentsline{toc}{part}{БҮЛГҮҮД}
+\clearpage
+\markboth{}{}
+\markright{}
+\pagestyle{fancy}
+% Шинэ бүлэг
+\subfile{research.tex}
+\subfile{requirement.tex}
+\subfile{design_architecture.tex}
+\subfile{implementation}
+\subfile{summer.tex}
+
+\singlespace
+\clearpage
+\markboth{НОМ ЗҮЙ}{}
+\addcontentsline{toc}{part}{НОМ ЗҮЙ}
+\begin{thebibliography}{}
+
+    \bibitem{image1}
+    Inserting Images, Share LaTex,
+    \url{https://www.sharelatex.com/learn/Inserting_Images}
+
+    \bibitem{pharagraph1}
+    Paragraphs and new lines, Share LaTex,
+    \url{https://www.sharelatex.com/learn/Paragraphs_and_new_lines}
+
+    \bibitem{format1}
+    Bold, italics and underlining, Share LaTex,
+    \url{https://www.sharelatex.com/learn/Bold,_italics_and_underlining}
+
+    \bibitem{list}
+    Lists, Share LaTex,
+    \url{https://www.sharelatex.com/learn/Lists}
+
+    \bibitem{table}
+    Tables, Share LaTex,
+    \url{https://www.sharelatex.com/learn/Tables}
+
+    \bibitem{fowler2004injection}
+    Fowler, M. (2004).
+    \textit{Inversion of Control Containers and
+    the Dependency Injection Pattern}.
+    \url{https://martinfowler.com/articles/injection.html}
+
+    \bibitem{fowler2004ioc}
+    Fowler, M. (2005).
+    \textit{Inversion of Control}. Martin Fowler's Bliki.
+    \url{https://martinfowler.com/bliki/InversionOfControl.html}
+
+    \bibitem{spring2024ioc}
+    Spring Framework Documentation. (2024).
+    \textit{The IoC Container}.
+    \url{https://docs.spring.io/spring-framework/reference/core/beans.html}
+
+    \bibitem{spring2024annotation}
+    Spring Framework Documentation. (2024).
+    \textit{Annotation-based Container Configuration}.
+    \url{https://docs.spring.io/spring-framework/reference/core/beans/annotation-config.html}
+
+    \bibitem{spring2024xml}
+    Spring Framework Documentation. (2024).
+    \textit{XML-based Container Configuration}.
+    \url{https://docs.spring.io/spring-framework/reference/core/beans/basics.html}
+
+    \bibitem{spring2024java}
+    Spring Framework Documentation. (2024).
+    \textit{Java-based Container Configuration}.
+    \url{https://docs.spring.io/spring-framework/reference/core/beans/java.html}
+
+    \bibitem{spring2024beanfactory}
+    Spring Framework Documentation. (2024).
+    \textit{The BeanFactory API}.
+    \url{https://docs.spring.io/spring-framework/reference/core/beans/beanfactory.html}
+
+    \bibitem{oracle2024annotation}
+    Oracle. (2024).
+    \textit{Lesson: Annotations}.
+    The Java\texttrademark{} Tutorials.
+    \url{https://docs.oracle.com/javase/tutorial/java/annotations/}
+
+    \bibitem{oracle2024target}
+    Oracle. (2024).
+    \textit{Annotation Type Target}.
+    Java SE 17 API Documentation.
+    \url{https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/lang/annotation/Target.html}
+
+    \bibitem{oracle2024declaring}
+    Oracle. (2024).
+    \textit{Declaring an Annotation Type}.
+    The Java\texttrademark{} Tutorials.
+    \url{https://docs.oracle.com/javase/tutorial/java/annotations/declaring.html}
+
+    \bibitem{guice2024}
+    Google. (2024).
+    \textit{Google Guice: A lightweight dependency injection
+    framework for Java}. GitHub.
+    \url{https://github.com/google/guice/wiki/Motivation}
+
+    \bibitem{jakarta2024cdi}
+    Jakarta EE. (2024).
+    \textit{Jakarta Contexts and Dependency Injection 4.1}.
+    \url{https://jakarta.ee/specifications/cdi/4.1/}
+
+    \bibitem{maven2024}
+    Apache Software Foundation. (2024).
+    \textit{Maven -- Welcome to Apache Maven}.
+    \url{https://maven.apache.org/index.html}
+
+    \bibitem{jetbrains2024}
+    JetBrains. (2024).
+    \textit{IntelliJ IDEA: The Leading Java and Kotlin IDE}.
+    \url{https://www.jetbrains.com/idea/}
+
+    \bibitem{jetbrains2023survey}
+    JetBrains. (2023).
+    \textit{The State of Developer Ecosystem 2023: Java}.
+    JetBrains Developer Survey.
+    \url{https://www.jetbrains.com/lp/devecosystem-2023/java/}
+
+    \bibitem{gamma1994}
+    Gamma, E., Helm, R., Johnson, R., \& Vlissides, J. (1994).
+    \textit{Design Patterns: Elements of Reusable
+    Object-Oriented Software}. Addison-Wesley.
+
+    \bibitem{visualparadigm}
+    Visual Paradigm Online.
+    \url{https://online.visual-paradigm.com}
+
+\end{thebibliography}
+
+\subfile{code}
+\end{document}

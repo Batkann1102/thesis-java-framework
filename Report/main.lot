@@ -1,0 +1,20 @@
+\contentsline {table}{\numberline {1.1}{\ignorespaces Dependency Injection аргуудын харьцуулалт}}{14}{table.1.1}%
+\contentsline {table}{\numberline {1.2}{\ignorespaces Java хэлний түгээмэл meta-annotation-ууд тэдгээрийн үүрэг}}{17}{table.1.2}%
+\contentsline {table}{\numberline {1.3}{\ignorespaces \texttt {@Target} annotation-д ашиглагддаг \texttt {ElementType} болон тайлбарууд}}{20}{table.1.3}%
+\contentsline {table}{\numberline {1.4}{\ignorespaces Retention policy-ийн орчны ялгаа}}{21}{table.1.4}%
+\contentsline {table}{\numberline {1.5}{\ignorespaces Түгээмэл DI framework-үүдийн харьцуулалт}}{33}{table.1.5}%
+\contentsline {table}{\numberline {2.1}{\ignorespaces Framework-ийн функциональ шаардлага}}{48}{table.2.1}%
+\contentsline {table}{\numberline {2.2}{\ignorespaces Framework-ийн функциональ бус шаардлагууд}}{50}{table.2.2}%
+\contentsline {table}{\numberline {2.3}{\ignorespaces A1 ажлын шаардлагатай уялдсан байдал}}{52}{table.2.3}%
+\contentsline {table}{\numberline {2.4}{\ignorespaces Framework-д хэрэгжүүлэх custom annotation-уудын шаардлага}}{54}{table.2.4}%
+\contentsline {table}{\numberline {2.5}{\ignorespaces Framework хэрэгжүүлэх технологийн шаардлага}}{60}{table.2.5}%
+\contentsline {table}{\numberline {2.6}{\ignorespaces Багцуудын хоорондын хамаарал}}{64}{table.2.6}%
+\contentsline {table}{\numberline {2.7}{\ignorespaces \texttt {ApplicationContext} классын КҮХ карт}}{65}{table.2.7}%
+\contentsline {table}{\numberline {2.8}{\ignorespaces \texttt {BeanDefinition} классын КҮХ карт}}{65}{table.2.8}%
+\contentsline {table}{\numberline {2.9}{\ignorespaces \texttt {ClassPathScanner} классын КҮХ карт}}{66}{table.2.9}%
+\contentsline {table}{\numberline {2.10}{\ignorespaces \texttt {DependencyInjector} классын КҮХ карт}}{66}{table.2.10}%
+\contentsline {table}{\numberline {2.11}{\ignorespaces \texttt {ScopeType} төрлийн КҮХ карт}}{67}{table.2.11}%
+\contentsline {table}{\numberline {2.12}{\ignorespaces Container эхлүүлэх use case-ийн тодорхойлолт}}{69}{table.2.12}%
+\contentsline {table}{\numberline {2.13}{\ignorespaces Bean авах use case-ийн тодорхойлолт}}{70}{table.2.13}%
+\contentsline {table}{\numberline {3.1}{\ignorespaces A1 ажлын архитектурын давхаргатай уялдсан байдал}}{81}{table.3.1}%
+\contentsline {table}{\numberline {4.1}{\ignorespaces A1 ажлын хүрээнд ашигласан тестийн матриц}}{96}{table.4.1}%

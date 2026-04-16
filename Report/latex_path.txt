@@ -1,0 +1,2 @@
+C:\Users\Administrator\AppData\Local\Programs\MiKTeX\miktex\bin\x64\xelatex.exe
+C:\Users\Administrator\AppData\Local\Programs\MiKTeX\miktex\bin\x64\miktex-xetex.exe
