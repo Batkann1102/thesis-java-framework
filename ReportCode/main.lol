@@ -25,19 +25,26 @@
 \contentsline {lstlisting}{\numberline {1.25}Autowired ашигласан dependency injection жишээ}{43}{lstlisting.1.25}%
 \contentsline {lstlisting}{\numberline {1.26}Singleton scope ашигласан жишээ}{44}{lstlisting.1.26}%
 \contentsline {lstlisting}{\numberline {1.27}Prototype scope ашигласан жишээ}{44}{lstlisting.1.27}%
-\contentsline {lstlisting}{\numberline {2.1}Reflection ашиглан классыг динамикаар ачаалах жишээ}{54}{lstlisting.2.1}%
-\contentsline {lstlisting}{\numberline {2.2}Static ба dynamic object creation-ийн ялгаа}{55}{lstlisting.2.2}%
-\contentsline {lstlisting}{\numberline {4.1}Component annotation-ийн хэрэгжүүлэлт}{85}{lstlisting.4.1}%
-\contentsline {lstlisting}{\numberline {4.2}\texttt {@Autowired} annotation-ийн хэрэгжүүлэлт}{86}{lstlisting.4.2}%
-\contentsline {lstlisting}{\numberline {4.3}\texttt {@Qualifier} annotation-ийн хэрэгжүүлэлт}{86}{lstlisting.4.3}%
-\contentsline {lstlisting}{\numberline {4.4}\texttt {@Scope} annotation-ийн хэрэгжүүлэлт}{87}{lstlisting.4.4}%
-\contentsline {lstlisting}{\numberline {4.5}BeanCreationException классын хэрэгжүүлэлт}{88}{lstlisting.4.5}%
-\contentsline {lstlisting}{\numberline {4.6}NoSuchBeanException классын хэрэгжүүлэлт}{88}{lstlisting.4.6}%
-\contentsline {lstlisting}{\numberline {4.7}CircularDependencyException классын хэрэгжүүлэлт}{88}{lstlisting.4.7}%
-\contentsline {lstlisting}{\numberline {4.8}\texttt {ScopeType} enum классын хэрэгжүүлэлт}{89}{lstlisting.4.8}%
-\contentsline {lstlisting}{\numberline {4.9}\texttt {BeanDefinition} классын хэрэгжүүлэлт}{89}{lstlisting.4.9}%
-\contentsline {lstlisting}{\numberline {4.10}\texttt {BeanRegistry} классын хэрэгжүүлэлт}{90}{lstlisting.4.10}%
-\contentsline {lstlisting}{\numberline {4.11}\texttt {ApplicationContext} классын хэрэгжүүлэлт}{91}{lstlisting.4.11}%
-\contentsline {lstlisting}{\numberline {4.12}\texttt {ClassPathScanner} классын хэрэгжүүлэлт}{94}{lstlisting.4.12}%
-\contentsline {lstlisting}{\numberline {4.13}\texttt {DependencyInjector} классын хэрэгжүүлэлт}{95}{lstlisting.4.13}%
+\contentsline {lstlisting}{\numberline {2.1}Reflection ашиглан классыг динамикаар ачаалах жишээ}{56}{lstlisting.2.1}%
+\contentsline {lstlisting}{\numberline {2.2}Static ба dynamic object creation-ийн ялгаа}{57}{lstlisting.2.2}%
+\contentsline {lstlisting}{\numberline {4.1}Component annotation-ийн хэрэгжүүлэлт}{89}{lstlisting.4.1}%
+\contentsline {lstlisting}{\numberline {4.2}\texttt {@Autowired} annotation-ийн хэрэгжүүлэлт}{90}{lstlisting.4.2}%
+\contentsline {lstlisting}{\numberline {4.3}\texttt {@Qualifier} annotation-ийн хэрэгжүүлэлт}{90}{lstlisting.4.3}%
+\contentsline {lstlisting}{\numberline {4.4}\texttt {@Scope} annotation-ийн хэрэгжүүлэлт}{91}{lstlisting.4.4}%
+\contentsline {lstlisting}{\numberline {4.5}BeanCreationException классын хэрэгжүүлэлт}{92}{lstlisting.4.5}%
+\contentsline {lstlisting}{\numberline {4.6}NoSuchBeanException классын хэрэгжүүлэлт}{92}{lstlisting.4.6}%
+\contentsline {lstlisting}{\numberline {4.7}CircularDependencyException классын хэрэгжүүлэлт}{92}{lstlisting.4.7}%
+\contentsline {lstlisting}{\numberline {4.8}\texttt {ScopeType} enum классын хэрэгжүүлэлт}{93}{lstlisting.4.8}%
+\contentsline {lstlisting}{\numberline {4.9}\texttt {BeanDefinition} классын хэрэгжүүлэлт}{93}{lstlisting.4.9}%
+\contentsline {lstlisting}{\numberline {4.10}\texttt {BeanRegistry} классын хэрэгжүүлэлт}{94}{lstlisting.4.10}%
+\contentsline {lstlisting}{\numberline {4.11}\texttt {ApplicationContext} классын хэрэгжүүлэлт}{95}{lstlisting.4.11}%
+\contentsline {lstlisting}{\numberline {4.12}\texttt {ClassPathScanner} классын хэрэгжүүлэлт}{98}{lstlisting.4.12}%
+\contentsline {lstlisting}{\numberline {4.13}\texttt {DependencyInjector} классын хэрэгжүүлэлт}{99}{lstlisting.4.13}%
+\contentsline {lstlisting}{\numberline {A.1}Төслийн эхлэл цэг \texttt {Main.java}}{113}{lstlisting.A.1}%
+\contentsline {lstlisting}{\numberline {A.2}\texttt {ApplicationContext} классын одоогийн хэрэгжүүлэлт}{114}{lstlisting.A.2}%
+\contentsline {lstlisting}{\numberline {A.3}\texttt {ClassPathScanner} классын одоогийн хэрэгжүүлэлт}{118}{lstlisting.A.3}%
+\contentsline {lstlisting}{\numberline {A.4}\texttt {DependencyInjector} классын одоогийн хэрэгжүүлэлт}{120}{lstlisting.A.4}%
+\contentsline {lstlisting}{\numberline {A.5}\texttt {BeanRegistry} классын одоогийн хэрэгжүүлэлт}{122}{lstlisting.A.5}%
+\contentsline {lstlisting}{\numberline {A.6}A3 ажлын гол логик болох \texttt {DependencyTreeBuilder} классын хэрэгжүүлэлт}{123}{lstlisting.A.6}%
+\contentsline {lstlisting}{\numberline {A.7}A3 ажлын dependency tree integration тестийн хэрэгжүүлэлт}{126}{lstlisting.A.7}%
 \providecommand \tocbasic@end@toc@file {}\tocbasic@end@toc@file 

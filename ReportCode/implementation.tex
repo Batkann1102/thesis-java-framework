@@ -557,6 +557,39 @@ public class DependencyInjector {
 \end{lstlisting}
 
 %-------------------------------------------------------------
+\section{A3 dependency tree болон visualization-ийн хэрэгжүүлэлт}
+%-------------------------------------------------------------
+
+A3 ажлын хүрээнд framework-ийн дотоод dependency бүтэц, bean хоорондын холбоос, root node, cycle эрсдэлийг илүү ойлгомжтой тайлбарлах зорилгоор dependency tree subsystem шинээр нэмж хэрэгжүүлсэн. Энэхүү subsystem нь \texttt{DependencyNode}, \texttt{DependencyTreeBuilder}, \texttt{DependencyTreeExporter}, \texttt{DependencyTreeHtmlExporter} гэсэн дөрвөн үндсэн бүрэлдэхүүнтэй бөгөөд эдгээр нь \texttt{ApplicationContext}-ийн startup урсгалтай шууд уялдан ажилладаг. Иймээс A3 хэрэгжүүлэлт нь dependency injection-ийн үндсэн логикийг өөрчлөхгүйгээр, түүний үр дүнг graph representation болгон боловсруулж хөгжүүлэгчид ойлгомжтой хэлбэрээр гаргах шинэ capability гэж үзэж болно.
+
+\subsection{\texttt{DependencyNode} ба \texttt{DependencyTreeBuilder}}
+
+\texttt{DependencyNode} нь dependency tree-ийн нэг node-г илэрхийлдэг өгөгдлийн бүтэц юм. Энэ бүтэц нь тухайн bean-ийн нэр, класс төрөл, scope болон хамаарах dependency node-уудын жагсаалтыг агуулна. Харин \texttt{DependencyTreeBuilder} нь \texttt{BeanRegistry}-д байгаа бүх \texttt{BeanDefinition}-оос nodeMap үүсгэж, reflection ашиглан \texttt{@Autowired} field бүрийг шалган dependency edge байгуулах үүрэгтэй. Үүний үр дүнд startup-ийн дараа container доторх bean-үүдийн хамаарлыг graph хэлбэрээр дахин ашиглах боломжтой болдог.
+
+Мөн \texttt{DependencyTreeBuilder.detectCircularDependencies()} нь \texttt{visited} болон \texttt{recursionStack} гэсэн хоёр туслах бүтэц ашигласан DFS алгоритмаар dependency cycle илрүүлнэ. Энэ нь runtime үед dependency inject хийх үеийн fail-fast шалгалтыг graph analysis түвшинд давхар баталгаажуулж, cycle илэрсэн тохиолдолд \texttt{CircularDependencyException} шидэх логиктой.
+
+\subsection{Console, JSON, HTML exporter-ийн хэрэгжүүлэлт}
+
+Dependency tree үүссэний дараа түүнийг хэд хэдэн representation-аар гаргах exporter-ууд хэрэгжсэн. \texttt{printTree()} метод нь root node-уудаас эхлэн console-д шаталсан мод хэлбэрээр dependency бүтэц хэвлэнэ. \texttt{DependencyTreeExporter.toJson()} нь dependency tree-г machine-readable JSON бүтэц болгон гаргаж, туршилт болон автомат шалгалтад ашиглах боломж бүрдүүлдэг.
+
+Үүнээс гадна \texttt{DependencyTreeHtmlExporter} нь JDK стандарт сан ашиглан standalone HTML dashboard үүсгэж browser-д автоматаар нээдэг болсон. Энэ dashboard дотор dependency tree-г интерактив байдлаар харах, object/bean нэрээр хайх, node сонгоход scope, type, dependencies болон reverse usage мэдээллийг харах, search result-ийг highlight хийх зэрэг боломжууд хэрэгжсэн. Ингэснээр framework-ийн dependency structure нь зөвхөн лог файл эсвэл текстэн тайлбар хэлбэрээр бус, харин хөгжүүлэгчид бодитоор харж шинжлэх UI хэлбэрээр илэрхийлэгдэж байна.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.92\textwidth]{images/DependencyTreeHtml.png}
+    \caption{A3 ажлын хүрээнд хэрэгжүүлсэн dependency tree HTML dashboard}
+    \label{fig:a3-dependency-html}
+\end{figure}
+
+Зураг~\ref{fig:a3-dependency-html}-т dependency tree HTML dashboard-ийн жишээ дэлгэцийг харуулж байна. Зүүн талд bean-үүдийн dependency мод бүтэц шаталсан хэлбэрээр, дээд хэсэгт bean-ийн тоон summary болон search toolbar, баруун талд сонгосон bean-ийн дэлгэрэнгүй мэдээлэл байрлаж байгаа нь framework-ийн dependency бүтэц хөгжүүлэгчид илүү ойлгомжтой, оношлоход хялбар байдлаар харагдаж байгааг илэрхийлнэ. Мөн энэ dashboard нь гуравдагч талын сан ашиглаагүй, зөвхөн өөрийн exporter ба vanilla HTML/CSS/JavaScript-аар хэрэгжсэн нь технологийн анхны шаардлагатай бүрэн нийцэж байна.
+
+\subsection{\texttt{ApplicationContext}, \texttt{@EnableIoC} болон startup integration}
+
+A3 ажлын өөр нэг чухал шинэчлэлт нь dependency tree subsystem-ийг framework-ийн startup lifecycle-тэй уялдуулсан явдал юм. \texttt{ApplicationContext} startup үед scanner-аар bean-үүдийг илрүүлж, registry-д бүртгэж, singleton preload болон injection хийсний дараа \texttt{treeBuilder.buildTree()} дуудаж dependency tree-г автоматаар үүсгэнэ. Дараа нь \texttt{getTreeBuilder()} аргаар tree-г хэрэглэх боломжтой болсон.
+
+Мөн Spring Boot-той төстэй startup туршлага бий болгохын тулд \texttt{@EnableIoC} annotation болон \texttt{ApplicationContext.run(Class<?>)} static method нэмж хэрэгжүүлсэн. \texttt{@EnableIoC(scanPackages, excludePackages, visualize)} тохиргоогоор scan root package, exclude хийх package болон HTML visualization-г startup үед автоматаар асаах боломжтой болсон. \texttt{visualize = true} тохиолдолд dependency tree HTML файл шууд үүсэж browser-д нээгдэнэ. Үүний үр дүнд framework-ийн ашиглалтын хэв маяг нь ``package нэр гараар дамжуулах'' түвшнээс ``annotation-д суурилсан startup configuration'' түвшинд хөгжсөн гэж үзэж болно.
+
+%-------------------------------------------------------------
 \section{Туршилт}
 %-------------------------------------------------------------
 
@@ -637,12 +670,45 @@ JUnit~5 тестийн орчинд баталгаажуулав. A1 ажлын 
 бууруулах, өөрчлөлтийн нөлөөг хурдан илрүүлэх, дараагийн A2--A4 ажлуудын
 суурь чанарын хамгаалалтыг бүрдүүлэх боломжтой болсон.
 
+\subsection{A3 ажлын тестийн өргөтгөл ба өмнөхтэй харьцуулалт}
+
+A3 ажлын хүрээнд туршилтын санг dependency tree subsystem, startup annotation integration, package auto-detect behavior, HTML exporter-ийн interactive hook зэрэг шинэ урсгалуудаар өргөтгөсөн. Ингэснээр өмнөх A1 ажлын 47 тестийн тохиолдлоос гадна dependency tree үүсгэлт, JSON export, HTML export, \texttt{@EnableIoC} behavior, \texttt{detectCallerBasePackage()} логик, visualization integration зэрэг шинэ нөхцлүүдийг шалгах тестүүд нэмэгдсэн. Сүүлийн байдлаар framework-ийн нийт тестийн тоо 66 болж өссөн бөгөөд энэ нь A3 ажил чанарын баталгаажуулалттайгаар хэрэгжсэнийг илтгэнэ.
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{A3 ажлын хүрээнд нэмэгдсэн туршилтын бүтэц}
+\label{tab:a3-test-matrix}
+\renewcommand{\arraystretch}{1.25}
+\begin{tabularx}{\textwidth}{|L{0.26\textwidth}|L{0.13\textwidth}|L{0.10\textwidth}|Y|}
+\hline
+\textbf{Тест класс} & \textbf{Түвшин} & \textbf{Тестийн тоо} & \textbf{Шалгасан үндсэн зан авир} \\ \hline
+\codeword{DependencyTreeIntegrationTest} & Integration & 6 & Dependency node count, dependency холбоос, DFS cycle detect, console tree print, JSON export, HTML exporter-ийн search hook-уудыг шалгасан. \\ \hline
+\codeword{EnableIoCIntegrationTest} & Integration & 6 & \texttt{run(Class)}, \texttt{scanPackages}, \texttt{excludePackages}, annotation runtime configuration, inject ба tree integration-ийг шалгасан. \\ \hline
+\codeword{AutoDetectPackageIntegrationTest} & Integration & 4 & \texttt{ApplicationContext()} ба explicit package constructor-ийн ялгаа, caller package auto-detect behavior-ийг шалгасан. \\ \hline
+\codeword{DetectCallerBasePackageTest} & Unit & 3 & Private \texttt{detectCallerBasePackage()} логик, package format, stack trace skip behavior-ийг reflection-оор баталгаажуулсан. \\ \hline
+\textbf{A3-аар нэмэгдсэн нийт} & -- & \textbf{19} & Dependency tree болон declarative startup behavior-ийн шинэ урсгалуудыг хамарсан. \\ \hline
+\end{tabularx}
+\end{table}
+
+Хүснэгт~\ref{tab:a3-test-matrix}-т A3 ажлын хүрээнд шинээр нэмэгдсэн тестүүдийг нэгтгэн харуулав. Эдгээр тестүүд нь dependency injection-ийн үндсэн логикийг давтах бус, харин tree analysis, startup configuration, HTML visualization зэрэг шинэ capability-уудыг тусгайлан баталгаажуулж байгаа нь A3 ажлын онцлог юм.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.82\textwidth]{images/TestUpdate.png}
+    \caption{A1-ээс A3 хүртэлх тестийн хамралтын өсөлтийн харьцуулалт}
+    \label{fig:a3-test-update}
+\end{figure}
+
+Зураг~\ref{fig:a3-test-update}-т өмнөх болон одоогийн тестийн хамралтын өөрчлөлтийг харьцуулан үзүүлэв. Өмнөх үе шатанд framework-ийн үндсэн startup, lookup, inject, scope, qualifier, exception урсгалууд баталгаажсан байсан бол A3 ажлын дараа dependency tree generation, HTML visualization, startup annotation integration, package auto-detect зэрэг шинэ capability-ууд туршилтын санд орж, нийт тестийн тоо 66 болж өссөн. Энэ нь dependency tree ажлыг зөвхөн UI нэмэлт биш, харин архитектур--шаардлага--туршилтын уялдаа бүхий бүрэн feature болон хөгжсөнийг нотолж байна.
+
 \subsection{\texttt{mvn test} гүйцэтгэлийн баталгаа}
 
 Төслийн үндсэн директорт \codeword{mvn test} командыг ажиллуулж шалгахад
-framework-ийн тестийн сан амжилттай гүйцэтгэсэн. Үүний үр дүнд нийт 47
+framework-ийн тестийн сан амжилттай гүйцэтгэсэн. Сүүлийн байдлаар нийт 66
 тест ажиллаж, \codeword{0 failures}, \codeword{0 errors}, \codeword{0 skipped}
-байдлаар build success болсон. Энэ нь A1 ажлын тайлбар зөвхөн кодын
+байдлаар build success болсон. Энэ нь A3 ажлын тайлбар зөвхөн кодын
 түвшний дүгнэлт бус, бодит build ба тестийн гүйцэтгэлийн үр дүнд
 тулгуурлаж байгааг харуулна.
 
@@ -660,10 +726,13 @@ framework-ийн туршилтын загвар болгон хэрэгжүүл
 Хэрэгжүүлэлтийн гол онцлог нь зөвхөн Java~SE стандарт сангийн
 Reflection API болон annotation inspection механизмыг ашигласнаар
 framework-ийн дотоод ажиллагааг гуравдагч талын сангаас бүрэн
-хамааралгүй байдлаар харуулсан явдал юм. Мөн A1 сайжруулалтын ажлын
-үр дүнд fail-fast exception-уудын мэдээллийн чанар сайжирч,
-\texttt{unit} болон \texttt{integration} түвшний нийт 10 тест класс,
-47 тестийн тохиолдлоор framework-ийн гол болон захын урсгалуудыг
+хамааралгүй байдлаар харуулсан явдал юм. Мөн A1 сайжруулалтын дараах
+A3 ажлын хүрээнд dependency tree, DFS cycle detection, JSON export,
+HTML dashboard visualization, \texttt{@EnableIoC}-д суурилсан startup
+integration зэрэг шинэ боломжууд нэмж хэрэгжсэн. Үүний үр дүнд
+\texttt{unit} болон \texttt{integration} түвшний нийт 14 тест класс,
+66 тестийн тохиолдлоор framework-ийн гол болон өргөтгөсөн урсгалуудыг
 баталгаажууллаа. Ингэснээр энэхүү хэрэгжүүлэлт нь зөвхөн ажилладаг
-туршилтын загвар бус, харин архитектур, шаардлага, туршилтын нотолгоо
-хоорондоо уялдсан чанарын баталгаатай хэрэгжүүлэлт болж байна.
+туршилтын загвар бус, харин архитектур, шаардлага, dependency graph
+observability, туршилтын нотолгоо хоорондоо уялдсан чанарын баталгаатай
+framework хэрэгжүүлэлт болж байна.

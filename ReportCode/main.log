@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.4.17)  17 APR 2026 04:41
+This is XeTeX, Version 3.141592653-2.6-0.999997 (MiKTeX 25.12) (preloaded format=xelatex 2026.4.17)  17 APR 2026 09:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1545,15 +1545,15 @@ Package microtype Info: Loading generic protrusion settings for font family
 ]
 Package tocbasic Info: character protrusion at lol deactivated on input line 45
 .
- (main.lol)
+ (main.lol [6
+
+
+
+])
 \tf@lol=\write9
 \openout9 = `main.lol'.
 
- [6
 
-
-
-]
 [7]) (intro.tex
 Underfull \hbox (badness 4479) in paragraph at lines 4--5
 \TU/TimesNewRoman(0)/m/n/12 дэлхий даяар хамгийн өргөн хэрэглэгддэг backend fra
@@ -1892,16 +1892,16 @@ Underfull \hbox (badness 4805) in paragraph at lines 635--636
 ing-ийн бүх боломжийг
  []
 
-[44]
+[44] [45]
 File: images/framework-flow.png Graphic file (type bmp)
 <images/framework-flow.png>
 
-Underfull \hbox (badness 4205) in paragraph at lines 656--657
+Underfull \hbox (badness 4205) in paragraph at lines 664--665
 []\TU/TimesNewRoman(0)/m/n/12 Зураг []1.12[]-т хэрэгжүүлэх framework-ийн ерөнхи
 й урсгал, үндсэн бүрэлдэхүүн
  []
 
-) (requirement.tex [45] [46]
+) (requirement.tex [46]
 БҮЛЭГ2.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
@@ -1974,282 +1974,288 @@ Underfull \hbox (badness 2012) in paragraph at lines 96--97
 бус, харин шаардлагын
  []
 
-[51]
-Underfull \hbox (badness 10000) in paragraph at lines 129--129
+[51] [52] [53]
+Underfull \hbox (badness 10000) in paragraph at lines 127--128
+[]\TU/TimesNewRoman(0)/m/n/12 Энэхүү ажлын үр дүнд дараах өргөтгөсөн шаардлагуу
+дыг тайланд тусгах
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 166--166
 []|\TU/TimesNewRoman(0)/m/n/12 Тухайн классыг container-т bean
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 130--130
+Underfull \hbox (badness 10000) in paragraph at lines 167--167
 []|\TU/TimesNewRoman(0)/m/n/12 Dependency-г автоматаар inject
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 131--131
+Underfull \hbox (badness 10000) in paragraph at lines 168--168
 []|\TU/TimesNewRoman(0)/m/n/12 FIELD, PA-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 []|\TU/TimesNewRoman(0)/m/n/12 Bean-ийн амьдралын мөчлөгийг
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 132--132
+Underfull \hbox (badness 10000) in paragraph at lines 169--169
 \TU/lmtt/m/n/12 singleton \TU/TimesNewRoman(0)/m/n/12 болон \TU/lmtt/m/n/12 pro
 totype
  []
 
 
-Overfull \hbox (1.6299pt too wide) in paragraph at lines 126--134
+Overfull \hbox (1.6299pt too wide) in paragraph at lines 163--171
  [][] 
  []
 
-
-Underfull \hbox (badness 3503) in paragraph at lines 140--141
+[54]
+Underfull \hbox (badness 3503) in paragraph at lines 177--178
 \TU/TimesNewRoman(0)/m/n/12 заавал \TU/lmtt/m/n/12 RUNTIME \TU/TimesNewRoman(0)
 /m/n/12 түвшинд хадгалагдаж, reflection ашиглан унших боломжтой байх
  []
 
-[52]
-Underfull \hbox (badness 3746) in paragraph at lines 159--160
+[55]
+Underfull \hbox (badness 3746) in paragraph at lines 196--197
 \TU/TimesNewRoman(0)/m/n/12 Framework нь ерөнхий зориулалттай байх ёстой. Өөрөө
 р хэлбэл framework-ийг
  []
 
 
-Underfull \hbox (badness 7468) in paragraph at lines 159--160
+Underfull \hbox (badness 7468) in paragraph at lines 196--197
 \TU/TimesNewRoman(0)/m/n/12 өргөжүүлэхийг framework урьдчилан мэдэх боломжгүй. 
 Иймээс framework нь
  []
 
-[53]
-Underfull \hbox (badness 2689) in paragraph at lines 177--178
+
+Underfull \hbox (badness 2689) in paragraph at lines 214--215
 \TU/TimesNewRoman(0)/m/n/12 байдагт оршино. Программ compile хийгдэж \TU/lmtt/m
 /n/12 .class \TU/TimesNewRoman(0)/m/n/12 файл үүссэний дараа JVM
  []
 
 
-Underfull \hbox (badness 3635) in paragraph at lines 177--178
+Underfull \hbox (badness 3635) in paragraph at lines 214--215
 \TU/TimesNewRoman(0)/m/n/12 дээр ажиллах үед framework annotation-уудыг уншиж, 
 dependency-үүдийг шалгаж,
  []
 
-[54] [55]
-Underfull \hbox (badness 2617) in paragraph at lines 215--216
+[56] [57]
+Underfull \hbox (badness 2617) in paragraph at lines 252--253
 []\TU/TimesNewRoman(0)/b/n/12 Dependency injection \TU/TimesNewRoman(0)/m/n/12 
 – \TU/lmtt/m/n/12 @Autowired \TU/TimesNewRoman(0)/m/n/12 annotation-той талбар 
 бүрийн хамаарлыг
  []
 
-[56] [57]
-Underfull \hbox (badness 10000) in paragraph at lines 263--263
+[58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 300--300
 []|\TU/TimesNewRoman(0)/b/n/12 Хэрэгсэл /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--264
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
 []|\TU/TimesNewRoman(0)/m/n/12 Программчлалын
  []
 
 
-Underfull \hbox (badness 2012) in paragraph at lines 264--264
+Underfull \hbox (badness 2012) in paragraph at lines 301--301
 []|\TU/TimesNewRoman(0)/m/n/12 Annotation, Reflection, class load-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 264--264
+Underfull \hbox (badness 10000) in paragraph at lines 301--301
 \TU/TimesNewRoman(0)/m/n/12 ing зэрэг механизмыг стандарт
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/12 Apache Maven
  []
 
 
-Underfull \hbox (badness 7168) in paragraph at lines 265--265
+Underfull \hbox (badness 7168) in paragraph at lines 302--302
 []|\TU/TimesNewRoman(0)/m/n/12 Төслийн бүтэц, compile, depen-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 265--265
+Underfull \hbox (badness 10000) in paragraph at lines 302--302
 \TU/TimesNewRoman(0)/m/n/12 dency болон test-ийг удирдахад
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 []|\TU/TimesNewRoman(0)/m/n/12 IntelliJ IDEA
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--266
+Underfull \hbox (badness 10000) in paragraph at lines 303--303
 \TU/TimesNewRoman(0)/m/n/12 Community Edi-
  []
 
 
-Underfull \hbox (badness 2181) in paragraph at lines 266--266
+Underfull \hbox (badness 2181) in paragraph at lines 303--303
 []|\TU/TimesNewRoman(0)/m/n/12 Reflection-д суурилсан кодын de-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []|\TU/TimesNewRoman(0)/m/n/12 OpenJDK 17 /
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 268--268
+Underfull \hbox (badness 10000) in paragraph at lines 305--305
 []|\TU/TimesNewRoman(0)/m/n/12 Java 17 орчныг тогтвортой
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 269--269
+Underfull \hbox (badness 10000) in paragraph at lines 306--306
 []|\TU/TimesNewRoman(0)/m/n/12 Зөвхөн JDK стандарт сан
  []
 
-[58]
-Underfull \hbox (badness 3386) in paragraph at lines 275--276
+[60]
+Underfull \hbox (badness 3386) in paragraph at lines 312--313
 \TU/TimesNewRoman(0)/m/n/12 Java 17 нь урт хугацааны дэмжлэгтэй (LTS) хувилбар 
 бөгөөд орчин үеийн Java
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 275--276
+Underfull \hbox (badness 4024) in paragraph at lines 312--313
 \TU/TimesNewRoman(0)/m/n/12 module system зэрэг энэхүү судалгааны ажилд шаардла
 гатай боломжуудыг бүрэн
  []
 
-[59]
-Underfull \hbox (badness 5446) in paragraph at lines 289--290
+[61]
+Underfull \hbox (badness 5446) in paragraph at lines 326--327
 \TU/TimesNewRoman(0)/m/n/12 Ийнхүү framework-ийн технологийн орчныг сонгохдоо д
 араах гурван шалгуурыг
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 296--297
+Underfull \hbox (badness 10000) in paragraph at lines 333--334
 \TU/TimesNewRoman(0)/m/n/12 зохиомж, модулийн хуваарилалт, container-ийн дотоод
  урсгалыг илүү оновчтой
  []
 
-[60] [61]
-Underfull \hbox (badness 3907) in paragraph at lines 353--360
+[62] [63]
+Underfull \hbox (badness 3907) in paragraph at lines 390--397
 \TU/TimesNewRoman(0)/m/n/12 Том хэмжээний загварыг илүү тоймтой, ойлгомжтой бол
 гох, системийн бүтцийн
  []
 
 
-Underfull \hbox (badness 3417) in paragraph at lines 353--360
+Underfull \hbox (badness 3417) in paragraph at lines 390--397
 \TU/TimesNewRoman(0)/m/n/12 өндөр хийсвэрлэлийн түвшний тайлбар өгөх зорилготой
 . Энэхүү framework-ийн
  []
 
-[62]
-Underfull \hbox (badness 10000) in paragraph at lines 503--510
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 540--547
 []\TU/lmtt/b/n/12 container \TU/TimesNewRoman(0)/b/n/12 багц \TU/TimesNewRoman(
 0)/m/n/12 нь framework-ийн цөм бүрэлдэхүүн хэсгүүдийг агуулна.
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--515
+Underfull \hbox (badness 10000) in paragraph at lines 548--552
 []\TU/lmtt/b/n/12 exception \TU/TimesNewRoman(0)/b/n/12 багц \TU/TimesNewRoman(
 0)/m/n/12 нь framework-ийн \TU/TimesNewRoman(0)/m/it/12 fail-fast \TU/TimesNewR
 oman(0)/m/n/12 зарчмыг хэрэгжүүлэх гурван
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 511--515
+Underfull \hbox (badness 10000) in paragraph at lines 548--552
 \TU/TimesNewRoman(0)/m/n/12 тусгай exception агуулна: \TU/lmtt/m/n/12 BeanCreat
 ionException\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 NoSuchBeanException\T
 U/TimesNewRoman(0)/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 4181) in paragraph at lines 516--520
+Underfull \hbox (badness 4181) in paragraph at lines 553--557
 []\TU/lmtt/b/n/12 app \TU/TimesNewRoman(0)/b/n/12 багц \TU/TimesNewRoman(0)/m/n
 /12 нь framework-ийг ашиглах жишээ хэрэглэгчийн классуудыг агуулах
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 530--530
+Underfull \hbox (badness 10000) in paragraph at lines 567--567
 []|\TU/TimesNewRoman(0)/b/n/12 Хамааралтай
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 534--534
+Underfull \hbox (badness 10000) in paragraph at lines 571--571
 []|\TU/lmtt/m/n/12 BeanDefinition \TU/TimesNewRoman(0)/m/n/12 объект үүсгэж
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 542--542
+Underfull \hbox (badness 10000) in paragraph at lines 579--579
 []|\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 үүсгэж
  []
 
-[63]
-Underfull \hbox (badness 10000) in paragraph at lines 559--559
+[65]
+Underfull \hbox (badness 10000) in paragraph at lines 596--596
 []|\TU/TimesNewRoman(0)/m/n/12 Dependency injection үйл явцыг
  []
 
-[64]
-Underfull \hbox (badness 10000) in paragraph at lines 576--576
+[66]
+Underfull \hbox (badness 10000) in paragraph at lines 613--613
 []|\TU/TimesNewRoman(0)/m/n/12 Bean үүсгэхэд шаардлагатай мета
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 577--577
+Underfull \hbox (badness 10000) in paragraph at lines 614--614
 []|\TU/TimesNewRoman(0)/m/n/12 Container-д бүртгэгдсэн bean-ийн
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 591--591
+Underfull \hbox (badness 10000) in paragraph at lines 628--628
 []|\TU/lmtt/m/n/12 @Component \TU/TimesNewRoman(0)/m/n/12 зэрэг annotation бүхи
 й
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 592--592
+Underfull \hbox (badness 10000) in paragraph at lines 629--629
 []|\TU/TimesNewRoman(0)/m/n/12 Component class-уудын мэдээллийг
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 593--593
+Underfull \hbox (badness 10000) in paragraph at lines 630--630
 []|\TU/TimesNewRoman(0)/m/n/12 Scan хийх логикийг төвлөрүүлэн
  []
 
-[65]
-Underfull \hbox (badness 10000) in paragraph at lines 609--609
+[67]
+Underfull \hbox (badness 10000) in paragraph at lines 646--646
 []|\TU/TimesNewRoman(0)/m/n/12 Field эсвэл constructor injection
  []
 
 
-Underfull \hbox (badness 8038) in paragraph at lines 623--623
+Underfull \hbox (badness 8038) in paragraph at lines 660--660
 []|\TU/lmtt/m/n/12 SINGLETON \TU/TimesNewRoman(0)/m/n/12 болон \TU/lmtt/m/n/12 
 PROTOTYPE \TU/TimesNewRoman(0)/m/n/12 утгыг
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 624--624
+Underfull \hbox (badness 10000) in paragraph at lines 661--661
 []|\TU/TimesNewRoman(0)/m/n/12 Bean үүсгэх болон дахин ашиглах
  []
 
-[66]
+[68]
 File: images/class_gm.png Graphic file (type bmp)
 <images/class_gm.png>
 
-Underfull \hbox (badness 5533) in paragraph at lines 638--645
+Underfull \hbox (badness 5533) in paragraph at lines 675--682
 \TU/lmtt/m/n/12 DependencyInjector\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12
  ScopeType \TU/TimesNewRoman(0)/m/n/12 гэсэн зургаан үндсэн бүрэлдэхүүн хэсэг б
 олон
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--655
+Underfull \hbox (badness 10000) in paragraph at lines 683--692
 []\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 нь framework-и
 йн төв класс бөгөөд \TU/lmtt/m/n/12 beanDefinitions\TU/TimesNewRoman(0)/m/n/12 
 ,
  []
 
 
-Underfull \hbox (badness 4024) in paragraph at lines 646--655
+Underfull \hbox (badness 4024) in paragraph at lines 683--692
 \TU/lmtt/m/n/12 singletonObjects\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 s
 canner\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 beanFactory\TU/TimesNewRoma
 n(0)/m/n/12 , \TU/lmtt/m/n/12 injector \TU/TimesNewRoman(0)/m/n/12 гэсэн таван 
@@ -2257,21 +2263,21 @@ n(0)/m/n/12 , \TU/lmtt/m/n/12 injector \TU/TimesNewRoman(0)/m/n/12 гэсэн т
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 646--655
+Underfull \hbox (badness 10000) in paragraph at lines 683--692
 \TU/TimesNewRoman(0)/m/it/12 uses \TU/TimesNewRoman(0)/m/n/12 харилцаагаар ашиг
 лах бөгөөд \TU/lmtt/m/n/12 ClassPathScanner\TU/TimesNewRoman(0)/m/n/12 -тэй \TU
 /TimesNewRoman(0)/m/it/12 manages \TU/TimesNewRoman(0)/m/n/12 харилцаагаар
  []
 
-[67]
-Underfull \hbox (badness 5741) in paragraph at lines 656--664
+[69]
+Underfull \hbox (badness 5741) in paragraph at lines 693--701
 []\TU/lmtt/m/n/12 ClassPathScanner \TU/TimesNewRoman(0)/m/n/12 нь \TU/lmtt/m/n/
 12 basePackage \TU/TimesNewRoman(0)/m/n/12 талбартай бөгөөд \TU/lmtt/m/n/12 sca
 n() \TU/TimesNewRoman(0)/m/n/12 аргаар илэрсэн
  []
 
 
-Underfull \hbox (badness 3407) in paragraph at lines 665--676
+Underfull \hbox (badness 3407) in paragraph at lines 702--713
 []\TU/lmtt/m/n/12 BeanDefinition \TU/TimesNewRoman(0)/m/n/12 нь bean-ийн мета м
 эдээллийг хадгалах \TU/lmtt/m/n/12 beanName\TU/TimesNewRoman(0)/m/n/12 , \TU/lm
 tt/m/n/12 beanClass\TU/TimesNewRoman(0)/m/n/12 ,
@@ -2279,35 +2285,35 @@ tt/m/n/12 beanClass\TU/TimesNewRoman(0)/m/n/12 ,
 
 File: images/use_case1.png Graphic file (type bmp)
 <images/use_case1.png>
-[68]
-Underfull \hbox (badness 2065) in paragraph at lines 702--703
+[70]
+Underfull \hbox (badness 2065) in paragraph at lines 739--740
 [] []\TU/TimesNewRoman(0)/m/n/12 2.3[]-р зурагт хөгжүүлэгч болон JVM actor - уу
 дын ажлын явцын диаграммыг
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 717--717
+Underfull \hbox (badness 10000) in paragraph at lines 754--754
 []|\TU/TimesNewRoman(0)/m/n/12 Урьдчилсан
  []
 
 
-Underfull \hbox (badness 6526) in paragraph at lines 738--738
+Underfull \hbox (badness 6526) in paragraph at lines 775--775
 []|\TU/TimesNewRoman(0)/m/n/12 Хөгжүүлэгч container-оос шаардлагатай bean-ийг н
 эрээр
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 740--740
+Underfull \hbox (badness 10000) in paragraph at lines 777--777
 []|\TU/TimesNewRoman(0)/m/n/12 Урьдчилсан
  []
 
-[69]) (design_architecture.tex
-Underfull \hbox (badness 3780) in paragraph at lines 752--1
+[71]) (design_architecture.tex
+Underfull \hbox (badness 3780) in paragraph at lines 789--1
 []\TU/TimesNewRoman(0)/m/n/12 Энэхүү бүлэгт framework-ийн шаардлагыг тодорхойло
 в. Үүнд framework-ийн
  []
 
-[70]
+[72]
 БҮЛЭГ3.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
@@ -2320,7 +2326,7 @@ Underfull \hbox (badness 2401) in paragraph at lines 11--12
 гүүдийн үүргийг тодорхой
  []
 
-[71
+[73
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 50--58
@@ -2334,12 +2340,12 @@ Underfull \hbox (badness 5802) in paragraph at lines 50--58
 йцэж байгаа бөгөөд
  []
 
-[72
+[74
 
 ]
 File: images/architecture.png Graphic file (type bmp)
 <images/architecture.png>
- [73]
+ [75]
 Underfull \hbox (badness 2401) in paragraph at lines 103--121
 [] []\TU/TimesNewRoman(0)/m/n/12 3.1[]-р зурагт annotation-д суурилсан DI frame
 work-ийн давхаргат архитектурыг
@@ -2360,7 +2366,7 @@ wRoman(0)/m/n/12 , \TU/lmtt/m/n/12 NoSuchBeanException\TU/TimesNewRoman(0)/m/n/
 12 , \TU/lmtt/m/n/12 CircularDependencyException
  []
 
-[74]
+[76]
 Underfull \hbox (badness 4120) in paragraph at lines 127--128
 []\TU/TimesNewRoman(0)/m/n/12 Дараагийн шатанд singleton bean instance-үүдийг ү
 үсгэж, \TU/lmtt/m/n/12 DependencyInjector
@@ -2368,7 +2374,7 @@ Underfull \hbox (badness 4120) in paragraph at lines 127--128
 
 File: images/Activity Diagram.png Graphic file (type bmp)
 <images/Activity Diagram.png>
-[75
+[77
 
 ]
 Underfull \hbox (badness 2735) in paragraph at lines 150--161
@@ -2388,7 +2394,7 @@ Underfull \hbox (badness 3009) in paragraph at lines 150--161
 /m/n/12 getBean() \TU/TimesNewRoman(0)/m/n/12 дуудах боломжтой болно.
  []
 
-[76] [77]
+[78] [79]
 Underfull \hbox (badness 2359) in paragraph at lines 165--166
 \TU/TimesNewRoman(0)/m/n/12 илэрхийлнэ. Эхлээд хэрэглэгч \TU/lmtt/m/n/12 Applic
 ationContext\TU/TimesNewRoman(0)/m/n/12 -ийг үүсгэж, package scanning
@@ -2420,7 +2426,7 @@ Underfull \hbox (badness 2126) in paragraph at lines 179--185
 bean авах үйл явцын дарааллын
  []
 
-[78
+[80
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 196--206
@@ -2448,31 +2454,82 @@ Underfull \hbox (badness 10000) in paragraph at lines 207--213
 imesNewRoman(0)/m/n/12 хайлт хийж олдсон \TU/lmtt/m/n/12 bean
  []
 
-[79]
+[81]
 Underfull \hbox (badness 5741) in paragraph at lines 218--219
 []\TU/TimesNewRoman(0)/m/n/12 Нэмэлт хэрэгжүүлэлтийн A1 ажил нь энэхүү бүлэгт т
 одорхойлсон давхаргат
  []
 
-[80]) (implementation.tex
-Underfull \hbox (badness 5862) in paragraph at lines 264--1
+[82]
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+\TU/lmtt/m/n/12 container \TU/TimesNewRoman(0)/m/n/12 давхаргын дотор dependenc
+y graph боловсруулах шинэ дэд модуль
+ []
+
+
+Underfull \hbox (badness 4518) in paragraph at lines 264--265
+\TU/TimesNewRoman(0)/m/n/12 нэмсэн архитектурын өргөтгөл юм. Энэ өргөтгөлийн хү
+рээнд \TU/lmtt/m/n/12 DependencyNode\TU/TimesNewRoman(0)/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--265
+\TU/lmtt/m/n/12 DependencyTreeBuilder\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n
+/12 DependencyTreeExporter\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 Depende
+ncyTreeHtmlExporter
+ []
+
+
+Underfull \hbox (badness 2119) in paragraph at lines 264--265
+\TU/TimesNewRoman(0)/m/n/12 гэсэн дөрвөн шинэ бүрэлдэхүүн нь bean registry, ann
+otation inspection, dependency
+ []
+
+[83]
+Overfull \hbox (3.73152pt too wide) in paragraph at lines 284--284
+\TU/lmtt/m/n/10.95 DependencyTreeBuilder\TU/TimesNewRoman(0)/m/n/10.95 , 
+ []
+
+
+Overfull \hbox (9.48026pt too wide) in paragraph at lines 284--284
+\TU/lmtt/m/n/10.95 DependencyTreeExporter\TU/TimesNewRoman(0)/m/n/10.95 , 
+ []
+
+
+Overfull \hbox (31.10649pt too wide) in paragraph at lines 284--284
+\TU/lmtt/m/n/10.95 DependencyTreeHtmlExporter|  
+ []
+
+
+Overfull \hbox (13.52953pt too wide) in paragraph at lines 284--284
+[]|\TU/TimesNewRoman(0)/m/n/10.95 ApplicationContext|  
+ []
+
+[84] [85]
+Underfull \hbox (badness 4518) in paragraph at lines 294--295
+[]\TU/TimesNewRoman(0)/m/n/12 Багцын зохион байгуулалтын хүснэгтэд dependency v
+isualization pipeline-ийн
+ []
+
+) (implementation.tex
+Underfull \hbox (badness 5862) in paragraph at lines 300--1
 \TU/TimesNewRoman(0)/m/n/12 давхарга тус бүрийн зан авирыг тестээр баталсан нь 
 энэ бүлэгт тодорхойлсон
  []
 
-[81] [82]
+[86]
 БҮЛЭГ4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
 
  []
 
-[83
+[87
 
-] [84]
+] [88]
 LaTeX Font Info:    Font shape `TU/lmtt/bx/sl' in size <12> not available
 (Font)              Font shape `TU/lmtt/b/sl' tried instead on input line 98.
- [85] [86]
+ [89] [90]
 Underfull \hbox (badness 2027) in paragraph at lines 212--222
 \TU/TimesNewRoman(0)/m/n/12 төрөл, бүртгэлтэй bean-үүдийн жагсаалт, олон candid
 ate тохирсон үед \TU/lmtt/m/n/12 @Qualifier
@@ -2484,13 +2541,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 212--222
 х байдлаар баяжуулсан.
  []
 
-[87]
+[91]
 Underfull \hbox (badness 2547) in paragraph at lines 269--272
 []\TU/TimesNewRoman(0)/m/n/12 Container давхарга нь framework-ийн цөм бүрэлдэхү
 үн болох \TU/lmtt/m/n/12 ScopeType \TU/TimesNewRoman(0)/m/n/12 enum,
  []
 
-[88] [89]
+[92] [93]
 Underfull \hbox (badness 8075) in paragraph at lines 333--340
 \TU/TimesNewRoman(0)/m/n/12 агуулна: нэгдүгээрт, bean-ийн нэрийг \TU/lmtt/m/n/1
 2 BeanDefinition\TU/TimesNewRoman(0)/m/n/12 -д харгалзуулан хадгалах
@@ -2502,7 +2559,7 @@ Underfull \hbox (badness 7963) in paragraph at lines 333--340
 eton bean-ийн бодит instance-г cache хийх
  []
 
-[90]
+[94]
 Underfull \hbox (badness 2961) in paragraph at lines 373--377
 []\TU/lmtt/m/n/12 ApplicationContext \TU/TimesNewRoman(0)/m/n/12 нь framework-и
 йн хамгийн чухал, төв бүрэлдэхүүн хэсэг
@@ -2520,14 +2577,14 @@ Underfull \hbox (badness 5908) in paragraph at lines 396--404
 мэдэгдэхүйц өргөжсөн.
  []
 
-[91] [92]
+[95] [96]
 Underfull \hbox (badness 7759) in paragraph at lines 471--475
 \TU/TimesNewRoman(0)/m/n/12 аргаар нэгжиж \TU/lmtt/m/n/12 @Component \TU/TimesN
 ewRoman(0)/m/n/12 annotation-той классуудыг илрүүлэн \TU/lmtt/m/n/12 BeanDefini
 tion
  []
 
-[93]
+[97]
 Underfull \hbox (badness 4036) in paragraph at lines 514--517
 []\TU/lmtt/m/n/12 DependencyInjector \TU/TimesNewRoman(0)/m/n/12 нь аль хэдийн 
 үүсгэгдсэн bean объект дээр \TU/lmtt/m/n/12 @Autowired
@@ -2539,69 +2596,117 @@ Underfull \hbox (badness 10000) in paragraph at lines 518--528
 imesNewRoman(0)/m/n/12 ашиглан төрлөөр хайж нэг candidate илэрсэн
  []
 
-[94]
+[98]
 Underfull \hbox (badness 2547) in paragraph at lines 535--544
 \TU/TimesNewRoman(0)/m/n/12 дээр төвлөрсөн. \TU/lmtt/m/n/12 @Qualifier \TU/Time
 sNewRoman(0)/m/n/12 байхгүй үед dependency-г төрлөөр нь resolve хийх,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 572--576
+Underfull \hbox (badness 4467) in paragraph at lines 563--564
+[]\TU/TimesNewRoman(0)/m/n/12 A3 ажлын хүрээнд framework-ийн дотоод dependency 
+бүтэц, bean хоорондын
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 563--564
+\TU/lmtt/m/n/12 DependencyTreeBuilder\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n
+/12 DependencyTreeExporter\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 Depende
+ncyTreeHtmlExporter
+ []
+
+[99]
+Underfull \hbox (badness 10000) in paragraph at lines 569--570
+[]\TU/TimesNewRoman(0)/m/n/12 Мөн \TU/lmtt/m/n/12 DependencyTreeBuilder.detectC
+ircularDependencies() \TU/TimesNewRoman(0)/m/n/12 нь \TU/lmtt/m/n/12 visited
+ []
+
+
+Underfull \hbox (badness 3792) in paragraph at lines 569--570
+\TU/TimesNewRoman(0)/m/n/12 болон \TU/lmtt/m/n/12 recursionStack \TU/TimesNewRo
+man(0)/m/n/12 гэсэн хоёр туслах бүтэц ашигласан DFS алгоритмаар de-
+ []
+
+File: images/DependencyTreeHtml.png Graphic file (type bmp)
+<images/DependencyTreeHtml.png>
+[100]
+Underfull \hbox (badness 4556) in paragraph at lines 590--591
+\TU/lmtt/m/n/12 @EnableIoC(scanPackages, excludePackages, visualize) \TU/TimesN
+ewRoman(0)/m/n/12 тохиргоогоор scan root
+ []
+
+[101]
+Underfull \hbox (badness 10000) in paragraph at lines 605--609
 \TU/TimesNewRoman(0)/m/n/12 шалгахад чиглэсэн. Энэ түвшинд \TU/lmtt/m/n/12 Bean
 RegistryTest\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/12 ClassPathScannerTest\
 TU/TimesNewRoman(0)/m/n/12 ,
  []
 
-[95]
-Underfull \hbox (badness 4467) in paragraph at lines 587--590
+
+Underfull \hbox (badness 4467) in paragraph at lines 620--623
 []\TU/lmtt/m/n/12 ExceptionTest \TU/TimesNewRoman(0)/m/n/12 – exception constru
 ctor-уудын мэдэгдэл, \TU/lmtt/m/n/12 ApplicationContext
  []
 
 
-Underfull \hbox (badness 3657) in paragraph at lines 587--590
+Underfull \hbox (badness 3657) in paragraph at lines 620--623
 \TU/TimesNewRoman(0)/m/n/12 болон \TU/lmtt/m/n/12 ClassPathScanner\TU/TimesNewR
 oman(0)/m/n/12 -ийн хүрэхэд хэцүү branch-уудыг reflection ашиглан
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 598--606
+[102]
+Underfull \hbox (badness 10000) in paragraph at lines 631--639
 \TU/lmtt/m/n/12 DependencyInjectionIntegrationTest\TU/TimesNewRoman(0)/m/n/12 ,
  \TU/lmtt/m/n/12 QualifierIntegrationTest\TU/TimesNewRoman(0)/m/n/12 ,
  []
 
 
-Underfull \hbox (badness 6510) in paragraph at lines 598--606
+Underfull \hbox (badness 6510) in paragraph at lines 631--639
 \TU/lmtt/m/n/12 ScopeIntegrationTest\TU/TimesNewRoman(0)/m/n/12 , \TU/lmtt/m/n/
 12 CircularDependencyIntegrationTest \TU/TimesNewRoman(0)/m/n/12 гэсэн зургаан 
 тест
  []
 
-[96]
-Overfull \hbox (4.52203pt too wide) in paragraph at lines 624--624
+[103]
+Overfull \hbox (4.52203pt too wide) in paragraph at lines 657--657
 []|[]|  
  []
 
 
-Overfull \hbox (15.79323pt too wide) in paragraph at lines 615--630
+Overfull \hbox (15.79323pt too wide) in paragraph at lines 648--663
  [][] 
  []
 
 
-Underfull \hbox (badness 3668) in paragraph at lines 634--639
+Underfull \hbox (badness 3668) in paragraph at lines 667--672
 \TU/TimesNewRoman(0)/m/n/12 харин framework-ийн давхарга тус бүрийн хариуцлагад
  уялдсан бүтэцтэй болсон.
  []
 
 
-Underfull \hbox (badness 4779) in paragraph at lines 634--639
+Underfull \hbox (badness 4779) in paragraph at lines 667--672
 \TU/TimesNewRoman(0)/m/n/12 Ингэснээр regression эрсдэлийг бууруулах, өөрчлөлти
 йн нөлөөг хурдан илрүүлэх,
  []
 
-) (summer.tex [97
 
-] [98]
+Underfull \hbox (badness 3386) in paragraph at lines 675--676
+\TU/TimesNewRoman(0)/m/n/12 integration, package auto-detect behavior, HTML exp
+orter-ийн interactive hook зэрэг
+ []
+
+
+Underfull \hbox (badness 3884) in paragraph at lines 675--676
+\TU/TimesNewRoman(0)/m/n/12 гадна dependency tree үүсгэлт, JSON export, HTML ex
+port, \TU/lmtt/m/n/12 @EnableIoC \TU/TimesNewRoman(0)/m/n/12 behavior,
+ []
+
+[104
+
+]
+File: images/TestUpdate.png Graphic file (type bmp)
+<images/TestUpdate.png>
+ [105] [106]) (summer.tex [107] [108]
 БҮЛЭГ5.
 
 Underfull \hbox (badness 10000) in paragraph at lines 1--2
@@ -2614,38 +2719,62 @@ Underfull \hbox (badness 5637) in paragraph at lines 7--8
 байгаа хэрэгжилтийн
  []
 
-) [99
 
-] [100
+Underfull \hbox (badness 2744) in paragraph at lines 7--8
+\TU/TimesNewRoman(0)/m/n/12 framework нь зөвхөн dependency-г шийддэг бус, мөн ө
+өрийн dependency бүтцийг
+ []
+
+[109
+
+]) [110] [111
 
 
-] (code.tex [101]
+] (code.tex [112]
 AppendixA.
 
 Underfull \hbox (badness 10000) in paragraph at lines 10--11
 
  []
 
-[102
+(../src/main/java/mn/edu/num/Main.java) [113
 
 
-] [103] [104
+]
+(../src/main/java/mn/edu/num/container/ApplicationContext.java [114
 
-] [105] [106] [107]) [108] (main.aux (main-pre.aux))
+] [115]
+[116]) [117] (../src/main/java/mn/edu/num/scanner/ClassPathScanner.java
+[118
+
+]) [119] (../src/main/java/mn/edu/num/container/DependencyInjector.java
+[120
+
+]) [121] (../src/main/java/mn/edu/num/container/BeanRegistry.java) [122
+
+]
+(../src/main/java/mn/edu/num/container/DependencyTreeBuilder.java [123
+
+]
+[124]) [125]
+(../src/test/java/mn/edu/num/integration/DependencyTreeIntegrationTest.java
+[126
+
+])) [127] (main.aux (main-pre.aux))
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2025-12-24>
  ***********
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: E2C9F7EEC198BF59B26421E14184AB1F;10524.
+(rerunfilecheck)             Checksum: 311457986763BA4CD61723B2AD429FA4;11986.
  ) 
 Here is how much of TeX's memory you used:
- 34627 strings out of 402987
- 662869 string characters out of 5446868
- 1772671 words of memory out of 5000000
- 62726 multiletter control sequences out of 15000+600000
+ 34782 strings out of 402987
+ 667297 string characters out of 5446868
+ 1888801 words of memory out of 5000000
+ 62853 multiletter control sequences out of 15000+600000
  645693 words of font info for 161 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 110i,17n,107p,1003b,2046s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 110i,17n,107p,1003b,2077s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (117 pages).
+Output written on main.pdf (136 pages).

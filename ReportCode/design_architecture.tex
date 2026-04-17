@@ -259,6 +259,42 @@ Activity diagram болон sequence diagram-д дүрсэлсэн урсгал 
 
 Иймээс A1 сайжруулалтын ажлыг архитектурын үүднээс авч үзвэл энэ нь шинэ бүтэц нэмсэн ажил бус, харин 3-р бүлгээр сонгосон layered architecture-ийн зөв шийдэл, тестлэгдэх чадвар, fail-fast шинж чанарыг баталгаажуулсан чанарын бэхжилтийн шат юм.
 
+\section{A3 dependency tree ажлын архитектурын уялдаа}
+
+Нэмэлт хэрэгжүүлэлтийн A3 ажил нь layered architecture-ийг өөрчлөх бус, харин \texttt{container} давхаргын дотор dependency graph боловсруулах шинэ дэд модуль нэмсэн архитектурын өргөтгөл юм. Энэ өргөтгөлийн хүрээнд \texttt{DependencyNode}, \texttt{DependencyTreeBuilder}, \texttt{DependencyTreeExporter}, \texttt{DependencyTreeHtmlExporter} гэсэн дөрвөн шинэ бүрэлдэхүүн нь bean registry, annotation inspection, dependency resolution-ийн одоо байгаа үр дүнд тулгуурлан graph representation боловсруулдаг болсон. Иймээс A3 нь шинэ бие даасан давхарга биш, харин container давхаргын ``өөрийгөө тайлбарлах'' болон ``оношлох'' боломжийг нэмсэн дотоод дэд систем гэж үзэж болно.
+
+Энэ дэд системийн урсгал дараах байдлаар ажиллана. \texttt{ApplicationContext} startup үед scanner-аар классуудыг илрүүлж, registry-д bean-үүдийг бүртгэж, singleton bean-үүдийг үүсгэсний дараа dependency tree builder-ийг ажиллуулна. Tree builder нь registry-д буй \texttt{BeanDefinition}-уудыг уншиж node-ууд үүсгэн, \texttt{@Autowired} field бүрээр dependency холбоос тогтооно. Үүний дараа DFS алгоритмаар cycle илрүүлэх, console tree хэвлэх, JSON export гаргах, HTML dashboard үүсгэх зэрэг exporter ба visualization pipeline ажиллах боломжтой болно. Энэ нь activity болон sequence diagram-д байсан startup урсгал дээр ``scan $\rightarrow$ register $\rightarrow$ preload $\rightarrow$ inject'' дарааллаас хойш ``build tree $\rightarrow$ export/visualize'' гэсэн шинэ шат нэмэгдсэнийг илэрхийлж байна.
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{A3 ажлын архитектурын давхаргатай уялдсан байдал}
+\label{tab:a3-architecture-alignment}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{|L{0.16\textwidth}|L{0.26\textwidth}|Y|}
+\hline
+\textbf{Давхарга / бүрэлдэхүүн} & \textbf{A3 хүрээнд нэмэгдсэн зүйл} & \textbf{Архитектурын үр нөлөө} \\ \hline
+Container layer & \texttt{DependencyNode}, \texttt{DependencyTreeBuilder}, \texttt{DependencyTreeExporter}, \texttt{DependencyTreeHtmlExporter} & Container нь зөвхөн bean удирдах биш, мөн dependency graph боловсруулах, экспортлох, runtime дүрслэх шинэ чадвартай болсон. \\ \hline
+ApplicationContext & Tree lifecycle integration & Startup төгсгөлд tree үүсгэж, \texttt{getTreeBuilder()}-ээр хэрэглээнд нээлттэй болгосноор container-ийн төлөвийг ажиглах боломж бүрдсэн. \\ \hline
+Annotation layer & \texttt{@EnableIoC(visualize = true)} & Visualization-г main startup declaration түвшинд идэвхжүүлэх hook нэмэгдэж, Spring Boot-той төстэй declarative startup хэв маяг үүссэн. \\ \hline
+Scanner layer & Registry-д өгөгдөл бэлтгэх & Scanner-ийн илрүүлсэн bean-үүд graph-ын node болох тул scanner давхаргын үр дүн архитектурын хувьд илүү үнэ цэнтэй болж хувирсан. \\ \hline
+Exception / fail-fast behavior & DFS cycle reporting & Circular dependency-г startup ба tree analysis түвшинд хоёуланд нь илрүүлэх замаар fail-fast шинж чанарыг архитектурын түвшинд бэхжүүлсэн. \\ \hline
+Testing architecture & Integration + unit validation & Dependency graph ба startup visualization-ийг тусгаарлан турших боломжтой болж, layered architecture-ийн testability нэмэгдсэн. \\ \hline
+\end{tabularx}
+\end{table}
+
+Хүснэгт~\ref{tab:a3-architecture-alignment}-оос харахад A3 ажил нь annotation, scanner, container, exception гэсэн өмнөх давхаргуудын зааглалыг эвдээгүй, харин container давхаргын дотор dependency structure боловсруулах хариуцлагыг шинээр тодорхойлсон байна. Ингэснээр системийн үндсэн startup урсгал архитектурын хувьд өөрчлөгдөөгүй ч, түүний үр дүнг хүний ойлгохуйц хэлбэрээр шинжлэх шинэ архитектурын capability нэмэгдсэн гэж үзэж болно.
+
+Энэхүү зохиомжийн өөрчлөлтийн үр дүнд дараах баримт бичгийн шинэчлэлтүүд шаардлагатай болсон.
+\begin{itemize}
+    \item Layered architecture diagram-д container layer дотор dependency tree submodule-ийг нэмэх;
+    \item Activity diagram-д startup төгсгөлд \textit{Build dependency tree} болон \textit{Export / Visualize} алхам нэмэх;
+    \item Sequence diagram-д \texttt{ApplicationContext} -- \texttt{DependencyTreeBuilder} -- exporter урсгалыг тусгах;
+    \item Багцын зохион байгуулалтын хүснэгтэд dependency visualization pipeline-ийн тайлбарыг нэмэх;
+    \item CRC картын түвшинд \texttt{ApplicationContext}-ийн шинэ responsibility болгон dependency tree lifecycle удирдлагыг оруулах.
+\end{itemize}
+
 \section{Бүлгийн дүгнэлт}
 
 Энэ бүлэгт annotation-д суурилсан dependency injection framework-ийн архитектурын зохиомжийг боловсруулж, системийн давхаргат бүтэц болон түүний динамик ажиллагааг Activity болон Sequence диаграммуудаар илэрхийллээ. Энэхүү архитектур нь системийн ойлгомжтой байдал, өргөтгөх боломж, тестлэх чадварыг сайжруулсан оновчтой шийдэл болж байна. Мөн A1 сайжруулалтын ажлын хүрээнд уг зохиомжийг эвдэлгүйгээр давхарга тус бүрийн зан авирыг тестээр баталсан нь энэ бүлэгт тодорхойлсон архитектурын шийдлийн бодит хэрэгжилтийн нотолгоо боллоо.

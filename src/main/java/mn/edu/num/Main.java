@@ -12,12 +12,15 @@ import mn.edu.num.container.DependencyTreeExporter;
  *
  * Spring Boot-ийн @SpringBootApplication + SpringApplication.run()-тай адил загвар.
  */
-@EnableIoC(excludePackages = {
-        "mn.edu.num.app.broken",
-        "mn.edu.num.app.circular",
-        "mn.edu.num.app.circular3",
-        "mn.edu.num.app.throwing"
-})
+@EnableIoC(
+        visualize = true,
+        excludePackages = {
+                "mn.edu.num.app.broken",
+                "mn.edu.num.app.circular",
+                "mn.edu.num.app.circular3",
+                "mn.edu.num.app.throwing"
+        }
+)
 public class Main {
     public static void main(String[] args) {
         // Spring Boot: SpringApplication.run(MyApp.class, args)

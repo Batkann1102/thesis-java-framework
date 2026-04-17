@@ -40,6 +40,7 @@ public class ApplicationContext implements DependencyInjector.ApplicationContext
         // 1. @EnableIoC annotation-аас тохиргоог унших
         String basePackage = primarySource.getPackage().getName();
         List<String> excludePackages = new ArrayList<>();
+        boolean visualize = false;
 
         if (primarySource.isAnnotationPresent(EnableIoC.class)) {
             EnableIoC config = primarySource.getAnnotation(EnableIoC.class);
@@ -51,12 +52,22 @@ public class ApplicationContext implements DependencyInjector.ApplicationContext
 
             // Exclude package-ууд
             excludePackages.addAll(Arrays.asList(config.excludePackages()));
+
+            // Visualize тохиргоо
+            visualize = config.visualize();
         }
 
 
         System.out.println("[IoC] Primary source: " + primarySource.getName());
 
-        return new ApplicationContext(basePackage, excludePackages);
+        ApplicationContext ctx = new ApplicationContext(basePackage, excludePackages);
+
+        // @EnableIoC(visualize = true) бол HTML файл үүсгэж browser нээнэ
+        if (visualize) {
+            DependencyTreeHtmlExporter.generateAndOpen(ctx.getTreeBuilder().getNodeMap());
+        }
+
+        return ctx;
     }
 
     /**

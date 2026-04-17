@@ -96,6 +96,43 @@ Fail-fast зан авирыг баталгаажуулах & ФШ-14, ФШ-17, �
 Иймээс A1 ажил нь энэ бүлгийн шаардлагыг өөрчлөх бус, харин шаардлагын биелэлтийг хэмжиж, дараагийн A2--A4 ажлуудад найдвартай суурь болгох зорилготой чанарын сайжруулалтын үе шат гэж үзэж болно.
 
 
+\section{A3 dependency tree ажлын шаардлагатай уялдах нь}
+
+Нэмэлт хэрэгжүүлэлтийн A3 ажил нь framework-ийн одоо байгаа dependency injection механизмыг зөвхөн ``ажиллуулах'' бус, харин түүний дотоод dependency бүтэц, bean хоорондын холбоос, циклийн эрсдэлийг тайлбарлахуйц түвшинд шинжлэх боломжтой болгосон өргөтгөл юм. Өөрөөр хэлбэл A3 ажлын гол зорилго нь bean-үүдийг runtime үед graph бүтэц болгон илэрхийлэх, dependency-г мод хэлбэрээр харуулах, циклийг DFS алгоритмаар илрүүлэх, мөн үүссэн dependency tree-г console, JSON, HTML гэсэн хэд хэдэн ойлгомжтой representation-аар хөгжүүлэгчид хүргэхэд оршино.
+
+Энэ ажлыг шаардлагын түвшинд авч үзвэл өмнө тодорхойлсон package scanning, annotation detection, bean registration, dependency injection, fail-fast алдаа боловсруулалт, тестлэгдэх чадвар, тайлбарлагдах чадвар зэрэг шаардлагууд бүгд A3 ажлын суурь болсон. Ялангуяа dependency tree нь \texttt{BeanRegistry}-д бүртгэгдсэн bean-үүдийн харилцааг нэгтгэн харуулах тул package scanning болон annotation detection-ийн үр дүн бодит графын бүтэц болж хувирч байна. Мөн циклийн DFS илрүүлэлт нь \textbf{ФБШ-12} шаардлагыг илүү бүтэцтэй түвшинд баталгаажуулж, HTML visualization нь \textbf{ФБШ-17} шаардлагын хүрээнд framework-ийн дотоод төлөвийг хүний ойлгох хэлбэрээр харуулах шинэ боломж нэмж өглөө.
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{4pt}
+\caption{A3 ажлын шаардлагатай уялдсан байдал}
+\label{tab:a3-requirement-alignment}
+\renewcommand{\arraystretch}{1.3}
+\begin{tabularx}{\textwidth}{|L{0.18\textwidth}|L{0.20\textwidth}|Y|}
+\hline
+\textbf{Уялдах шаардлага} & \textbf{A3 ажлын чиглэл} & \textbf{Тайлбар} \\ \hline
+ФШ-10, ФШ-12 & Dependency tree source өгөгдөл & Scanner-аар илэрч, registry-д бүртгэгдсэн bean бүр dependency tree-ийн node болох суурь өгөгдөл болж байна. \\ \hline
+ФШ-11, ФШ-14 & Dependency холбоос тогтоох & \texttt{@Autowired} field-үүдийг reflection ашиглан уншиж, bean хооронд dependency edge байгуулж байна. \\ \hline
+ФШ-15 & Оношлогооны дэмжлэг & Bean lookup зөв ажиллаж буй үр дүнг tree бүтэц, JSON болон HTML representation-аар баталгаажуулж харагдуулах боломж бүрдэв. \\ \hline
+ФБШ-12 & DFS cycle detection & Visited set ба recursion stack ашигласан DFS алгоритм dependency cycle-ийг тайлбарлагдсан хэлбэрээр илрүүлнэ. \\ \hline
+ФБШ-16 & Туршилтын баталгаа & DependencyTreeIntegrationTest, EnableIoCIntegrationTest, AutoDetectPackageIntegrationTest зэрэг шинэ тестүүд A3 ажлын урсгалыг баталж байна. \\ \hline
+ФБШ-17 & Тайлбарлагдах чадвар & Console tree, JSON export, HTML dashboard нь framework-ийн dependency бүтцийг хөгжүүлэгчид илүү ойлгомжтой болгож байна. \\ \hline
+ФБШ-15 & Гуравдагч талын сангүй хэрэгжилт & Dependency tree болон visualization нь зөвхөн JDK болон өөрийн exporter-оор хэрэгжсэн тул анхны технологийн шаардлагыг зөрчөөгүй. \\ \hline
+\end{tabularx}
+\end{table}
+
+Хүснэгт~\ref{tab:a3-requirement-alignment}-оос харахад A3 ажил нь шинэ боломж нэмсэн ч анхны шаардлагын хүрээнээс ангид биш, харин тэдгээрийн бодит биелэлтийг ажиглах, шинжлэх, тайлбарлах шинэ түвшинд өргөтгөсөн байна. Иймээс A3 ажлыг системийн шинэ функциональ өргөтгөлөөс гадна framework-ийн тайлбарлагдах чадвар, оношлогооны чанарыг өсгөсөн архитектур--шаардлагын уялдаатай сайжруулалт гэж үзэж болно.
+
+Энэхүү ажлын үр дүнд дараах өргөтгөсөн шаардлагуудыг тайланд тусгах шаардлагатай болсон.
+\begin{itemize}
+    \item \textbf{ФШ-18: Dependency tree generation} -- Container-д бүртгэгдсэн bean-үүдээс dependency tree үүсгэдэг байна.
+    \item \textbf{ФШ-19: Dependency visualization export} -- Dependency tree-г console, JSON болон HTML хэлбэрээр гаргах боломжтой байна.
+    \item \textbf{ФБШ-18: Observability} -- Framework-ийн dependency бүтэц, root node, dependency холбоос, ашиглагдах байдал зэргийг ойлгомжтой хэлбэрээр тайлбарлах боломжтой байна.
+    \item \textbf{ФБШ-19: Visualization without third-party library} -- Dependency tree visualization нь гуравдагч талын UI сан ашиглахгүйгээр зөвхөн Java стандарт сан болон өөрийн exporter-оор хэрэгжсэн байна.
+\end{itemize}
+
+
 \section{Custom annotation-уудын шаардлага}
 
 

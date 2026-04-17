@@ -3,6 +3,15 @@
   <component name="CopilotDiffPersistence">
     <option name="pendingDiffs">
       <map>
+        <entry key="/EnableIoC (snapshot).java">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="/EnableIoC (snapshot).java" />
+              <option name="originalContent" value="package mn.edu.num.annotation;&#10;&#10;import java.lang.annotation.*;&#10;&#10;/**&#10; * Төслийн эхлэл цэгийг тэмдэглэх annotation.&#10; * Spring Boot-ийн @SpringBootApplication-тай адил үүрэгтэй.&#10; *&#10; * Энэ annotation-г тавьсан классын package-аас эхлэн&#10; * бүх дэд package-уудыг scan хийж @Component bean-уудыг олно.&#10; *&#10; * Хэрэглээ:&#10; * &lt;pre&gt;&#10; * &amp;#64;EnableIoC&#10; * public class MyApp {&#10; *     public static void main(String[] args) {&#10; *         ApplicationContext ctx = ApplicationContext.run(MyApp.class);&#10; *     }&#10; * }&#10; * &lt;/pre&gt;&#10; */&#10;@Target(ElementType.TYPE)&#10;@Retention(RetentionPolicy.RUNTIME)&#10;@Documented&#10;public @interface EnableIoC {&#10;    /**&#10;     * Scan хийх нэмэлт package-ууд.&#10;     * Хоосон байвал зөвхөн энэ классын package-аас scan хийнэ.&#10;     */&#10;    String[] scanPackages() default {};&#10;&#10;    /**&#10;     * Алгасах package-ууд.&#10;     */&#10;    String[] excludePackages() default {};&#10;}&#10;&#10;" />
+              <option name="updatedContent" value="package mn.edu.num.annotation;&#10;&#10;import java.lang.annotation.*;&#10;&#10;/**&#10; * Төслийн эхлэл цэгийг тэмдэглэх annotation.&#10; * Spring Boot-ийн @SpringBootApplication-тай адил үүрэгтэй.&#10; *&#10; * Энэ annotation-г тавьсан классын package-аас эхлэн&#10; * бүх дэд package-уудыг scan хийж @Component bean-уудыг олно.&#10; *&#10; * Хэрэглээ:&#10; * &lt;pre&gt;&#10; * &amp;#64;EnableIoC&#10; * public class MyApp {&#10; *     public static void main(String[] args) {&#10; *         ApplicationContext ctx = ApplicationContext.run(MyApp.class);&#10; *     }&#10; * }&#10; * &lt;/pre&gt;&#10; */&#10;@Target(ElementType.TYPE)&#10;@Retention(RetentionPolicy.RUNTIME)&#10;@Documented&#10;public @interface EnableIoC {&#10;    /**&#10;     * Scan хийх нэмэлт package-ууд.&#10;     * Хоосон байвал зөвхөн энэ классын package-аас scan хийнэ.&#10;     */&#10;    String[] scanPackages() default {};&#10;&#10;    /**&#10;     * Алгасах package-ууд.&#10;     */&#10;    String[] excludePackages() default {};&#10;&#10;    /**&#10;     * true бол dependency tree-г HTML файлаар үүсгэж browser-д автоматаар нээнэ.&#10;     */&#10;    boolean visualize() default false;&#10;}&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
         <entry key="/dics (snapshot).sty">
           <value>
             <PendingDiffInfo>

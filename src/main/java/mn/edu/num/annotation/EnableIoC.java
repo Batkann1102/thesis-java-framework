@@ -33,5 +33,10 @@ public @interface EnableIoC {
      * Алгасах package-ууд.
      */
     String[] excludePackages() default {};
+
+    /**
+     * true бол dependency tree-г HTML файлаар үүсгэж browser-д автоматаар нээнэ.
+     */
+    boolean visualize() default false;
 }
 

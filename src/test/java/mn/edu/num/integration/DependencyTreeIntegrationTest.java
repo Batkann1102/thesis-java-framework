@@ -90,5 +90,22 @@ class DependencyTreeIntegrationTest {
 
         System.out.println(json);
     }
+
+    @Test
+    void shouldExportInteractiveHtmlWithSearch() {
+        ApplicationContext ctx = new ApplicationContext("mn.edu.num.app.conflict");
+        DependencyTreeBuilder builder = ctx.getTreeBuilder();
+
+        String html = DependencyTreeHtmlExporter.generateHtml(builder.getNodeMap());
+        assertNotNull(html);
+        assertTrue(html.contains("Dependency Tree Dashboard"));
+        assertTrue(html.contains("id=\"search-input\""));
+        assertTrue(html.contains("searchNodes()"));
+        assertTrue(html.contains("clearSearch()"));
+        assertTrue(html.contains("id=\"search-count\""));
+        assertTrue(html.contains("class=\"tree-panel\""));
+        assertTrue(html.contains("class=\"detail-panel\""));
+        assertTrue(html.contains("data-search=\"userservice mn.edu.num.app.conflict.userservice\""));
+    }
 }
 

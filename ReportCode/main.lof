@@ -9,10 +9,12 @@
 \contentsline {figure}{\numberline {1.9}{\ignorespaces IntelliJ IDEA}}{36}{figure.1.9}%
 \contentsline {figure}{\numberline {1.10}{\ignorespaces Eclipse}}{36}{figure.1.10}%
 \contentsline {figure}{\numberline {1.11}{\ignorespaces Git GitHub}}{36}{figure.1.11}%
-\contentsline {figure}{\numberline {1.12}{\ignorespaces Хэрэгжүүлэх DI Framework-ийн ерөнхий ажиллагааны зураглал}}{45}{figure.1.12}%
-\contentsline {figure}{\numberline {2.1}{\ignorespaces DI framework-ийн багцын диаграмм}}{62}{figure.2.1}%
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Annotation-д суурилсан DI framework-ийн классын диаграмм}}{67}{figure.2.2}%
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Use case}}{69}{figure.2.3}%
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Төслийн архитектур}}{74}{figure.3.1}%
-\contentsline {figure}{\numberline {3.2}{\ignorespaces Activity diagramm}}{76}{figure.3.2}%
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Sequence diagramm}}{78}{figure.3.3}%
+\contentsline {figure}{\numberline {1.12}{\ignorespaces Хэрэгжүүлэх DI Framework-ийн ерөнхий ажиллагааны зураглал}}{46}{figure.1.12}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces DI framework-ийн багцын диаграмм}}{64}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Annotation-д суурилсан DI framework-ийн классын диаграмм}}{69}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Use case}}{71}{figure.2.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Төслийн архитектур}}{76}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Activity diagramm}}{78}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Sequence diagramm}}{80}{figure.3.3}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces A3 ажлын хүрээнд хэрэгжүүлсэн dependency tree HTML dashboard}}{101}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces A1-ээс A3 хүртэлх тестийн хамралтын өсөлтийн харьцуулалт}}{106}{figure.4.2}%
