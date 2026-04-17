@@ -29,10 +29,6 @@
     </dependencies>
     <build>
         <plugins>
-            <!--
-                            Maven Surefire Plugin — тестүүдийг ажиллуулна
-                            JUnit 5 дэмжихийн тулд 3.x хувилбар хэрэгтэй
-                         -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-surefire-plugin</artifactId>
