@@ -4,6 +4,11 @@ import mn.edu.num.exception.NoSuchBeanException;
 
 import java.util.*;
 
+/**
+ * Бүртгэгдсэн Bean Definition буюу тохируулгауд болон
+ * инстансуудыг (Singleton cache гм) хадгалж удирдах зориулалттай хуваарьт санах ойн Registry класс.
+ * Бусад модулиуд нь BeanRegistry-руу хандаж бүртгэх эсвэл хайж сураг гаргах үүрэгтэй.
+ */
 public class BeanRegistry {
     // bean нэр → BeanDefinition
     private final Map<String, BeanDefinition> definitions = new HashMap<>();

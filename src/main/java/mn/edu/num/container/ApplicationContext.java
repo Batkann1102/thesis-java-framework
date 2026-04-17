@@ -8,6 +8,11 @@ import mn.edu.num.scanner.ClassPathScanner;
 
 import java.util.*;
 
+/**
+ * Энэхүү классыг өөрийн бүтээсэн IoC Framework-ийнхээ "зүрх" буюу үндсэн Container гэж ойлгож болно.
+ * Энэ нь классуудыг хайж олох (scan), Bean үүсгэх, dependency injection (хамаарлууд) хийх,
+ * мөн Scope-ийг удирдах бүх амьдралын мөчлөгийг (Lifecycle) чиглүүлэн ажиллана.
+ */
 public class ApplicationContext implements DependencyInjector.ApplicationContextRef {
 
     private final BeanRegistry registry = new BeanRegistry();

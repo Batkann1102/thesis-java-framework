@@ -3,13 +3,13 @@ package mn.edu.num.annotation;
 import java.lang.annotation.*;
 
 /**
- * Төслийн эхлэл цэгийг тэмдэглэх annotation.
- * Spring Boot-ийн @SpringBootApplication-тай адил үүрэгтэй.
+ * Framework-ийг асаах эсвэл эхлүүлэх үйл явцыг удирдах үндсэн annotation.
+ * Spring Boot-ийн @SpringBootApplication-тэй төстэй зориулалттай.
  *
- * Энэ annotation-г тавьсан классын package-аас эхлэн
- * бүх дэд package-уудыг scan хийж @Component bean-уудыг олно.
+ * Энэхүү annotation-г ашигласан классын орших пакет болон түүний
+ * дотоод пакетуудаар гүйж (scan хийж) @Component-тэй классуудыг бүртгэнэ.
  *
- * Хэрэглээ:
+ * Хэрэглэх жишээ:
  * <pre>
  * &#64;EnableIoC
  * public class MyApp {
@@ -24,18 +24,18 @@ import java.lang.annotation.*;
 @Documented
 public @interface EnableIoC {
     /**
-     * Scan хийх нэмэлт package-ууд.
-     * Хоосон байвал зөвхөн энэ классын package-аас scan хийнэ.
+     * Scan хийхийг хүссэн нэмэлт пакетууд.
+     * Энэхүү утгыг зааж өгвөл тэдгээр пакетуудаар нэмэлт хайлт хийнэ.
      */
     String[] scanPackages() default {};
 
     /**
-     * Алгасах package-ууд.
+     * Хайлт (scan) хийхдээ алгасах буюу оруулахгүй байх пакетууд.
      */
     String[] excludePackages() default {};
 
     /**
-     * true бол dependency tree-г HTML файлаар үүсгэж browser-д автоматаар нээнэ.
+     * true үед dependency tree-ийг HTML хэлбэрээр хэвлэж хадгална.
      */
     boolean visualize() default false;
 }

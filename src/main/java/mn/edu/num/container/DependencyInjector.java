@@ -8,6 +8,12 @@ import mn.edu.num.exception.NoSuchBeanException;
 import java.lang.reflect.Field;
 import java.util.List;
 
+/**
+ * Шинээр үүссэн Bean инстансад хэрэгтэй байгаа бусад хамааралтай Bean-уудыг (dependencies)
+ * автоматаар холбох буюу inject хийх үйлдлийг гүйцэтгэх гол туслах класс.
+ * @Autowired, @Qualifier зэрэг annotation-үүдийн дагуу талбаруудыг reflection ашиглан шалгаж
+ * регистрээс зэргэлдээ Bean-уудыг татаж авчирдаг.
+ */
 public class DependencyInjector {
 
     private final BeanRegistry registry;

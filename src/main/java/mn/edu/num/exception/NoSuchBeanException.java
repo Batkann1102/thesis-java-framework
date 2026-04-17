@@ -2,6 +2,10 @@ package mn.edu.num.exception;
 
 import java.util.Collection;
 
+/**
+ * Контейнерээс (IoC Container) шаардлагатай Bean-ийг хайх үед тухайн төрлийн эсвэл
+ * нэртэй Bean бүртгэлд (registry) олдсонгүй гэдгийг илэрхийлэх Exception.
+ */
 public class NoSuchBeanException extends RuntimeException {
     public NoSuchBeanException(String message) {
         super(message);

@@ -10,6 +10,12 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * Тухайн зааж өгсөн base package болон бусад нэмэлт багцуудаар систем дэх
+ * бүх классуудыг хайж олох (scan) зорилготой гүйцэтгэгч класс.
+ * Ингэхдээ зөвхөн @Component гэх мэт заасан annotation бүхий классуудыг л
+ * шүүж аваад BeanDefinition (бүтэц тодорхойлох мэдээлэл) болгож хувиргадаг.
+ */
 public class ClassPathScanner {
 
     private final String basePackage;
