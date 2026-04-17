@@ -1,4 +1,0 @@
-exit1=0
-exit2=0
---- files ---
---- hashes ---
