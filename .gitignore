@@ -31,7 +31,13 @@ target/
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
-
+.idea/
+.junie/
+/ExportChangingReport/
+/Report/
+/ReportCode/
+/src/main/java/mn/edu/num/app/
+/src/main/java/mn/edu/num/Main.java
 ### VS Code ###
 .vscode/
 
