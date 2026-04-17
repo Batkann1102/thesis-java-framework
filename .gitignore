@@ -38,6 +38,7 @@ build/
 /ReportCode/
 /src/main/java/mn/edu/num/app/
 /src/main/java/mn/edu/num/Main.java
+/dependency-tree.html
 ### VS Code ###
 .vscode/
 
