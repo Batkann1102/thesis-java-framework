@@ -1,0 +1,32 @@
+[
+  {
+    "name": "startup-eager",
+    "iterations": 20,
+    "meanNanos": 1681267,
+    "p50Nanos": 876124,
+    "p95Nanos": 7484380,
+    "minNanos": 778823,
+    "maxNanos": 7484380,
+    "notes": "lazyInit=false (eager pre-instantiation)"
+  },
+  {
+    "name": "startup-lazy",
+    "iterations": 20,
+    "meanNanos": 1355093,
+    "p50Nanos": 553141,
+    "p95Nanos": 6108374,
+    "minNanos": 455139,
+    "maxNanos": 6108374,
+    "notes": "lazyInit=true (deferred singleton)"
+  },
+  {
+    "name": "singleton-lookup",
+    "iterations": 500,
+    "meanNanos": 1261,
+    "p50Nanos": 952,
+    "p95Nanos": 1122,
+    "minNanos": 801,
+    "maxNanos": 44102,
+    "notes": "Cached singleton lookup"
+  }
+]

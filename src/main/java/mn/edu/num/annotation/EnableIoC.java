@@ -38,5 +38,21 @@ public @interface EnableIoC {
      * true үед dependency tree-ийг HTML хэлбэрээр хэвлэж хадгална.
      */
     boolean visualize() default false;
+
+    /**
+     * true үед singleton bean-уудыг ApplicationContext эхлэх үед урьдчилан үүсгэхгүй,
+     * харин эхний {@code getBean()} дуудалтад "хойшлуулсан" (lazy) хэлбэрээр үүсгэнэ.
+     * Энэ нь том суурийн хэмжээнд startup latency-г бууруулна; гэхдээ алдаа
+     * хожуу илрэх магадлалтай тул production-д сонголттой ашиглагдана.
+     */
+    boolean lazyInit() default false;
+
+    /**
+     * true үед {@link Scope} утгыг хатуу шалгана. Тодорхойгүй scope утга
+     * (singleton/prototype биш) тохиолдолд {@code BeanScopeException} шиднэ.
+     * false (default) үед framework нь silently SINGLETON руу буулгана —
+     * хуучин кодтой нийцтэй байна.
+     */
+    boolean strictScope() default false;
 }
 

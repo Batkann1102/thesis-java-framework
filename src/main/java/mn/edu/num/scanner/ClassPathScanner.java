@@ -53,6 +53,11 @@ public class ClassPathScanner {
         File[] files = dir.listFiles();
         if (files == null) return;
 
+        // Тогтвортой (deterministic) дараалалтай байхын тулд нэрээр эрэмбэлнэ.
+        // Энэ нь scan үр дүнг систем хоорондын ялгаагаас хамаарахгүй болгон
+        // benchmark болон тестийн reproducibility-г баталгаажуулна.
+        Arrays.sort(files, java.util.Comparator.comparing(File::getName));
+
         for (File file : files) {
             if (file.isDirectory()) {
                 String subPackage = packageName + "." + file.getName();
