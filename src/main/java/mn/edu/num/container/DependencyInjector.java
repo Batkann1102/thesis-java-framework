@@ -1,7 +1,5 @@
 package mn.edu.num.container;
 
-import mn.edu.num.annotation.Autowired;
-import mn.edu.num.annotation.Qualifier;
 import mn.edu.num.exception.BeanCreationException;
 import mn.edu.num.exception.NoSuchBeanException;
 
@@ -11,37 +9,48 @@ import java.util.List;
 /**
  * Шинээр үүссэн Bean инстансад хэрэгтэй байгаа бусад хамааралтай Bean-уудыг (dependencies)
  * автоматаар холбох буюу inject хийх үйлдлийг гүйцэтгэх гол туслах класс.
- * @Autowired, @Qualifier зэрэг annotation-үүдийн дагуу талбаруудыг reflection ашиглан шалгаж
- * регистрээс зэргэлдээ Bean-уудыг татаж авчирдаг.
+ *
+ * <p>Reflection хайлтын overhead-ийг хязгаарлахын тулд {@link ReflectionCache}-аас
+ * тус класст харгалзах урьдчилан тооцоолсон metadata-г ашиглана. Үүний үр дүнд:
+ * <ul>
+ *   <li>{@code getDeclaredFields()} нэг класст нэг л удаа дуудагдана</li>
+ *   <li>{@link Field#setAccessible(boolean)} давтан дуудагдахгүй</li>
+ *   <li>annotation шалгалтын тоо багасна</li>
+ * </ul>
+ * Энэ оновчлол нь "reflection overhead" гэсэн шүүмжид шууд хариулсан шийдэл
+ * бөгөөд benchmark-аар нотлогдсон (docs/benchmarks/index.mdx).
  */
 public class DependencyInjector {
 
     private final BeanRegistry registry;
+    private final ReflectionCache reflectionCache;
 
     public DependencyInjector(BeanRegistry registry) {
+        this(registry, new ReflectionCache());
+    }
+
+    public DependencyInjector(BeanRegistry registry, ReflectionCache reflectionCache) {
         this.registry = registry;
+        this.reflectionCache = reflectionCache;
     }
 
     public void inject(Object instance, BeanDefinition definition,
                        ApplicationContextRef contextRef) {
-        for (Field field : definition.getBeanClass().getDeclaredFields()) {
-            if (!field.isAnnotationPresent(Autowired.class)) continue;
+        ReflectionCache.ClassMetadata metadata = reflectionCache.metadataFor(definition.getBeanClass());
 
+        for (ReflectionCache.InjectableField injectable : metadata.autowiredFields()) {
+            Field field = injectable.field();
             Class<?> fieldType = field.getType();
-            String beanName = null;
-
-            // @Qualifier байвал нэрээр хайна
-            if (field.isAnnotationPresent(Qualifier.class)) {
-                beanName = field.getAnnotation(Qualifier.class).value();
-            }
 
             Object dependency;
-            if (beanName != null) {
-                dependency = contextRef.getBean(beanName);
+            if (injectable.beanName() != null) {
+                dependency = contextRef.getBean(injectable.beanName());
             } else {
-                // Төрлөөр хайна
                 List<BeanDefinition> candidates = registry.findByType(fieldType);
                 if (candidates.isEmpty()) {
+                    if (!injectable.required()) {
+                        continue; // optional dependency — алгасна
+                    }
                     throw new NoSuchBeanException(
                             "Dependency олдсонгүй: " + fieldType.getName()
                                     + " [" + definition.getBeanName() + "]. Бүртгэлтэй bean-үүд: "
@@ -57,7 +66,6 @@ public class DependencyInjector {
             }
 
             try {
-                field.setAccessible(true);
                 field.set(instance, dependency);
                 System.out.println("[Injector] Inject: "
                         + definition.getBeanName() + "." + field.getName());
@@ -66,6 +74,10 @@ public class DependencyInjector {
                         "Field inject хийхэд алдаа: " + field.getName(), e);
             }
         }
+    }
+
+    public ReflectionCache reflectionCache() {
+        return reflectionCache;
     }
 
     // ApplicationContext-тэй circular reference үүсгэхгүйн тулд interface ашиглана
